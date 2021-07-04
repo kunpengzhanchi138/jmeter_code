@@ -20820,80 +20820,31 @@
             </RegexExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="trialCalculationPriceInfo--缴费校验" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="trialCalculationPriceInfo--缴费校验" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;orderinfoUpdateStatus&quot;:1,&#xd;
-    &quot;studentDTO&quot;:{&#xd;
-        &quot;familyId&quot;:${familyId},&#xd;
-        &quot;parentId&quot;:${parentId},&#xd;
-        &quot;studentId&quot;:${studentId},&#xd;
-        &quot;isLeads&quot;:&quot;${isLeads}&quot;,&#xd;
-        &quot;channelId&quot;:${channelId},&#xd;
-        &quot;parentPhone&quot;:&quot;${parentPhone}&quot;&#xd;
-    },&#xd;
-    &quot;orderinfoDTO&quot;:{&#xd;
-        &quot;adviserId&quot;:${adviserId}&#xd;
-    },&#xd;
-    &quot;payMethodDTO&quot;:{&#xd;
-        &quot;payMode&quot;:200,&#xd;
-        &quot;otherPayMode&quot;:200,&#xd;
-        &quot;bankRate&quot;:null,&#xd;
-        &quot;bankAccount&quot;:null,&#xd;
-        &quot;referenceNumber&quot;:null,&#xd;
-        &quot;payAmount&quot;:${totalPrice},&#xd;
-        &quot;tradeDateStr&quot;:null,&#xd;
-        &quot;payer&quot;:&quot;fukuanren1&quot;,&#xd;
-        &quot;bank&quot;:null,&#xd;
-        &quot;chequeNo&quot;:null,&#xd;
-        &quot;company&quot;:null&#xd;
-    },&#xd;
-    &quot;orderinfoSaveStatus&quot;:200,&#xd;
-    &quot;orderSource&quot;:0,&#xd;
-    &quot;apedxInfoIds&quot;:&quot;&quot;,&#xd;
-    &quot;contractList&quot;:[&#xd;
-        {&#xd;
-            &quot;productIds&quot;:${classTypeId},&#xd;
-            &quot;classGradeId&quot;:null,&#xd;
-            &quot;centraId&quot;:${centraId_loginUser},&#xd;
-            &quot;brandId&quot;:1,&#xd;
-            &quot;enteredClassHours&quot;:0,&#xd;
-            &quot;enrollType&quot;:2,&#xd;
-            &quot;payType&quot;:2,&#xd;
-            &quot;payAmt&quot;:${totalPrice},&#xd;
-            &quot;productDetailIdList&quot;:[&#xd;
-                1,&#xd;
-                3&#xd;
-            ],&#xd;
-            &quot;couponIds&quot;:[&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classId&quot;:${classTypeId},&#xd;
+    &quot;classGradeId&quot;:null,&#xd;
+    &quot;entryType&quot;:${entryType},&#xd;
+    &quot;inClassQty&quot;:0,&#xd;
+    &quot;isTransfer&quot;:1,&#xd;
+    &quot;productIds&quot;:7173,&#xd;
+    &quot;productLineId&quot;:1,&#xd;
+    &quot;couponIds&quot;:[&#xd;
 &#xd;
-            ],&#xd;
-            &quot;redeemIds&quot;:[&#xd;
+    ],&#xd;
+    &quot;promotionIds&quot;:[&#xd;
 &#xd;
-            ],&#xd;
-            &quot;promotionIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;bundledDiscountIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;paymentPlanDTO&quot;:{&#xd;
-                &quot;couponIds&quot;:[&#xd;
-&#xd;
-                ],&#xd;
-                &quot;promotionIds&quot;:[&#xd;
-&#xd;
-                ],&#xd;
-                &quot;redeemIds&quot;:[&#xd;
-&#xd;
-                ]&#xd;
-            }&#xd;
-        }&#xd;
-    ]&#xd;
+    ],&#xd;
+    &quot;centerId&quot;:582,&#xd;
+    &quot;orgId&quot;:582,&#xd;
+    &quot;channelId&quot;:21844,&#xd;
+    &quot;studentId&quot;:9209257&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
