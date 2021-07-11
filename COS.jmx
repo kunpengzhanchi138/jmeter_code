@@ -19193,7 +19193,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--深圳某班型合同" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--深圳某班型合同" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -19410,13 +19410,23 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getParentPhone" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getParentPhone" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">parentPhone</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;parentPhone&quot;:&quot;(.+?)&quot;,</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">Error_parentPhone</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getPhoneNum" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">phoneNum</stringProp>
+              <stringProp name="RegexExtractor.regex">,&quot;phoneNum&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">Error_phoneNum</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="TestPlan.comments">合同接口使用phoneNum，而不是parentPhone</stringProp>
             </RegexExtractor>
             <hashTree/>
           </hashTree>
@@ -19999,7 +20009,7 @@
         &quot;studentId&quot;:${studentId},&#xd;
         &quot;isLeads&quot;:&quot;${isLeads}&quot;,&#xd;
         &quot;channelId&quot;:${channelId},&#xd;
-        &quot;parentPhone&quot;:&quot;${parentPhone}&quot;&#xd;
+        &quot;parentPhone&quot;:&quot;${phoneNum}&quot;&#xd;
     },&#xd;
     &quot;orderinfoDTO&quot;:{&#xd;
         &quot;adviserId&quot;:${adviserId}&#xd;
@@ -20017,7 +20027,7 @@
         &quot;chequeNo&quot;:null,&#xd;
         &quot;company&quot;:null&#xd;
     },&#xd;
-    &quot;orderinfoSaveStatus&quot;:200,&#xd;
+    &quot;orderinfoSaveStatus&quot;:1,&#xd;
     &quot;orderSource&quot;:0,&#xd;
     &quot;apedxInfoIds&quot;:&quot;&quot;,&#xd;
     &quot;contractList&quot;:[&#xd;
@@ -20092,10 +20102,10 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getTotalPrice" enabled="false">
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getOrderId" enabled="true">
             <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-            <stringProp name="RegexExtractor.refname">totalPrice</stringProp>
-            <stringProp name="RegexExtractor.regex">,&quot;price&quot;:${.+?}.00000,&quot;qty&quot;:1,</stringProp>
+            <stringProp name="RegexExtractor.refname">orderId</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;orderId&quot;:&quot;(.+?)&quot;,</stringProp>
             <stringProp name="RegexExtractor.template">$1$</stringProp>
             <stringProp name="RegexExtractor.default">Error_totalPrice</stringProp>
             <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -20147,6 +20157,48 @@
           </RegexExtractor>
           <hashTree/>
         </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="insertOrderinfo--删除订单" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${addressMic}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/orderinfo_server/order-info/deleteOrderinfo?orderinfoId=${orderId}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">token</stringProp>
+                <stringProp name="Header.value">${LoginToken1}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getOrderId" enabled="false">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">orderId</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;orderId&quot;:&quot;(.+?)&quot;,</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">Error_totalPrice</stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+        </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
@@ -20191,7 +20243,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -20215,7 +20267,7 @@
             <stringProp name="428369533">classTypeName</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="1409762571">
+            <collectionProp name="-1918969346">
               <stringProp name="-92985930">bja7961</stringProp>
               <stringProp name="115560">uat</stringProp>
               <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
