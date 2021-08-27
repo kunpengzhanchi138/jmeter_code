@@ -9,10 +9,10 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+      <stringProp name="TestPlan.user_define_classpath">/Users/liuyunpeng/Documents/RISE/CODE/github_code/java_code/untitled1/out/artifacts/formatDoubleNum/formatDoubleNum.jar</stringProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组--【新建咨询量】【校长权限】" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组--【新建咨询量】【校长权限】" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -820,13 +820,13 @@
             <stringProp name="-1338173431">dbname</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="98045738">
-              <stringProp name="53">5</stringProp>
-              <stringProp name="-2101044012">K10729</stringProp>
-              <stringProp name="-92985930">bja7961</stringProp>
-              <stringProp name="3556498">test</stringProp>
-              <stringProp name="-687229589">cos-test.risechina.com</stringProp>
-              <stringProp name="-1932911425">kcos-gateway-test.risechina.com</stringProp>
+            <collectionProp name="-2070738347">
+              <stringProp name="1572">15</stringProp>
+              <stringProp name="26280091">林悦溪</stringProp>
+              <stringProp name="-93054193">bja5050</stringProp>
+              <stringProp name="115560">uat</stringProp>
+              <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
+              <stringProp name="-1043835103">kcos-gateway-uat.risechina.com</stringProp>
               <stringProp name="1540255">2353</stringProp>
               <stringProp name="-109307118">currentProposerOrgId</stringProp>
               <stringProp name="-990080354">10.19.144.123</stringProp>
@@ -2478,6 +2478,16 @@
                 <stringProp name="RegexExtractor.default">Error_approvalStatusCode</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-165152137">&quot;code&quot;:200,&quot;message&quot;:&quot;审批成功&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
               <hashTree/>
             </hashTree>
             <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler--code" enabled="true">
@@ -5781,7 +5791,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--单产品订单生成学员" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--单产品订单生成学员" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -5805,13 +5815,13 @@
             <stringProp name="428369533">classTypeName</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="986524934">
-              <stringProp name="-92985930">bja7961</stringProp>
-              <stringProp name="3556498">test</stringProp>
-              <stringProp name="-687229589">cos-test.risechina.com</stringProp>
-              <stringProp name="-1932911425">kcos-gateway-test.risechina.com</stringProp>
-              <stringProp name="1991433705">18000000000</stringProp>
-              <stringProp name="1295579148">0729基础 </stringProp>
+            <collectionProp name="312908567">
+              <stringProp name="-92957159">bja8844</stringProp>
+              <stringProp name="115560">uat</stringProp>
+              <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
+              <stringProp name="-1043835103">kcos-gateway-uat.risechina.com</stringProp>
+              <stringProp name="416699889">18800000000</stringProp>
+              <stringProp name="420817891">Prek 160版 半天班-线下-分3期（52+56+52）</stringProp>
             </collectionProp>
           </collectionProp>
           <boolProp name="UserParameters.per_iteration">false</boolProp>
@@ -6018,6 +6028,16 @@
               <stringProp name="TestPlan.comments">合同接口使用phoneNum，而不是parentPhone</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="studentsIdentify--校验学生信息" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -6096,6 +6116,16 @@
               <stringProp name="RegexExtractor.default">Error_channelId</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1459617822">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -6204,6 +6234,16 @@
               <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="classPrice?--查版型定价--暂时无用" enabled="true">
@@ -6321,6 +6361,16 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="judgeEnrollTypeValue" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -6419,6 +6469,16 @@
               <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="product--产品各期价格" enabled="true">
@@ -6520,7 +6580,78 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="getproductDetailNameASproductDetailFlag" enabled="false">
+              <stringProp name="JMESExtractor.referenceName">productDetailNameASproductDetailFlag</stringProp>
+              <stringProp name="JMESExtractor.jmesPathExpr">$.data.status</stringProp>
+              <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
+              <stringProp name="JMESExtractor.defaultValue">ERROR_productDetailNameASproductDetailFlag</stringProp>
+            </JMESPathExtractor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="json" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">nameASflag</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.data[0].productDetailVOs[*].productDetailName</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">ERROR_productDetailNameASproductDetailFlag</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
           </hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+            <stringProp name="BeanShellSampler.query">import java.lang.String;
+import java.lang.Integer;
+
+
+
+
+
+
+
+String str_matchN=vars.get(&quot;nameASflag_matchNr&quot;);
+int int_matchNr = Integer.parseInt(str_matchN);
+String str=&quot;&quot;;
+
+
+for(int i=1;i&lt;=int_matchNr;i++){
+	String st123=&quot;nameASflag_&quot;+i;
+//	log.info(&quot;===========================================================================================&quot;);
+	log.info(st123);
+	if(i!=int_matchNr){
+		str=str+vars.get(st123)+&quot;,&quot;;
+		log.info(str);
+	}
+	else{
+		str=str+vars.get(st123);
+	}
+}
+
+vars.put(&quot;productDetailFlag&quot;,str);
+
+
+
+
+
+
+
+
+
+
+
+
+</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="trialCalculationPriceInfo--缴费校验" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -6545,7 +6676,9 @@
     &quot;centerId&quot;:${centraId_loginUser},&#xd;
     &quot;orgId&quot;:${centraId_loginUser},&#xd;
     &quot;channelId&quot;:${channelId},&#xd;
-    &quot;studentId&quot;:${studentId}&#xd;
+    &quot;studentId&quot;:${studentId},&#xd;
+     &quot;productDetailFlag&quot;: &quot;${productDetailFlag}&quot;,&#xd;
+     &quot;paidAmt&quot;: 0&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -6649,6 +6782,16 @@ log.info(&quot;classUnitId的值&quot;+classUnitId);</stringProp>
               <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
             </BeanShellAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1216235670">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
             <stringProp name="BeanShellSampler.query">import java.lang.String;
@@ -6680,6 +6823,25 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           </BeanShellSampler>
           <hashTree/>
         </hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">import  java.lang.Double;
+import FormatNum;
+
+
+log.info(&quot;===========================================================================================&quot;);
+//String getsumTotalAmt=vars.get(&quot;sumTotalAmt&quot;);
+//double x=Double.valueOf(getsumTotalAmt.toString());
+
+
+double x=22.12;
+
+formatDouble(x);
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="insertOrderinfo--建订单" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -6687,69 +6849,57 @@ vars.put(&quot;classUnitId_arr&quot;,s);
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-    &quot;orderinfoUpdateStatus&quot;:1,&#xd;
-    &quot;studentDTO&quot;:{&#xd;
-        &quot;familyId&quot;:${familyId},&#xd;
-        &quot;parentId&quot;:${parentId},&#xd;
-        &quot;studentId&quot;:${studentId},&#xd;
-        &quot;isLeads&quot;:&quot;${isLeads}&quot;,&#xd;
-        &quot;channelId&quot;:${channelId},&#xd;
-        &quot;parentPhone&quot;:&quot;${phoneNum}&quot;&#xd;
+    &quot;orderinfoUpdateStatus&quot;: 1,&#xd;
+    &quot;studentDTO&quot;: {&#xd;
+        &quot;familyId&quot;: ${familyId},&#xd;
+        &quot;parentId&quot;: ${parentId},&#xd;
+        &quot;studentId&quot;: ${studentId},&#xd;
+        &quot;isLeads&quot;: &quot;${isLeads}&quot;,&#xd;
+        &quot;channelId&quot;: ${channelId},&#xd;
+        &quot;parentPhone&quot;: &quot;${phoneNum}&quot;&#xd;
     },&#xd;
-    &quot;orderinfoDTO&quot;:{&#xd;
-        &quot;adviserId&quot;:${adviserId}&#xd;
+    &quot;orderinfoDTO&quot;: {&#xd;
+        &quot;adviserId&quot;: ${adviserId}&#xd;
     },&#xd;
-    &quot;payMethodDTO&quot;:{&#xd;
-        &quot;payMode&quot;:200,&#xd;
-        &quot;otherPayMode&quot;:200,&#xd;
-        &quot;bankRate&quot;:null,&#xd;
-        &quot;bankAccount&quot;:null,&#xd;
-        &quot;referenceNumber&quot;:null,&#xd;
-        &quot;payAmount&quot;:${sumTotalAmt},&#xd;
-        &quot;tradeDateStr&quot;:null,&#xd;
-        &quot;payer&quot;:&quot;fukuanren1&quot;,&#xd;
-        &quot;bank&quot;:null,&#xd;
-        &quot;chequeNo&quot;:null,&#xd;
-        &quot;company&quot;:null&#xd;
-    },&#xd;
-    &quot;orderinfoSaveStatus&quot;:200,&#xd;
-    &quot;orderSource&quot;:0,&#xd;
-    &quot;apedxInfoIds&quot;:&quot;&quot;,&#xd;
-    &quot;contractList&quot;:[&#xd;
+    &quot;orderinfoSaveStatus&quot;: 200,&#xd;
+    &quot;orderSource&quot;: 0,&#xd;
+    &quot;apedxInfoIds&quot;: &quot;&quot;,&#xd;
+    &quot;contractList&quot;: [&#xd;
         {&#xd;
-            &quot;productIds&quot;:${idASclassTypeId},&#xd;
-            &quot;classGradeId&quot;:null,&#xd;
-            &quot;centraId&quot;:${centraId_loginUser},&#xd;
-            &quot;brandId&quot;:1,&#xd;
-            &quot;enteredClassHours&quot;:0,&#xd;
-            &quot;enrollType&quot;:${enrollType},&#xd;
-            &quot;payType&quot;:2,&#xd;
-            &quot;payAmt&quot;:${sumTotalAmt},&#xd;
-            &quot;productDetailIdList&quot;:${classUnitId_arr},&#xd;
-            &quot;couponIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;redeemIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;promotionIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;bundledDiscountIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;paymentPlanDTO&quot;:{&#xd;
-                &quot;couponIds&quot;:[&#xd;
-&#xd;
-                ],&#xd;
-                &quot;promotionIds&quot;:[&#xd;
-&#xd;
-                ],&#xd;
-                &quot;redeemIds&quot;:[&#xd;
-&#xd;
-                ]&#xd;
+        	 &quot;productDetailFlag&quot;: &quot;${productDetailFlag}&quot;,&#xd;
+            &quot;productIds&quot;: ${idASclassTypeId},&#xd;
+            &quot;classGradeId&quot;: null,&#xd;
+            &quot;centraId&quot;: ${centraId_loginUser},&#xd;
+            &quot;brandId&quot;: 1,&#xd;
+            &quot;enteredClassHours&quot;: 0,&#xd;
+            &quot;enrollType&quot;: ${enrollType},&#xd;
+            &quot;payType&quot;: 2,&#xd;
+            &quot;payAmt&quot;: ${sumTotalAmt},&#xd;
+            &quot;couponIds&quot;: [],&#xd;
+            &quot;redeemIds&quot;: [],&#xd;
+            &quot;promotionIds&quot;: [],&#xd;
+            &quot;bundledDiscountIds&quot;: [],&#xd;
+            &quot;paymentPlanDTO&quot;: {&#xd;
+            &quot;couponIds&quot;: [],&#xd;
+            &quot;promotionIds&quot;: [],&#xd;
+            &quot;redeemIds&quot;: []&#xd;
             }&#xd;
         }&#xd;
+    ],&#xd;
+    &quot;payMethodDTOS&quot;: [&#xd;
+    {&#xd;
+        &quot;payMode&quot;: 200,&#xd;
+        &quot;otherPayMode&quot;: 200,&#xd;
+        &quot;bankRate&quot;: null,&#xd;
+        &quot;bankAccount&quot;: null,&#xd;
+        &quot;referenceNumber&quot;: null,&#xd;
+        &quot;payAmount&quot;: ${sumTotalAmt},&#xd;
+        &quot;tradeDateStr&quot;: null,&#xd;
+        &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
+        &quot;bank&quot;: null,&#xd;
+        &quot;chequeNo&quot;: null,&#xd;
+        &quot;company&quot;: null&#xd;
+    }&#xd;
     ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -6837,6 +6987,16 @@ vars.put(&quot;classUnitId_arr&quot;,s);
             <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
             <stringProp name="RegexExtractor.match_number">1</stringProp>
           </RegexExtractor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-604695343">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="review?--学员复核" enabled="true">
@@ -6933,6 +7093,16 @@ vars.put(&quot;classUnitId_arr&quot;,s);
             <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
             <stringProp name="RegexExtractor.match_number">1</stringProp>
           </RegexExtractor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1459617822">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
           <hashTree/>
         </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
@@ -8057,9 +8227,9 @@ vars.put(&quot;classUnitId_arr&quot;,s);
             <stringProp name="106008351">orgId</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-1060106784">
-              <stringProp name="52">4</stringProp>
-              <stringProp name="-468664875">K1072901</stringProp>
+            <collectionProp name="-489654497">
+              <stringProp name="1567">10</stringProp>
+              <stringProp name="25754366">方奕为</stringProp>
               <stringProp name="-92985930">bja7961</stringProp>
               <stringProp name="3556498">test</stringProp>
               <stringProp name="-687229589">cos-test.risechina.com</stringProp>
@@ -13445,7 +13615,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="paike071401" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="paike071401" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>

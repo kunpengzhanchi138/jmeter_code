@@ -16,38 +16,38 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="userNameSubmmitor" elementType="Argument">
             <stringProp name="Argument.name">userNameSubmmitor</stringProp>
-            <stringProp name="Argument.value">bja8844</stringProp>
+            <stringProp name="Argument.value">bja5050</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="address" elementType="Argument">
             <stringProp name="Argument.name">address</stringProp>
-            <stringProp name="Argument.value">cos-test.risechina.com</stringProp>
+            <stringProp name="Argument.value">cos-uat.risechina.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="addressMic" elementType="Argument">
             <stringProp name="Argument.name">addressMic</stringProp>
-            <stringProp name="Argument.value">kcos-gateway-test.risechina.com</stringProp>
+            <stringProp name="Argument.value">kcos-gateway-uat.risechina.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userPassword" elementType="Argument">
             <stringProp name="Argument.name">userPassword</stringProp>
-            <stringProp name="Argument.value">test</stringProp>
+            <stringProp name="Argument.value">uat</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="classTypeIdASclassId" elementType="Argument">
             <stringProp name="Argument.name">classTypeIdASclassId</stringProp>
-            <stringProp name="Argument.value">124</stringProp>
+            <stringProp name="Argument.value">31013</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">班型id</stringProp>
           </elementProp>
           <elementProp name="preClassCode" elementType="Argument">
             <stringProp name="Argument.name">preClassCode</stringProp>
-            <stringProp name="Argument.value">K1</stringProp>
+            <stringProp name="Argument.value">XG</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="codeJSQ" elementType="Argument">
             <stringProp name="Argument.name">codeJSQ</stringProp>
-            <stringProp name="Argument.value">0808</stringProp>
+            <stringProp name="Argument.value">0826</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userNameAdmin" elementType="Argument">
