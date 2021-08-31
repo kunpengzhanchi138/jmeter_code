@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="150" it="0" lt="148" ct="44" ts="1630409852209" s="true" lb="login_admin----获取admin账号cookie" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="622" sby="187" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:34 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 11:37:32 GMT
+Set-Cookie: SESSION=7dc00335-55da-49c0-a726-2b404723a23b; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;7dc00335-55da-49c0-a726-2b404723a23b&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/login/login.do?username=2353&amp;password=uat&amp;_=1630409852131</java.net.URL>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1630409852374" s="true" lb="showEmpList.do0----用admin查申请人信息" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="1016" sby="441" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:34 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 652
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 148
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;birthday&quot;:850752000000,&quot;birthdayText&quot;:&quot;1996-12-17&quot;,&quot;classNum&quot;:0,&quot;companyName&quot;:&quot;深圳公司&quot;,&quot;createdBy&quot;:&quot;2353&quot;,&quot;createdDate&quot;:1596105021000,&quot;deleteFlag&quot;:0,&quot;departmentId&quot;:1723,&quot;departmentName&quot;:&quot;学术部&quot;,&quot;email&quot;:&quot;bellalin1@riseedu.net&quot;,&quot;employeeCode&quot;:&quot;1001660&quot;,&quot;employeeNameCn&quot;:&quot;林佩霞&quot;,&quot;employeeNameEn&quot;:&quot;Bella&quot;,&quot;employeeNamePy&quot;:&quot;lpx&quot;,&quot;entryDateText&quot;:&quot;2020-07-28&quot;,&quot;entryDay&quot;:1595865600000,&quot;id&quot;:1000036226,&quot;leftDay&quot;:1599321600000,&quot;mobliephone&quot;:&quot;15089448536&quot;,&quot;orgId&quot;:582,&quot;orgName&quot;:&quot;深圳布吉万象汇校区&quot;,&quot;orgType&quot;:3,&quot;post&quot;:68,&quot;postStatus&quot;:0,&quot;sourceName&quot;:&quot;直营&quot;,&quot;status&quot;:1,&quot;updatedBy&quot;:&quot;2353&quot;,&quot;updatedDate&quot;:1624446107000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=7dc00335-55da-49c0-a726-2b404723a23b</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">employeeCode=1001660&amp;employeeNameCn=&amp;postName=&amp;orgId=&amp;entryStartdate=&amp;entryEnddate=&amp;deptName=&amp;sourceType=&amp;page=1&amp;rows=15&amp;sort=updatedDate&amp;order=desc</queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/employee/showEmpList.do</java.net.URL>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1630409852431" s="true" lb="showEmpList.do0----用admin查申校长" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="993" sby="467" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:34 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 629
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 174
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;birthday&quot;:507744000000,&quot;birthdayText&quot;:&quot;1986-02-03&quot;,&quot;classNum&quot;:0,&quot;companyName&quot;:&quot;深圳公司&quot;,&quot;createdBy&quot;:&quot;sync&quot;,&quot;createdDate&quot;:1481086503000,&quot;deleteFlag&quot;:0,&quot;departmentId&quot;:0,&quot;email&quot;:&quot;rachellian_szlhwxc@riseedu.net&quot;,&quot;employeeCode&quot;:&quot;sz0352&quot;,&quot;employeeNameCn&quot;:&quot;连敏&quot;,&quot;employeeNameEn&quot;:&quot;Rachel&quot;,&quot;employeeNamePy&quot;:&quot;lm&quot;,&quot;entryDateText&quot;:&quot;2016-11-29&quot;,&quot;entryDay&quot;:1480348800000,&quot;id&quot;:20536,&quot;mobliephone&quot;:&quot;13713870180&quot;,&quot;orgId&quot;:582,&quot;orgName&quot;:&quot;深圳布吉万象汇校区&quot;,&quot;orgType&quot;:3,&quot;parentId&quot;:22,&quot;post&quot;:22,&quot;postStatus&quot;:0,&quot;relativeCoupons&quot;:1,&quot;sourceName&quot;:&quot;直营&quot;,&quot;status&quot;:1,&quot;updatedBy&quot;:&quot;ehr&quot;,&quot;updatedDate&quot;:1615128339000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=7dc00335-55da-49c0-a726-2b404723a23b</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">employeeCode=&amp;employeeNameCn=&amp;statusArr=1&amp;postName=%E6%A0%A1%E9%95%BF&amp;orgId=582&amp;entryStartdate=&amp;entryEnddate=&amp;deptName=&amp;sourceType=&amp;page=1&amp;rows=15&amp;sort=updatedDate&amp;order=desc</queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/employee/showEmpList.do</java.net.URL>
+</httpSample>
+<httpSample t="91" it="0" lt="91" ct="0" ts="1630409852489" s="true" lb="login0----咨询人登陆cookie获取" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="622" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:34 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 11:37:32 GMT
+Set-Cookie: SESSION=4847657a-6df9-4c5e-8426-ef757711c65b; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;4847657a-6df9-4c5e-8426-ef757711c65b&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/login/login.do?username=sz0352&amp;password=uat&amp;_=1630409852489</java.net.URL>
+</httpSample>
+<httpSample t="257" it="0" lt="257" ct="0" ts="1630409852581" s="true" lb="addOptt.do --咨询加" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="426" sby="989" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:35 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 63
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 704
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;新建咨询量成功&quot;,&quot;result&quot;:3544303}</responseData>
+  <cookies class="java.lang.String">SESSION=4847657a-6df9-4c5e-8426-ef757711c65b</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">optt.id=0&amp;student.id=0&amp;student.isFocus=1&amp;student.custLevel=0&amp;parent.id=0&amp;optt.callNum=0&amp;optt.consMode=&amp;optt.demoClassId=0&amp;optt.demoTimes=+&amp;brandId=1&amp;brandName=%E5%B8%B8%E8%A7%84%E8%AF%BE%E7%A8%8B&amp;brandType=1&amp;tendencyLine=&amp;conTourType=&amp;parent.mobile=19100000050+&amp;parent.parentName=19100000050+&amp;parent.relation=1&amp;student.studentName=19100000050+&amp;student.age=3&amp;student.studentBirthdayIn=2017-12-01&amp;student.sex=0&amp;student.readGrade=0&amp;student.readSchool=&amp;channel1Id=87&amp;channel2Id=415&amp;optt.channelId=530&amp;student.learnBackground=&amp;student.englishBasis=&amp;parent.wechat=&amp;parent.email=&amp;parent.address=&amp;optt.activityAddress=&amp;optt.activityGift=&amp;optt.consultant=&amp;consultantName=&amp;recommended=&amp;city=&amp;campus=&amp;optt.comments=</queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/optt/addOptt.do</java.net.URL>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1630409852857" s="true" lb="调试取样器" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="1350" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@4d21347d
+LoginCookie1=SESSION=4847657a-6df9-4c5e-8426-ef757711c65b
+LoginCookie1_g=1
+LoginCookie1_g0=Set-Cookie: SESSION=4847657a-6df9-4c5e-8426-ef757711c65b; Path=/COS/; HttpOnly
+LoginCookie1_g1=SESSION=4847657a-6df9-4c5e-8426-ef757711c65b
+LoginCookie_admin=SESSION=7dc00335-55da-49c0-a726-2b404723a23b
+LoginCookie_admin_g=1
+LoginCookie_admin_g0=Set-Cookie: SESSION=7dc00335-55da-49c0-a726-2b404723a23b; Path=/COS/; HttpOnly
+LoginCookie_admin_g1=SESSION=7dc00335-55da-49c0-a726-2b404723a23b
+START.HMS=193731
+START.MS=1630409851589
+START.YMD=20210831
+TESTSTART.MS=1630409851841
+__jm__线程组--【新建咨询量】【校长权限】__idx=0
+__jmeter.U_T__=线程组--【新建咨询量】【校长权限】 1-1
+__jmv_SAME_USER=true
+address=cos-uat.risechina.com
+approvalInterface=clazz/buildClassApproval.do?
+approveType=
+employeeCode=sz0352
+employeeCode_g=1
+employeeCode_g0=&quot;,&quot;employeeCode&quot;:&quot;sz0352&quot;,&quot;
+employeeCode_g1=sz0352
+iphoneNum=00000050
+preIphone=191
+proposerId=1000036226
+proposerId_g=1
+proposerId_g0=&quot;id&quot;:1000036226,&quot;
+proposerId_g1=1000036226
+proposerOrganizationId=582
+proposerOrganizationId_g=1
+proposerOrganizationId_g0=&quot;orgId&quot;:582,&quot;orgName&quot;
+proposerOrganizationId_g1=582
+userName_0=1001660
+userName_admin=2353
+userPassword=uat
+
+</responseData>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+<httpSample t="72" it="0" lt="72" ct="0" ts="1630409852859" s="true" lb="login_admin----获取admin账号cookie" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="622" sby="187" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:35 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 11:37:32 GMT
+Set-Cookie: SESSION=f2440d61-7db6-4b90-994b-c9ed62821509; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;f2440d61-7db6-4b90-994b-c9ed62821509&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/login/login.do?username=2353&amp;password=uat&amp;_=1630409852860</java.net.URL>
+</httpSample>
+<httpSample t="42" it="0" lt="41" ct="0" ts="1630409852934" s="true" lb="showEmpList.do0----用admin查申请人信息" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="1016" sby="441" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:35 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 652
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 148
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;birthday&quot;:850752000000,&quot;birthdayText&quot;:&quot;1996-12-17&quot;,&quot;classNum&quot;:0,&quot;companyName&quot;:&quot;深圳公司&quot;,&quot;createdBy&quot;:&quot;2353&quot;,&quot;createdDate&quot;:1596105021000,&quot;deleteFlag&quot;:0,&quot;departmentId&quot;:1723,&quot;departmentName&quot;:&quot;学术部&quot;,&quot;email&quot;:&quot;bellalin1@riseedu.net&quot;,&quot;employeeCode&quot;:&quot;1001660&quot;,&quot;employeeNameCn&quot;:&quot;林佩霞&quot;,&quot;employeeNameEn&quot;:&quot;Bella&quot;,&quot;employeeNamePy&quot;:&quot;lpx&quot;,&quot;entryDateText&quot;:&quot;2020-07-28&quot;,&quot;entryDay&quot;:1595865600000,&quot;id&quot;:1000036226,&quot;leftDay&quot;:1599321600000,&quot;mobliephone&quot;:&quot;15089448536&quot;,&quot;orgId&quot;:582,&quot;orgName&quot;:&quot;深圳布吉万象汇校区&quot;,&quot;orgType&quot;:3,&quot;post&quot;:68,&quot;postStatus&quot;:0,&quot;sourceName&quot;:&quot;直营&quot;,&quot;status&quot;:1,&quot;updatedBy&quot;:&quot;2353&quot;,&quot;updatedDate&quot;:1624446107000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=f2440d61-7db6-4b90-994b-c9ed62821509</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">employeeCode=1001660&amp;employeeNameCn=&amp;postName=&amp;orgId=&amp;entryStartdate=&amp;entryEnddate=&amp;deptName=&amp;sourceType=&amp;page=1&amp;rows=15&amp;sort=updatedDate&amp;order=desc</queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/employee/showEmpList.do</java.net.URL>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1630409852978" s="true" lb="showEmpList.do0----用admin查申校长" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="993" sby="467" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:35 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 629
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 174
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;birthday&quot;:507744000000,&quot;birthdayText&quot;:&quot;1986-02-03&quot;,&quot;classNum&quot;:0,&quot;companyName&quot;:&quot;深圳公司&quot;,&quot;createdBy&quot;:&quot;sync&quot;,&quot;createdDate&quot;:1481086503000,&quot;deleteFlag&quot;:0,&quot;departmentId&quot;:0,&quot;email&quot;:&quot;rachellian_szlhwxc@riseedu.net&quot;,&quot;employeeCode&quot;:&quot;sz0352&quot;,&quot;employeeNameCn&quot;:&quot;连敏&quot;,&quot;employeeNameEn&quot;:&quot;Rachel&quot;,&quot;employeeNamePy&quot;:&quot;lm&quot;,&quot;entryDateText&quot;:&quot;2016-11-29&quot;,&quot;entryDay&quot;:1480348800000,&quot;id&quot;:20536,&quot;mobliephone&quot;:&quot;13713870180&quot;,&quot;orgId&quot;:582,&quot;orgName&quot;:&quot;深圳布吉万象汇校区&quot;,&quot;orgType&quot;:3,&quot;parentId&quot;:22,&quot;post&quot;:22,&quot;postStatus&quot;:0,&quot;relativeCoupons&quot;:1,&quot;sourceName&quot;:&quot;直营&quot;,&quot;status&quot;:1,&quot;updatedBy&quot;:&quot;ehr&quot;,&quot;updatedDate&quot;:1615128339000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=f2440d61-7db6-4b90-994b-c9ed62821509</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">employeeCode=&amp;employeeNameCn=&amp;statusArr=1&amp;postName=%E6%A0%A1%E9%95%BF&amp;orgId=582&amp;entryStartdate=&amp;entryEnddate=&amp;deptName=&amp;sourceType=&amp;page=1&amp;rows=15&amp;sort=updatedDate&amp;order=desc</queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/employee/showEmpList.do</java.net.URL>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1630409853029" s="true" lb="login0----咨询人登陆cookie获取" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="622" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:35 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 11:37:33 GMT
+Set-Cookie: SESSION=e0c6e434-4448-4538-957d-13a9277e25ef; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;e0c6e434-4448-4538-957d-13a9277e25ef&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/login/login.do?username=sz0352&amp;password=uat&amp;_=1630409853030</java.net.URL>
+</httpSample>
+<httpSample t="126" it="0" lt="126" ct="0" ts="1630409853087" s="true" lb="addOptt.do --咨询加" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="426" sby="989" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:37:35 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 63
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 704
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;新建咨询量成功&quot;,&quot;result&quot;:3544304}</responseData>
+  <cookies class="java.lang.String">SESSION=e0c6e434-4448-4538-957d-13a9277e25ef</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">optt.id=0&amp;student.id=0&amp;student.isFocus=1&amp;student.custLevel=0&amp;parent.id=0&amp;optt.callNum=0&amp;optt.consMode=&amp;optt.demoClassId=0&amp;optt.demoTimes=+&amp;brandId=1&amp;brandName=%E5%B8%B8%E8%A7%84%E8%AF%BE%E7%A8%8B&amp;brandType=1&amp;tendencyLine=&amp;conTourType=&amp;parent.mobile=19100000051+&amp;parent.parentName=19100000051+&amp;parent.relation=1&amp;student.studentName=19100000051+&amp;student.age=3&amp;student.studentBirthdayIn=2017-12-01&amp;student.sex=0&amp;student.readGrade=0&amp;student.readSchool=&amp;channel1Id=87&amp;channel2Id=415&amp;optt.channelId=530&amp;student.learnBackground=&amp;student.englishBasis=&amp;parent.wechat=&amp;parent.email=&amp;parent.address=&amp;optt.activityAddress=&amp;optt.activityGift=&amp;optt.consultant=&amp;consultantName=&amp;recommended=&amp;city=&amp;campus=&amp;optt.comments=</queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/optt/addOptt.do</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1630409853214" s="true" lb="调试取样器" rc="200" rm="OK" tn="线程组--【新建咨询量】【校长权限】 1-1" dt="text" by="1350" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@4d21347d
+LoginCookie1=SESSION=e0c6e434-4448-4538-957d-13a9277e25ef
+LoginCookie1_g=1
+LoginCookie1_g0=Set-Cookie: SESSION=e0c6e434-4448-4538-957d-13a9277e25ef; Path=/COS/; HttpOnly
+LoginCookie1_g1=SESSION=e0c6e434-4448-4538-957d-13a9277e25ef
+LoginCookie_admin=SESSION=f2440d61-7db6-4b90-994b-c9ed62821509
+LoginCookie_admin_g=1
+LoginCookie_admin_g0=Set-Cookie: SESSION=f2440d61-7db6-4b90-994b-c9ed62821509; Path=/COS/; HttpOnly
+LoginCookie_admin_g1=SESSION=f2440d61-7db6-4b90-994b-c9ed62821509
+START.HMS=193731
+START.MS=1630409851589
+START.YMD=20210831
+TESTSTART.MS=1630409851841
+__jm__线程组--【新建咨询量】【校长权限】__idx=1
+__jmeter.U_T__=线程组--【新建咨询量】【校长权限】 1-1
+__jmv_SAME_USER=true
+address=cos-uat.risechina.com
+approvalInterface=clazz/buildClassApproval.do?
+approveType=
+employeeCode=sz0352
+employeeCode_g=1
+employeeCode_g0=&quot;,&quot;employeeCode&quot;:&quot;sz0352&quot;,&quot;
+employeeCode_g1=sz0352
+iphoneNum=00000051
+preIphone=191
+proposerId=1000036226
+proposerId_g=1
+proposerId_g0=&quot;id&quot;:1000036226,&quot;
+proposerId_g1=1000036226
+proposerOrganizationId=582
+proposerOrganizationId_g=1
+proposerOrganizationId_g0=&quot;orgId&quot;:582,&quot;orgName&quot;
+proposerOrganizationId_g1=582
+userName_0=1001660
+userName_admin=2353
+userPassword=uat
+
+</responseData>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+</testResults>

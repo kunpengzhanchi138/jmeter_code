@@ -1,0 +1,56 @@
+2021-08-31 18:23:41,988 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-08-31 18:23:42,008 INFO o.a.j.JMeter: Loading user properties from: /Library/Jmeter/apache-jmeter-5.3/bin/user.properties
+2021-08-31 18:23:42,009 INFO o.a.j.JMeter: Loading system properties from: /Library/Jmeter/apache-jmeter-5.3/bin/system.properties
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: Version 5.3
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: java.version=1.8.0_191
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: os.arch=x86_64
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: os.version=10.15.6
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-08-31 18:23:42,011 INFO o.a.j.JMeter: java.awt.headless=true
+2021-08-31 18:23:42,012 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-08-31 18:23:42,012 INFO o.a.j.JMeter: Available Processors =8
+2021-08-31 18:23:42,016 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-08-31 18:23:42,016 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-08-31 18:23:42,016 INFO o.a.j.JMeter: JMeterHome=/Library/Jmeter/apache-jmeter-5.3
+2021-08-31 18:23:42,016 INFO o.a.j.JMeter: user.dir  =/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script
+2021-08-31 18:23:42,017 INFO o.a.j.JMeter: PWD       =/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script
+2021-08-31 18:23:42,020 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: liuyunpengdeMacBook-Pro.local FullName: localhost
+2021-08-31 18:23:42,025 INFO o.a.j.s.FileServer: Default base='/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script'
+2021-08-31 18:23:42,029 INFO o.a.j.s.FileServer: Set new base='/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script'
+2021-08-31 18:23:42,142 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-08-31 18:23:42,156 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-08-31 18:23:42,161 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-08-31 18:23:42,166 INFO o.a.j.s.SaveService: Loading file: Test Plan.jmx
+2021-08-31 18:23:42,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:23:42,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:23:42,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:23:42,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:23:42,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-08-31 18:23:42,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-08-31 18:23:42,267 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-08-31 18:23:42,272 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-08-31 18:23:42,273 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-08-31 18:23:42,273 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-08-31 18:23:42,277 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-08-31 18:23:42,278 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-08-31 18:23:42,531 INFO o.a.j.JMeter: Running test (1630405422531)
+2021-08-31 18:23:42,561 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : contranct--深圳某班型合同--班型不可更改
+2021-08-31 18:23:42,562 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group contranct--深圳某班型合同--班型不可更改.
+2021-08-31 18:23:42,562 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-08-31 18:23:42,562 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2021-08-31 18:23:42,568 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-08-31 18:23:42,569 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-08-31 18:23:42,572 INFO o.a.j.t.JMeterThread: Thread started: contranct--深圳某班型合同--班型不可更改 1-1
+2021-08-31 18:23:42,589 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = liuyunpengdeMacBook-Pro.local
+2021-08-31 18:23:42,595 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-08-31 18:23:42,597 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-08-31 18:23:42,597 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to utf-8
+2021-08-31 18:23:42,597 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-08-31 18:23:42,597 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-08-31 18:23:45,363 INFO o.a.j.t.JMeterThread: Thread is done: contranct--深圳某班型合同--班型不可更改 1-1
+2021-08-31 18:23:45,363 INFO o.a.j.t.JMeterThread: Thread finished: contranct--深圳某班型合同--班型不可更改 1-1
+2021-08-31 18:23:45,365 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-08-31 18:23:45,366 INFO o.a.j.r.Summariser: summary =     10 in 00:00:03 =    3.5/s Avg:   262 Min:     2 Max:  1166 Err:     0 (0.00%)

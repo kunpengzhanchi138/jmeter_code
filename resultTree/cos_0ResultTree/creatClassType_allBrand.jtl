@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="322" it="0" lt="319" ct="36" ts="1630410156184" s="true" lb="login_admin----获取admin账号cookie" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="622" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:36 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 11:42:36 GMT
+Set-Cookie: SESSION=56e7711a-eede-4350-97ec-b725560f7513; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;56e7711a-eede-4350-97ec-b725560f7513&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/login/login.do?username=2353&amp;password=test&amp;_=1630410156122</java.net.URL>
+</httpSample>
+<httpSample t="194" it="0" lt="194" ct="0" ts="1630410156518" s="true" lb="addClassType0" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="394" sby="565" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:36 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 31
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:30616,&quot;result&quot;:&quot;success&quot;}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/add.do?&amp;brandId=1&amp;classType=10&amp;classLevelId=1&amp;classCategoryId=1&amp;stChair=&amp;status=0&amp;oldclassType=&amp;isInstallment=1&amp;isEntry=0&amp;installmentNums=&amp;base=0&amp;baseId=&amp;classAssociate=50&amp;lessonMode=&amp;className=09011%E5%9F%BA%E7%A1%80&amp;classShortname=09011%E5%9F%BA%E7%A1%80&amp;minNum=2&amp;maxNum=4&amp;standarNum=3&amp;classQty=160&amp;applyStartAge=&amp;applyEndAge=&amp;serviceOrgId=&amp;_=1630410156518&amp;productLineId=1</java.net.URL>
+</httpSample>
+<httpSample t="119" it="0" lt="119" ct="0" ts="1630410156714" s="true" lb="addClassType_fee0" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="319" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:36 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">ids=1%2C2%2C3%2C4&amp;classId=30616</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classdetail/add.do</java.net.URL>
+</httpSample>
+<httpSample t="115" it="0" lt="115" ct="0" ts="1630410156836" s="true" lb="addClassType_update0" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="383" sby="375" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:36 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 20
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 77
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;result&quot;:&quot;success&quot;}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">classId=30616&amp;installmentHoursArr=160&amp;classSurplusHoursArr=0&amp;installmentNums=</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/mclassInstallment/update.do?</java.net.URL>
+</httpSample>
+<httpSample t="198" it="0" lt="198" ct="0" ts="1630410156953" s="true" lb="addClassType1" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="394" sby="573" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:37 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 31
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:30617,&quot;result&quot;:&quot;success&quot;}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/add.do?&amp;brandId=1&amp;classType=10&amp;classLevelId=1&amp;classCategoryId=1&amp;stChair=&amp;status=0&amp;oldclassType=&amp;isInstallment=0&amp;isEntry=0&amp;installmentNums=3&amp;base=1&amp;baseId=30616&amp;classAssociate=50&amp;lessonMode=&amp;className=09011%E9%9D%9E%E5%9F%BA%E7%A1%80&amp;classShortname=09011%E9%9D%9E%E5%9F%BA%E7%A1%80&amp;minNum=2&amp;maxNum=4&amp;standarNum=3&amp;classQty=160&amp;applyStartAge=&amp;applyEndAge=&amp;serviceOrgId=&amp;_=1630410156953</java.net.URL>
+</httpSample>
+<httpSample t="121" it="0" lt="121" ct="0" ts="1630410157153" s="true" lb="addClassType_fee1" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="319" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:37 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">ids=1%2C2%2C3%2C4&amp;classId=30617</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classdetail/add.do</java.net.URL>
+</httpSample>
+<httpSample t="173" it="0" lt="173" ct="0" ts="1630410157276" s="true" lb="addClassType_update1" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="383" sby="396" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:37 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 20
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 98
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;result&quot;:&quot;success&quot;}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">classId=30617&amp;installmentHoursArr=60%2C60%2C40&amp;classSurplusHoursArr=100%2C40%2C0&amp;installmentNums=3</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/mclassInstallment/update.do?</java.net.URL>
+</httpSample>
+<httpSample t="613" it="0" lt="613" ct="0" ts="1630410157451" s="true" lb="savAssociatedClass.do?--基础关联非基础" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="394" sby="331" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:37 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 31
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 33
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:30617,&quot;result&quot;:&quot;success&quot;}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">id=30617&amp;brandId=1&amp;sourceId=30616</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/savAssociatedClass.do?</java.net.URL>
+</httpSample>
+<httpSample t="92" it="0" lt="92" ct="0" ts="1630410158065" s="true" lb="BASEgetlist.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="1090" sby="522" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:38 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 726
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 225
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;base&quot;:0,&quot;brandId&quot;:1,&quot;classAssociate&quot;:50,&quot;classCategoryId&quot;:1,&quot;classCategoryName&quot;:&quot;常规班&quot;,&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;className&quot;:&quot;09011基础&quot;,&quot;classNamePy&quot;:&quot;09011jc&quot;,&quot;classQty&quot;:160,&quot;classShortname&quot;:&quot;09011基础&quot;,&quot;classType&quot;:10,&quot;createBy&quot;:&quot;2353&quot;,&quot;createDate&quot;:1630410157000,&quot;deleteFlag&quot;:0,&quot;detailId&quot;:0,&quot;effectiveDate&quot;:1630339200000,&quot;expiredDate&quot;:1630339200000,&quot;id&quot;:30616,&quot;installmentNums&quot;:1,&quot;isEntry&quot;:0,&quot;isInstallment&quot;:1,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;maxNum&quot;:4,&quot;minNum&quot;:2,&quot;onlineSale&quot;:1,&quot;orgId&quot;:1,&quot;productLineId&quot;:1,&quot;productLineName&quot;:&quot;瑞思英语&quot;,&quot;qty&quot;:0,&quot;relatedClassNames&quot;:&quot;09011非基础&quot;,&quot;standarNum&quot;:3,&quot;status&quot;:0,&quot;strCreateDate&quot;:&quot;2021-08-31&quot;,&quot;updatedBy&quot;:&quot;2353&quot;,&quot;updatedDate&quot;:1630410156000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">className=09011%E5%9F%BA%E7%A1%80&amp;classShortname=09011%E5%9F%BA%E7%A1%80&amp;status=&amp;classLevelId=&amp;classCategoryId=&amp;oldclassType=&amp;isInstallment=&amp;base=&amp;onlineSale=&amp;classAssociate=&amp;lessonMode=&amp;page=1&amp;rows=15&amp;sort=id&amp;order=className</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/getlist.do?brandId=1</java.net.URL>
+</httpSample>
+<httpSample t="1434" it="0" lt="1434" ct="0" ts="1630410158160" s="true" lb="baseSendToOrganization" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="352" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:39 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 37
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">ids=4&amp;prodids=30616&amp;installmentNums=1</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classunitdistribution/addproduct.do?brandId=1</java.net.URL>
+</httpSample>
+<httpSample t="94" it="0" lt="94" ct="0" ts="1630410159595" s="true" lb="NoBASEgetlist.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="1134" sby="540" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:39 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 770
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 243
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;base&quot;:1,&quot;baseId&quot;:30616,&quot;baseName&quot;:&quot;09011基础&quot;,&quot;brandId&quot;:1,&quot;classAssociate&quot;:50,&quot;classCategoryId&quot;:1,&quot;classCategoryName&quot;:&quot;常规班&quot;,&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;className&quot;:&quot;09011非基础&quot;,&quot;classNamePy&quot;:&quot;09011fjc&quot;,&quot;classQty&quot;:160,&quot;classShortname&quot;:&quot;09011非基础&quot;,&quot;classType&quot;:10,&quot;createBy&quot;:&quot;2353&quot;,&quot;createDate&quot;:1630410157000,&quot;deleteFlag&quot;:0,&quot;detailId&quot;:0,&quot;effectiveDate&quot;:1630339200000,&quot;expiredDate&quot;:1630339200000,&quot;id&quot;:30617,&quot;installmentNums&quot;:3,&quot;isEntry&quot;:0,&quot;isInstallment&quot;:0,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;maxNum&quot;:4,&quot;minNum&quot;:2,&quot;onlineSale&quot;:1,&quot;orgId&quot;:1,&quot;productLineId&quot;:1,&quot;productLineName&quot;:&quot;瑞思英语&quot;,&quot;qty&quot;:0,&quot;relatedClassNames&quot;:&quot;09011基础&quot;,&quot;standarNum&quot;:3,&quot;status&quot;:0,&quot;strCreateDate&quot;:&quot;2021-08-31&quot;,&quot;updatedBy&quot;:&quot;2353&quot;,&quot;updatedDate&quot;:1630410157000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">className=09011%E9%9D%9E%E5%9F%BA%E7%A1%80&amp;classShortname=09011%E9%9D%9E%E5%9F%BA%E7%A1%80&amp;status=&amp;classLevelId=&amp;classCategoryId=&amp;oldclassType=&amp;isInstallment=&amp;base=&amp;onlineSale=&amp;classAssociate=&amp;lessonMode=&amp;page=1&amp;rows=15&amp;sort=id&amp;order=className</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/getlist.do?brandId=1</java.net.URL>
+</httpSample>
+<httpSample t="1445" it="0" lt="1445" ct="0" ts="1630410159691" s="true" lb="nobaseSendToOrganization" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="352" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:41 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 37
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">ids=4&amp;prodids=30617&amp;installmentNums=1</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classunitdistribution/addproduct.do?brandId=1</java.net.URL>
+</httpSample>
+<httpSample t="91" it="0" lt="91" ct="0" ts="1630410161137" s="true" lb="BASEgetlist.do?--获班型id" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="1090" sby="522" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:41 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 726
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 225
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;base&quot;:0,&quot;brandId&quot;:1,&quot;classAssociate&quot;:50,&quot;classCategoryId&quot;:1,&quot;classCategoryName&quot;:&quot;常规班&quot;,&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;className&quot;:&quot;09011基础&quot;,&quot;classNamePy&quot;:&quot;09011jc&quot;,&quot;classQty&quot;:160,&quot;classShortname&quot;:&quot;09011基础&quot;,&quot;classType&quot;:10,&quot;createBy&quot;:&quot;2353&quot;,&quot;createDate&quot;:1630410157000,&quot;deleteFlag&quot;:0,&quot;detailId&quot;:0,&quot;effectiveDate&quot;:1630339200000,&quot;expiredDate&quot;:1630339200000,&quot;id&quot;:30616,&quot;installmentNums&quot;:1,&quot;isEntry&quot;:0,&quot;isInstallment&quot;:1,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;maxNum&quot;:4,&quot;minNum&quot;:2,&quot;onlineSale&quot;:1,&quot;orgId&quot;:1,&quot;productLineId&quot;:1,&quot;productLineName&quot;:&quot;瑞思英语&quot;,&quot;qty&quot;:0,&quot;relatedClassNames&quot;:&quot;09011非基础&quot;,&quot;standarNum&quot;:3,&quot;status&quot;:0,&quot;strCreateDate&quot;:&quot;2021-08-31&quot;,&quot;updatedBy&quot;:&quot;2353&quot;,&quot;updatedDate&quot;:1630410156000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">className=09011%E5%9F%BA%E7%A1%80&amp;classShortname=09011%E5%9F%BA%E7%A1%80&amp;status=&amp;classLevelId=&amp;classCategoryId=&amp;oldclassType=&amp;isInstallment=&amp;base=&amp;onlineSale=&amp;classAssociate=&amp;lessonMode=&amp;page=1&amp;rows=15&amp;sort=id&amp;order=className</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/getlist.do?brandId=1</java.net.URL>
+</httpSample>
+<httpSample t="317" it="0" lt="316" ct="0" ts="1630410161229" s="true" lb="BASEshowClassDetailPrice.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="798" sby="320" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:41 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 434
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 13
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;教辅用书&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113851,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0},{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;拉杆箱&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113850,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0},{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;总课时费&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113849,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0},{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;看护费&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113852,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0}],&quot;total&quot;:4}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">classId=30616</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/showClassDetailPrice.do?</java.net.URL>
+</httpSample>
+<httpSample t="211" it="0" lt="211" ct="0" ts="1630410161546" s="true" lb="basePrice" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="547" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:41 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 252
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">savestr=113851%7C600%2C113850%7C300%2C113849%7C64000%2C113852%7C2400&amp;pricelistName=09011%E5%9F%BA%E7%A1%80price&amp;classId=30616&amp;status=1&amp;orgId=4&amp;brandId=1&amp;brandType=1&amp;comments=%E6%8F%8F%E8%BF%B0&amp;effectiveDate=2020-12-15&amp;expiredDate=2023-12-30&amp;price=32600</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/addPrice.do</java.net.URL>
+</httpSample>
+<httpSample t="138" it="0" lt="138" ct="0" ts="1630410161761" s="true" lb="BASEshowPirceList.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="854" sby="518" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:41 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 490
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 202
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;applyType&quot;:&quot;10&quot;,&quot;applyTypeName&quot;:&quot;校区适用&quot;,&quot;classId&quot;:30616,&quot;className&quot;:&quot;09011基础&quot;,&quot;comments&quot;:&quot;描述&quot;,&quot;effectiveDate&quot;:1607961600000,&quot;employeeId&quot;:0,&quot;endDate&quot;:&quot;2023-12-30&quot;,&quot;expiredDate&quot;:1703865600000,&quot;id&quot;:15056,&quot;installmentNums&quot;:1,&quot;isInstallment&quot;:1,&quot;orgId&quot;:4,&quot;orgType&quot;:0,&quot;org_type&quot;:0,&quot;price&quot;:32600.0000,&quot;priceListCode&quot;:&quot;PRICELIST20210831197859&quot;,&quot;priceListName&quot;:&quot;09011基础price&quot;,&quot;priceListNamePy&quot;:&quot;09011jcprice&quot;,&quot;startDate&quot;:&quot;2020-12-15&quot;,&quot;status&quot;:1,&quot;usageNum&quot;:0}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">priceListCode=&amp;priceListName=09011%E5%9F%BA%E7%A1%80price&amp;status=&amp;className=&amp;orgId=1&amp;brandId=1&amp;brandType=1&amp;effStartdate=&amp;effEnddate=&amp;expStartdate=&amp;expEnddate=&amp;type=1&amp;org_type=1&amp;repayment=&amp;page=1&amp;rows=15</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/showPirceList.do?orgAssociate=10</java.net.URL>
+</httpSample>
+<httpSample t="148" it="0" lt="148" ct="0" ts="1630410161902" s="true" lb="basePreceSubmmit" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="306" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 8
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">id=15056</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/startProcess.do?</java.net.URL>
+</httpSample>
+<httpSample t="117" it="0" lt="117" ct="0" ts="1630410162053" s="true" lb="basePriceApprove" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="302" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 8
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">id=15056</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/complete.do?</java.net.URL>
+</httpSample>
+<httpSample t="99" it="0" lt="99" ct="0" ts="1630410162173" s="true" lb="NoBASEgetlist.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="1134" sby="540" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 770
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 243
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;base&quot;:1,&quot;baseId&quot;:30616,&quot;baseName&quot;:&quot;09011基础&quot;,&quot;brandId&quot;:1,&quot;classAssociate&quot;:50,&quot;classCategoryId&quot;:1,&quot;classCategoryName&quot;:&quot;常规班&quot;,&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;className&quot;:&quot;09011非基础&quot;,&quot;classNamePy&quot;:&quot;09011fjc&quot;,&quot;classQty&quot;:160,&quot;classShortname&quot;:&quot;09011非基础&quot;,&quot;classType&quot;:10,&quot;createBy&quot;:&quot;2353&quot;,&quot;createDate&quot;:1630410157000,&quot;deleteFlag&quot;:0,&quot;detailId&quot;:0,&quot;effectiveDate&quot;:1630339200000,&quot;expiredDate&quot;:1630339200000,&quot;id&quot;:30617,&quot;installmentNums&quot;:3,&quot;isEntry&quot;:0,&quot;isInstallment&quot;:0,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;maxNum&quot;:4,&quot;minNum&quot;:2,&quot;onlineSale&quot;:1,&quot;orgId&quot;:1,&quot;productLineId&quot;:1,&quot;productLineName&quot;:&quot;瑞思英语&quot;,&quot;qty&quot;:0,&quot;relatedClassNames&quot;:&quot;09011基础&quot;,&quot;standarNum&quot;:3,&quot;status&quot;:0,&quot;strCreateDate&quot;:&quot;2021-08-31&quot;,&quot;updatedBy&quot;:&quot;2353&quot;,&quot;updatedDate&quot;:1630410157000}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">className=09011%E9%9D%9E%E5%9F%BA%E7%A1%80&amp;classShortname=09011%E9%9D%9E%E5%9F%BA%E7%A1%80&amp;status=&amp;classLevelId=&amp;classCategoryId=&amp;oldclassType=&amp;isInstallment=&amp;base=&amp;onlineSale=&amp;classAssociate=&amp;lessonMode=&amp;page=1&amp;rows=15&amp;sort=id&amp;order=className</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/class/getlist.do?brandId=1</java.net.URL>
+</httpSample>
+<httpSample t="177" it="0" lt="177" ct="0" ts="1630410162274" s="true" lb="noBASEshowClassDetailPrice.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="798" sby="320" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 434
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 13
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;教辅用书&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113855,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0},{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;拉杆箱&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113854,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0},{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;总课时费&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113853,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0},{&quot;classNamePy&quot;:&quot;&quot;,&quot;classUnitName&quot;:&quot;看护费&quot;,&quot;detailId&quot;:0,&quot;id&quot;:113856,&quot;limitE&quot;:0,&quot;limitS&quot;:0,&quot;qty&quot;:0}],&quot;total&quot;:4}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">classId=30617</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/showClassDetailPrice.do?</java.net.URL>
+</httpSample>
+<httpSample t="220" it="0" lt="220" ct="0" ts="1630410162454" s="true" lb="nobasePrice" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="556" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 261
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">savestr=113851%7C600%2C113854%7C300%2C113853%7C64000%2C113856%7C2400&amp;pricelistName=09011%E9%9D%9E%E5%9F%BA%E7%A1%80price&amp;classId=30617&amp;status=1&amp;orgId=4&amp;brandId=1&amp;brandType=1&amp;comments=%E6%8F%8F%E8%BF%B0&amp;effectiveDate=2020-12-15&amp;expiredDate=2023-12-30&amp;price=32600</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/addPrice.do</java.net.URL>
+</httpSample>
+<httpSample t="137" it="0" lt="137" ct="0" ts="1630410162676" s="true" lb="NoBASEshowPirceList.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="861" sby="527" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 497
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 211
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;applyType&quot;:&quot;10&quot;,&quot;applyTypeName&quot;:&quot;校区适用&quot;,&quot;classId&quot;:30617,&quot;className&quot;:&quot;09011非基础&quot;,&quot;comments&quot;:&quot;描述&quot;,&quot;effectiveDate&quot;:1607961600000,&quot;employeeId&quot;:0,&quot;endDate&quot;:&quot;2023-12-30&quot;,&quot;expiredDate&quot;:1703865600000,&quot;id&quot;:15057,&quot;installmentNums&quot;:3,&quot;isInstallment&quot;:0,&quot;orgId&quot;:4,&quot;orgType&quot;:0,&quot;org_type&quot;:0,&quot;price&quot;:32600.0000,&quot;priceListCode&quot;:&quot;PRICELIST20210831197860&quot;,&quot;priceListName&quot;:&quot;09011非基础price&quot;,&quot;priceListNamePy&quot;:&quot;09011fjcprice&quot;,&quot;startDate&quot;:&quot;2020-12-15&quot;,&quot;status&quot;:1,&quot;usageNum&quot;:0}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">priceListCode=&amp;priceListName=09011%E9%9D%9E%E5%9F%BA%E7%A1%80price&amp;status=&amp;className=&amp;orgId=1&amp;brandId=1&amp;brandType=1&amp;effStartdate=&amp;effEnddate=&amp;expStartdate=&amp;expEnddate=&amp;type=1&amp;org_type=1&amp;repayment=&amp;page=1&amp;rows=15</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/showPirceList.do?orgAssociate=10</java.net.URL>
+</httpSample>
+<httpSample t="153" it="0" lt="153" ct="0" ts="1630410162816" s="true" lb="nobasePreceSubmmit" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="306" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:42 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 8
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">id=15057</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/startProcess.do?</java.net.URL>
+</httpSample>
+<httpSample t="151" it="0" lt="151" ct="0" ts="1630410162971" s="true" lb="nobasePriceApprove" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="306" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:43 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 8
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">id=15057</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/pricemanager/startProcess.do?</java.net.URL>
+</httpSample>
+<httpSample t="86" it="0" lt="86" ct="0" ts="1630410163124" s="true" lb="classGroupConfig" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="383" sby="425" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:43 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 20
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 129
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;result&quot;:&quot;success&quot;}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">classIds=30616&amp;orgIds=4&amp;groupNum=2&amp;minNum=2&amp;maxNum=4&amp;suspendTime=10&amp;effectDate=2020-12-25&amp;loseEffectDate=2023-12-25&amp;maxGroupNum=3</queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classGroupConfig/save.do?</java.net.URL>
+</httpSample>
+<httpSample t="89" it="0" lt="89" ct="0" ts="1630410163212" s="true" lb="classGroupConfig/getList.do?" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="540" sby="304" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:43 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 176
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;rows&quot;:[{&quot;classId&quot;:30616,&quot;className&quot;:&quot;09011基础&quot;,&quot;companyName&quot;:&quot;北京公司&quot;,&quot;groupNum&quot;:2,&quot;id&quot;:3169,&quot;maxNum&quot;:4,&quot;minNum&quot;:2,&quot;orgId&quot;:4,&quot;status&quot;:1,&quot;suspendTime&quot;:10}],&quot;total&quot;:1}</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classGroupConfig/getList.do?&amp;classId=30616&amp;companyids=4&amp;isFirst=NO&amp;brandId=1&amp;groupStatus=&amp;page=1&amp;rows=15&amp;sort=id&amp;order=</java.net.URL>
+</httpSample>
+<httpSample t="88" it="0" lt="88" ct="0" ts="1630410163304" s="true" lb="classGroupConfig/update.do" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="" by="323" sby="232" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 11:42:43 GMT
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-test.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">SESSION=56e7711a-eede-4350-97ec-b725560f7513</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-test.risechina.com/COS/classGroupConfig/update.do?ids=3169&amp;type=SUBMIT</java.net.URL>
+</httpSample>
+<sample t="2" it="0" lt="0" ct="0" ts="1630410163412" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="ClassType【新建班型】【v7000】【new】 1-1" dt="text" by="2515" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@452bfcde
+LoginCookie_admin=SESSION=56e7711a-eede-4350-97ec-b725560f7513
+LoginCookie_admin_g=1
+LoginCookie_admin_g0=Set-Cookie: SESSION=56e7711a-eede-4350-97ec-b725560f7513; Path=/COS/; HttpOnly
+LoginCookie_admin_g1=SESSION=56e7711a-eede-4350-97ec-b725560f7513
+START.HMS=194235
+START.MS=1630410155499
+START.YMD=20210831
+TESTSTART.MS=1630410155796
+__jm__ClassType【新建班型】【v7000】【new】__idx=0
+__jmeter.U_T__=ClassType【新建班型】【v7000】【new】 1-1
+__jmv_SAME_USER=true
+address=cos-test.risechina.com
+classId0=30616
+classId0_g=1
+classId0_g0=&quot;classId&quot;:30616,&quot;
+classId0_g1=30616
+classId1=30617
+classId1_g=1
+classId1_g0=&quot;classId&quot;:30617,&quot;
+classId1_g1=30617
+classLevelId=1
+classTypeId0=30616
+classTypeId00=30616
+classTypeId000=30616
+classTypeId000_g=1
+classTypeId000_g0=&quot;id&quot;:30616,&quot;
+classTypeId000_g1=30616
+classTypeId00_g=1
+classTypeId00_g0=&quot;id&quot;:30616,&quot;
+classTypeId00_g1=30616
+classTypeId0_g=1
+classTypeId0_g0={&quot;id&quot;:30616,&quot;result&quot;:&quot;success&quot;}
+classTypeId0_g1=30616
+classTypeId1=30617
+classTypeId11=30617
+classTypeId111=30617
+classTypeId111_g=1
+classTypeId111_g0=&quot;id&quot;:30617,&quot;
+classTypeId111_g1=30617
+classTypeId11_g=1
+classTypeId11_g0=&quot;id&quot;:30617,&quot;
+classTypeId11_g1=30617
+classTypeId1_g=1
+classTypeId1_g0={&quot;id&quot;:30617,&quot;result&quot;:&quot;success&quot;}
+classTypeId1_g1=30617
+classTypeName0=09011基础
+classTypeName1=09011非基础
+feeId0=ERROR_feeId0
+feeId0_1=113851
+feeId0_1_g=1
+feeId0_1_g0=&quot;id&quot;:113851,&quot;
+feeId0_1_g1=113851
+feeId0_2=113850
+feeId0_2_g=1
+feeId0_2_g0=&quot;id&quot;:113850,&quot;
+feeId0_2_g1=113850
+feeId0_3=113849
+feeId0_3_g=1
+feeId0_3_g0=&quot;id&quot;:113849,&quot;
+feeId0_3_g1=113849
+feeId0_4=113852
+feeId0_4_g=1
+feeId0_4_g0=&quot;id&quot;:113852,&quot;
+feeId0_4_g1=113852
+feeId0_matchNr=4
+feeId1=ERROR_feeId1
+feeId1_1=113855
+feeId1_1_g=1
+feeId1_1_g0=&quot;id&quot;:113855,&quot;
+feeId1_1_g1=113855
+feeId1_2=113854
+feeId1_2_g=1
+feeId1_2_g0=&quot;id&quot;:113854,&quot;
+feeId1_2_g1=113854
+feeId1_3=113853
+feeId1_3_g=1
+feeId1_3_g0=&quot;id&quot;:113853,&quot;
+feeId1_3_g1=113853
+feeId1_4=113856
+feeId1_4_g=1
+feeId1_4_g0=&quot;id&quot;:113856,&quot;
+feeId1_4_g1=113856
+feeId1_matchNr=4
+fenzuSettingId=3169
+fenzuSettingId_g=1
+fenzuSettingId_g0=,&quot;id&quot;:3169,&quot;
+fenzuSettingId_g1=3169
+orgId0=4
+orgId0_g=1
+orgId0_g0=,&quot;orgId&quot;:4,&quot;
+orgId0_g1=4
+orgId1=4
+orgId1_g=1
+orgId1_g0=,&quot;orgId&quot;:4,&quot;
+orgId1_g1=4
+priceId0=15056
+priceId0_g=1
+priceId0_g0=,&quot;id&quot;:15056,&quot;
+priceId0_g1=15056
+priceId1=15057
+priceId1_g=1
+priceId1_g0=,&quot;id&quot;:15057,&quot;
+priceId1_g1=15057
+sendOrganizaitonId=4
+userName_admin=2353
+userPassword=test
+
+</responseData>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+</testResults>

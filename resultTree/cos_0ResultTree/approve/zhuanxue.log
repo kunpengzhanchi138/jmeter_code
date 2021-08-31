@@ -1,0 +1,61 @@
+2021-08-31 20:01:50,917 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-08-31 20:01:50,934 INFO o.a.j.JMeter: Loading user properties from: /Library/Jmeter/apache-jmeter-5.3/bin/user.properties
+2021-08-31 20:01:50,935 INFO o.a.j.JMeter: Loading system properties from: /Library/Jmeter/apache-jmeter-5.3/bin/system.properties
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: Version 5.3
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: java.version=1.8.0_191
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: os.arch=x86_64
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: os.version=10.15.6
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: java.awt.headless=true
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-08-31 20:01:50,937 INFO o.a.j.JMeter: Available Processors =8
+2021-08-31 20:01:50,941 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-08-31 20:01:50,942 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-08-31 20:01:50,942 INFO o.a.j.JMeter: JMeterHome=/Library/Jmeter/apache-jmeter-5.3
+2021-08-31 20:01:50,942 INFO o.a.j.JMeter: user.dir  =/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script
+2021-08-31 20:01:50,942 INFO o.a.j.JMeter: PWD       =/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script
+2021-08-31 20:01:50,943 INFO o.a.j.JMeter: IP: 172.18.21.144 Name: liuyunpengdeMacBook-Pro.local FullName: 172.18.21.144
+2021-08-31 20:01:50,948 INFO o.a.j.s.FileServer: Default base='/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script'
+2021-08-31 20:01:50,952 INFO o.a.j.s.FileServer: Set new base='/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script'
+2021-08-31 20:01:51,072 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-08-31 20:01:51,089 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-08-31 20:01:51,094 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-08-31 20:01:51,099 INFO o.a.j.s.SaveService: Loading file: Test Plan.jmx
+2021-08-31 20:01:51,143 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 20:01:51,143 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 20:01:51,143 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 20:01:51,144 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 20:01:51,144 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-08-31 20:01:51,144 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-08-31 20:01:51,521 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-08-31 20:01:51,528 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-08-31 20:01:51,529 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-08-31 20:01:51,529 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-08-31 20:01:51,535 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-08-31 20:01:51,536 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-08-31 20:01:51,687 INFO o.a.j.JMeter: Running test (1630411311687)
+2021-08-31 20:01:51,724 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 审批流【mysql】[DEBUG]---
+2021-08-31 20:01:51,724 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group 审批流【mysql】[DEBUG]---.
+2021-08-31 20:01:51,724 INFO o.a.j.e.StandardJMeterEngine: Test will stop on error
+2021-08-31 20:01:51,724 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2021-08-31 20:01:51,736 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-08-31 20:01:51,736 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-08-31 20:01:51,740 INFO o.a.j.t.JMeterThread: Thread started: 审批流【mysql】[DEBUG]--- 1-1
+2021-08-31 20:01:51,756 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = liuyunpengdeMacBook-Pro.local
+2021-08-31 20:01:51,762 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-08-31 20:01:51,764 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-08-31 20:01:51,764 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to utf-8
+2021-08-31 20:01:51,764 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-08-31 20:01:51,764 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-08-31 20:01:52,309 ERROR o.a.j.u.BeanShellInterpreter: Error invoking bsh method: eval	In file: inline evaluation of: ``龚春艳,王丹丹,宋燕丽;'' Encountered "," at line 1, column 4.
+
+2021-08-31 20:01:52,310 WARN o.a.j.e.BeanShellPostProcessor: Problem in BeanShell script: org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	In file: inline evaluation of: ``龚春艳,王丹丹,宋燕丽;'' Encountered "," at line 1, column 4.
+
+2021-08-31 20:01:59,007 INFO o.a.j.t.JMeterThread: Shutdown Test detected by thread: 审批流【mysql】[DEBUG]--- 1-1
+2021-08-31 20:01:59,008 INFO o.a.j.t.JMeterThread: Thread finished: 审批流【mysql】[DEBUG]--- 1-1
+2021-08-31 20:01:59,009 INFO o.a.j.t.JMeterThread: Stopping: 审批流【mysql】[DEBUG]--- 1-1
+2021-08-31 20:01:59,009 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-08-31 20:01:59,011 INFO o.a.j.r.Summariser: summary =     58 in 00:00:07 =    7.9/s Avg:   103 Min:     0 Max:   892 Err:     1 (1.72%)

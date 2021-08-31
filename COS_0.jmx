@@ -9,7 +9,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <stringProp name="TestPlan.user_define_classpath">/Users/liuyunpeng/Documents/RISE/CODE/github_code/java_code/untitled1/out/artifacts/formatDoubleNum/formatDoubleNum.jar</stringProp>
+      <stringProp name="TestPlan.user_define_classpath">/Users/liuyunpeng/Documents/RISE/CODE/github_code/java_code/untitled1/out/artifacts/formatDoubleNum/formatDoubleNum.jar,/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_jar/JmeterJar/out/artifacts/Jmeter_Code_jar/Jmeter_Code.jar</stringProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组--【新建咨询量】【校长权限】" enabled="false">
@@ -39,8 +39,8 @@
             <stringProp name="716014134">approvalInterface</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-52159136">
-              <stringProp name="48904">190</stringProp>
+            <collectionProp name="-686757626">
+              <stringProp name="48905">191</stringProp>
               <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
               <stringProp name="1958049040">1001660</stringProp>
               <stringProp name="115560">uat</stringProp>
@@ -54,7 +54,7 @@
         </UserParameters>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="计数器" enabled="true">
-          <stringProp name="CounterConfig.start">30</stringProp>
+          <stringProp name="CounterConfig.start">37</stringProp>
           <stringProp name="CounterConfig.end">40</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">iphoneNum</stringProp>
@@ -423,7 +423,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1313268432">&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;新建咨询量成功&quot;,</stringProp>
+              <stringProp name="1399415474">&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -736,7 +736,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1399415474">&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;</stringProp>
+              <stringProp name="814411034">新建咨询量成功</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -785,7 +785,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script/resultTree/cos_0ResultTree/zixunliang.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -820,10 +820,10 @@
             <stringProp name="-1338173431">dbname</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-2070738347">
+            <collectionProp name="-1389167719">
               <stringProp name="1572">15</stringProp>
-              <stringProp name="26280091">林悦溪</stringProp>
-              <stringProp name="-93054193">bja5050</stringProp>
+              <stringProp name="48">0</stringProp>
+              <stringProp name="-92957159">bja8844</stringProp>
               <stringProp name="115560">uat</stringProp>
               <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
               <stringProp name="-1043835103">kcos-gateway-uat.risechina.com</stringProp>
@@ -3217,7 +3217,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script/resultTree/cos_0ResultTree/contractSingle.jtl</stringProp>
           <stringProp name="TestPlan.comments">bsqbx</stringProp>
         </ResultCollector>
         <hashTree/>
@@ -3249,12 +3249,12 @@
             <stringProp name="105425703">classLevelId</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-1418133384">
+            <collectionProp name="1141231408">
               <stringProp name="-687229589">cos-test.risechina.com</stringProp>
               <stringProp name="3556498">test</stringProp>
               <stringProp name="1540255">2353</stringProp>
-              <stringProp name="1427266196">0729基础</stringProp>
-              <stringProp name="1310948886">0729非基础</stringProp>
+              <stringProp name="54013533">832基础</stringProp>
+              <stringProp name="1689789293">832非基础</stringProp>
               <stringProp name="52">4</stringProp>
               <stringProp name="49">1</stringProp>
             </collectionProp>
@@ -6824,19 +6824,13 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           <hashTree/>
         </hashTree>
         <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
-          <stringProp name="BeanShellSampler.query">import  java.lang.Double;
-import FormatNum;
+          <stringProp name="BeanShellSampler.query">//import  java.lang.Double;
 
+//vars.get(&quot;sumTotalAmt&quot;);
 
-log.info(&quot;===========================================================================================&quot;);
-//String getsumTotalAmt=vars.get(&quot;sumTotalAmt&quot;);
-//double x=Double.valueOf(getsumTotalAmt.toString());
-
-
-double x=22.12;
-
-formatDouble(x);
-</stringProp>
+int a =Double.valueOf(vars.get(&quot;sumTotalAmt&quot;)).intValue();
+String ss = Integer.toString(a);
+vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
           <stringProp name="BeanShellSampler.filename"></stringProp>
           <stringProp name="BeanShellSampler.parameters"></stringProp>
           <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
@@ -6866,7 +6860,7 @@ formatDouble(x);
     &quot;apedxInfoIds&quot;: &quot;&quot;,&#xd;
     &quot;contractList&quot;: [&#xd;
         {&#xd;
-        	 &quot;productDetailFlag&quot;: &quot;${productDetailFlag}&quot;,&#xd;
+&#xd;
             &quot;productIds&quot;: ${idASclassTypeId},&#xd;
             &quot;classGradeId&quot;: null,&#xd;
             &quot;centraId&quot;: ${centraId_loginUser},&#xd;
@@ -6875,31 +6869,32 @@ formatDouble(x);
             &quot;enrollType&quot;: ${enrollType},&#xd;
             &quot;payType&quot;: 2,&#xd;
             &quot;payAmt&quot;: ${sumTotalAmt},&#xd;
+            &quot;productDetailFlag&quot;: &quot;${productDetailFlag}&quot;,&#xd;
             &quot;couponIds&quot;: [],&#xd;
             &quot;redeemIds&quot;: [],&#xd;
             &quot;promotionIds&quot;: [],&#xd;
             &quot;bundledDiscountIds&quot;: [],&#xd;
             &quot;paymentPlanDTO&quot;: {&#xd;
-            &quot;couponIds&quot;: [],&#xd;
-            &quot;promotionIds&quot;: [],&#xd;
-            &quot;redeemIds&quot;: []&#xd;
+                &quot;couponIds&quot;: [],&#xd;
+                &quot;promotionIds&quot;: [],&#xd;
+                &quot;redeemIds&quot;: []&#xd;
             }&#xd;
         }&#xd;
     ],&#xd;
     &quot;payMethodDTOS&quot;: [&#xd;
-    {&#xd;
-        &quot;payMode&quot;: 200,&#xd;
-        &quot;otherPayMode&quot;: 200,&#xd;
-        &quot;bankRate&quot;: null,&#xd;
-        &quot;bankAccount&quot;: null,&#xd;
-        &quot;referenceNumber&quot;: null,&#xd;
-        &quot;payAmount&quot;: ${sumTotalAmt},&#xd;
-        &quot;tradeDateStr&quot;: null,&#xd;
-        &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
-        &quot;bank&quot;: null,&#xd;
-        &quot;chequeNo&quot;: null,&#xd;
-        &quot;company&quot;: null&#xd;
-    }&#xd;
+        {&#xd;
+            &quot;payMode&quot;: 200,&#xd;
+            &quot;otherPayMode&quot;: 200,&#xd;
+            &quot;bankRate&quot;: null,&#xd;
+            &quot;bankAccount&quot;: null,&#xd;
+            &quot;referenceNumber&quot;: null,&#xd;
+            &quot;payAmount&quot;: ${sumTotalAmt},&#xd;
+            &quot;tradeDateStr&quot;: null,&#xd;
+            &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
+            &quot;bank&quot;: null,&#xd;
+            &quot;chequeNo&quot;: null,&#xd;
+            &quot;company&quot;: null&#xd;
+        }&#xd;
     ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -6909,7 +6904,7 @@ formatDouble(x);
           <stringProp name="HTTPSampler.domain">${addressMic}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/orderinfo_server/order-info/insertOrderinfo</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -7016,7 +7011,7 @@ formatDouble(x);
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/orderinfo_server/b-payment-plan/review?</stringProp>
+          <stringProp name="HTTPSampler.path">/orderinfo_server/b-payment-plan/review?paymentPlanId= ${paymentPlanId}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7094,7 +7089,7 @@ formatDouble(x);
             <stringProp name="RegexExtractor.match_number">1</stringProp>
           </RegexExtractor>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1459617822">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;</stringProp>
             </collectionProp>
@@ -7128,19 +7123,21 @@ formatDouble(x);
               <encoding>false</encoding>
               <assertions>true</assertions>
               <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>true</xml>
               <fieldNames>true</fieldNames>
               <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
+              <requestHeaders>true</requestHeaders>
               <responseDataOnError>false</responseDataOnError>
               <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
               <assertionsResultsToSave>0</assertionsResultsToSave>
               <bytes>true</bytes>
               <sentBytes>true</sentBytes>
               <url>true</url>
+              <hostname>true</hostname>
               <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
               <idleTime>true</idleTime>
               <connectTime>true</connectTime>
             </value>

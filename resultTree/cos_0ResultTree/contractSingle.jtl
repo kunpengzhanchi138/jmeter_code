@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="159" it="0" lt="157" ct="64" ts="1630403654950" s="true" lb="login1----当前审批人登陆获取cookie" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="622" sby="190" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 09:54:17 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 09:54:15 GMT
+Set-Cookie: SESSION=ddaae38e-fa11-484b-8c00-6f7464500585; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;ddaae38e-fa11-484b-8c00-6f7464500585&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/login/login.do?username=bja8844&amp;password=uat&amp;_=1630403654869</java.net.URL>
+</httpSample>
+<httpSample t="37" it="0" lt="37" ct="0" ts="1630403655122" s="true" lb="HTTP Request--token" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="401" sby="341" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 09:54:17 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 38
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">&quot;ddaae38e-fa11-484b-8c00-6f7464500585&quot;</responseData>
+  <cookies class="java.lang.String">SESSION=ddaae38e-fa11-484b-8c00-6f7464500585</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/system/generateToken.do?baseLocation=http://cos-release.risechina.com/COS</java.net.URL>
+</httpSample>
+<httpSample t="273" it="0" lt="272" ct="13" ts="1630403655160" s="true" lb="studentList--查询学生信息" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="3902" sby="401" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:15 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 114
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;total&quot;:0,&quot;pageNo&quot;:1,&quot;pageSize&quot;:10,&quot;rows&quot;:[{&quot;id&quot;:null,&quot;orgId&quot;:null,&quot;centraId&quot;:1,&quot;contractCode&quot;:null,&quot;familyId&quot;:9195563,&quot;parentId&quot;:9200123,&quot;parentPhone&quot;:&quot;18800000000&quot;,&quot;studentId&quot;:9209257,&quot;productLineId&quot;:null,&quot;productIds&quot;:null,&quot;productId&quot;:null,&quot;productNams&quot;:null,&quot;enrollType&quot;:null,&quot;enrollName&quot;:null,&quot;totalAmt&quot;:null,&quot;discountAmt&quot;:null,&quot;payAmt&quot;:null,&quot;actualAmt&quot;:null,&quot;smallPayAmt&quot;:null,&quot;adviserId&quot;:null,&quot;isTransfer&quot;:null,&quot;isTransferName&quot;:null,&quot;comments&quot;:null,&quot;payType&quot;:null,&quot;payName&quot;:null,&quot;status&quot;:null,&quot;contractStatus&quot;:null,&quot;sourceId&quot;:null,&quot;createdDate&quot;:null,&quot;createdBy&quot;:null,&quot;updatedDate&quot;:null,&quot;updatedBy&quot;:null,&quot;deleteFlag&quot;:null,&quot;isreturn&quot;:null,&quot;uploadTime&quot;:null,&quot;recordType&quot;:null,&quot;priceListId&quot;:null,&quot;couponNum&quot;:null,&quot;couponPriceSum&quot;:null,&quot;bmszj&quot;:null,&quot;isInterface&quot;:null,&quot;signDate&quot;:null,&quot;prepayDate&quot;:null,&quot;isLeads&quot;:&quot;Y&quot;,&quot;approvalDate&quot;:null,&quot;isMultiClass&quot;:null,&quot;changeType&quot;:null,&quot;isreturnBms&quot;:null,&quot;depositZj&quot;:null,&quot;classId&quot;:null,&quot;classStudentId&quot;:null,&quot;learnedHours&quot;:null,&quot;classProcess&quot;:null,&quot;prepayAmt&quot;:null,&quot;signAmt&quot;:null,&quot;invoiceWhetherUsed&quot;:null,&quot;brandId&quot;:1,&quot;originalStatus&quot;:null,&quot;originalDate&quot;:null,&quot;leadsId&quot;:null,&quot;installment&quot;:null,&quot;isInstallment&quot;:null,&quot;erpUploadStatus&quot;:null,&quot;installmentNum&quot;:null,&quot;sourceIn&quot;:null,&quot;campperiodId&quot;:null,&quot;studentName&quot;:&quot;01&quot;,&quot;phoneStr&quot;:&quot;188xxxx0000&quot;,&quot;phoneNum&quot;:&quot;18800000000&quot;,&quot;channelId&quot;:21844,&quot;orgName&quot;:&quot;瑞思教育&quot;,&quot;parentName&quot;:&quot;0家长&quot;,&quot;studentStatus&quot;:200,&quot;studentEnglishName&quot;:null,&quot;studentBirthday&quot;:&quot;2017-11-30T16:00:00.000+0000&quot;,&quot;studentSex&quot;:0,&quot;useClassHour&quot;:0,&quot;endCourseDate&quot;:null,&quot;studentAge&quot;:null,&quot;brandName&quot;:&quot;常规课程&quot;,&quot;inschoolnum&quot;:null,&quot;employeeNameCn&quot;:null,&quot;employeeCode&quot;:null,&quot;channelName&quot;:null,&quot;centraName&quot;:null,&quot;beginDate&quot;:null,&quot;beginDateStr&quot;:null,&quot;classLevelName&quot;:null,&quot;className&quot;:null,&quot;classShortName&quot;:null,&quot;classGradeCode&quot;:null,&quot;qty&quot;:null,&quot;price&quot;:null,&quot;tranStatus&quot;:null,&quot;isChangeClass&quot;:null,&quot;sourceClassStudentId&quot;:null,&quot;sourceClassId&quot;:null,&quot;classGradeId&quot;:null,&quot;age&quot;:null,&quot;installmentNums&quot;:null,&quot;payPlanStatus&quot;:null,&quot;accountName&quot;:null,&quot;accountNumber&quot;:null,&quot;bankDeposit&quot;:null,&quot;firstPayPlanStatus&quot;:null,&quot;searchorgid&quot;:null,&quot;createdUserName&quot;:null,&quot;updateUserName&quot;:null,&quot;registrationNumber&quot;:null,&quot;businessDate&quot;:null,&quot;businessMonth&quot;:null,&quot;totalHours&quot;:null,&quot;classCategoryId&quot;:null,&quot;dataFlag&quot;:null,&quot;exportType&quot;:null,&quot;csId&quot;:null,&quot;contractIdStr&quot;:null,&quot;classcategory&quot;:null,&quot;groupcradeId&quot;:null,&quot;contractSource&quot;:null,&quot;classType&quot;:null,&quot;oldCoupons&quot;:null,&quot;oldPriceLists&quot;:null,&quot;paymentPlanId&quot;:null,&quot;gatherUserName&quot;:null,&quot;brandType&quot;:null,&quot;financeOrgName&quot;:null,&quot;classMode&quot;:null,&quot;approvalDatee&quot;:null,&quot;approvalDates&quot;:null,&quot;enrollTypeStr&quot;:null,&quot;isTransferStr&quot;:null,&quot;studentStatusStr&quot;:null,&quot;expectBeginDate&quot;:null,&quot;remindDate&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;orgAssociate&quot;:0,&quot;organizationId&quot;:0,&quot;currentUserId&quot;:null,&quot;mobileVisible&quot;:null,&quot;adviserName&quot;:null,&quot;strStartCreateDate&quot;:null,&quot;strEndCreateDate&quot;:null,&quot;startCreateDate&quot;:null,&quot;endCreateDate&quot;:null,&quot;unpaidamount&quot;:null,&quot;amountpayable&quot;:null,&quot;contractDate&quot;:null,&quot;couponIdStr&quot;:null,&quot;studentStrBirthday&quot;:null,&quot;endCourseDateStr&quot;:null,&quot;companyName&quot;:null,&quot;orgParentId&quot;:null,&quot;strStartSignDate&quot;:null,&quot;strEndSignDate&quot;:null,&quot;statusStr&quot;:null,&quot;approvalDateStr&quot;:null,&quot;channel1Name&quot;:&quot;网络主动&quot;,&quot;channel2Name&quot;:&quot;品牌营销中心&quot;,&quot;channel3Name&quot;:&quot;小达人&quot;,&quot;payer&quot;:null,&quot;cardNum&quot;:null,&quot;createDate&quot;:null,&quot;paymentMethod&quot;:null,&quot;payDAmt&quot;:null,&quot;bankName&quot;:null,&quot;orderNo&quot;:null,&quot;enteredClassHours&quot;:null,&quot;classQty&quot;:null,&quot;couponIds&quot;:null,&quot;bundledDiscountIds&quot;:null,&quot;promotionIds&quot;:null,&quot;redeemIds&quot;:null,&quot;address&quot;:null,&quot;payAccount&quot;:null,&quot;bindingId&quot;:null,&quot;bcontractProductDetailVOS&quot;:null,&quot;bpaymentPlanVOS&quot;:null,&quot;installmentName&quot;:null,&quot;bcontractProductDTO&quot;:null}]},&quot;cost&quot;:204}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;phoneNum&quot;:&quot;18800000000&quot;,&#xd;
+    &quot;studentName&quot;:&quot;&quot;,&#xd;
+    &quot;brandId&quot;:&quot;1&quot;,&#xd;
+    &quot;pageNo&quot;:1,&#xd;
+    &quot;pageSize&quot;:10&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-contract/studentList</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1630403655440" s="true" lb="studentsIdentify--校验学生信息" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="2896" sby="333" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:15 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 42
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;bContract&quot;:{&quot;pageNo&quot;:1,&quot;pageSize&quot;:10,&quot;limitStart&quot;:0,&quot;id&quot;:null,&quot;orgId&quot;:null,&quot;centraId&quot;:334,&quot;contractCode&quot;:null,&quot;familyId&quot;:null,&quot;parentId&quot;:null,&quot;parentPhone&quot;:null,&quot;studentId&quot;:9209257,&quot;classCategoryId&quot;:null,&quot;productIds&quot;:null,&quot;productNams&quot;:null,&quot;enrollType&quot;:null,&quot;enrollTypes&quot;:null,&quot;totalAmt&quot;:null,&quot;discountAmt&quot;:null,&quot;payAmt&quot;:null,&quot;adviserId&quot;:1000008566,&quot;isTransfer&quot;:null,&quot;comments&quot;:null,&quot;payType&quot;:null,&quot;status&quot;:null,&quot;contractStatuses&quot;:null,&quot;sourceId&quot;:null,&quot;createdDate&quot;:null,&quot;createdBy&quot;:null,&quot;updatedDate&quot;:null,&quot;updatedBy&quot;:null,&quot;deleteFlag&quot;:null,&quot;isreturn&quot;:null,&quot;uploadTime&quot;:null,&quot;recordType&quot;:null,&quot;priceListId&quot;:null,&quot;couponNum&quot;:null,&quot;couponPriceSum&quot;:null,&quot;bmszj&quot;:null,&quot;isInterface&quot;:null,&quot;signDate&quot;:null,&quot;prepayDate&quot;:null,&quot;isLeads&quot;:null,&quot;approvalDate&quot;:null,&quot;isMultiClass&quot;:null,&quot;changeType&quot;:null,&quot;isreturnBms&quot;:null,&quot;depositZj&quot;:null,&quot;classId&quot;:null,&quot;classStudentId&quot;:null,&quot;learnedHours&quot;:null,&quot;classProcess&quot;:null,&quot;prepayAmt&quot;:null,&quot;signAmt&quot;:null,&quot;invoiceWhetherUsed&quot;:null,&quot;brandId&quot;:null,&quot;originalStatus&quot;:null,&quot;originalDate&quot;:null,&quot;leadsId&quot;:null,&quot;installment&quot;:null,&quot;isInstallment&quot;:null,&quot;erpUploadStatus&quot;:null,&quot;installmentNum&quot;:null,&quot;installmentNums&quot;:null,&quot;sourceIn&quot;:null,&quot;sourceIns&quot;:null,&quot;campperiodId&quot;:null,&quot;couponIds&quot;:null,&quot;productLineId&quot;:null,&quot;productLineIds&quot;:null,&quot;orderinfoNo&quot;:null,&quot;adviserName&quot;:null,&quot;employee&quot;:null,&quot;org&quot;:null,&quot;studentName&quot;:null,&quot;phoneStr&quot;:null,&quot;phoneNum&quot;:null,&quot;channelId&quot;:null,&quot;orgName&quot;:&quot;北京西红门校区&quot;,&quot;parentName&quot;:null,&quot;studentStatus&quot;:null,&quot;studentEnglishName&quot;:null,&quot;studentBirthday&quot;:null,&quot;studentSex&quot;:null,&quot;useClassHour&quot;:0,&quot;endCourseDate&quot;:null,&quot;studentAge&quot;:null,&quot;brandName&quot;:null,&quot;inschoolnum&quot;:0,&quot;employeeNameCn&quot;:null,&quot;channelName&quot;:null,&quot;strStartApprovalDate&quot;:null,&quot;strEndApprovalDate&quot;:null,&quot;startApprovalDate&quot;:null,&quot;endApprovalDate&quot;:null,&quot;strStartSignDate&quot;:null,&quot;strEndSignDate&quot;:null,&quot;startOrderDate&quot;:null,&quot;endOrderDate&quot;:null,&quot;strStartOrderDate&quot;:null,&quot;strEndOrderDate&quot;:null,&quot;orgAssociate&quot;:null,&quot;orgAssociates&quot;:null,&quot;organizationId&quot;:null,&quot;strStartCreateDate&quot;:null,&quot;strEndCreateDate&quot;:null,&quot;startCreateDate&quot;:null,&quot;endCreateDate&quot;:null,&quot;unpaidamount&quot;:null,&quot;amountpayable&quot;:null,&quot;contractDate&quot;:null,&quot;couponIdStr&quot;:null,&quot;orgParent&quot;:null,&quot;studentStrBirthday&quot;:null,&quot;endCourseDateStr&quot;:null,&quot;companyName&quot;:null,&quot;orgParentId&quot;:null,&quot;statusStr&quot;:null,&quot;approvalDateStr&quot;:null,&quot;channel1Name&quot;:null,&quot;channel2Name&quot;:null,&quot;channel3Name&quot;:null,&quot;payer&quot;:null,&quot;cardNum&quot;:null,&quot;createDate&quot;:null,&quot;paymentMethod&quot;:null,&quot;payDAmt&quot;:null,&quot;bankName&quot;:null,&quot;searchorgId&quot;:null,&quot;orderNo&quot;:null,&quot;classType&quot;:null,&quot;classNo&quot;:null,&quot;payPlanStatus&quot;:null,&quot;payPlanStatuses&quot;:null,&quot;brandType&quot;:null,&quot;contractId&quot;:null,&quot;param&quot;:null,&quot;bcontractProductDTO&quot;:null}},&quot;cost&quot;:37}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;studentId&quot;:9209257,&#xd;
+	&quot;centraId&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-contract/studentsIdentify</java.net.URL>
+</httpSample>
+<httpSample t="666" it="0" lt="641" ct="0" ts="1630403655502" s="true" lb="classList--查版型列表" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="32581" sby="356" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:16 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:[{&quot;id&quot;:7186,&quot;orgId&quot;:4,&quot;brandId&quot;:1,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;classNamePy&quot;:&quot;Prek160bbtbxxf3q525652&quot;,&quot;classCategoryId&quot;:1,&quot;classShortname&quot;:&quot;瑞思英语第一阶段（半天班）-分期&quot;,&quot;base&quot;:0,&quot;baseId&quot;:null,&quot;classGrade&quot;:[{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-02-13T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:64402,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H13&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-02-12T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2020-11-11T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2019-12-29T02:43:37.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-08-03T01:20:56.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周四,周四&quot;,&quot;studentNum&quot;:12,&quot;classGradeSchedule&quot;:&quot;4|2,4|2&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-02-12T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四上午08:30-10:00(R3),星期四上午10:10-11:40(R3)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:20200625,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:&quot;2020-02-26T16:00:00.000+0000&quot;,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|352,4|352&quot;,&quot;classTeacherSchedule&quot;:null,&quot;brandId&quot;:1,&quot;duration&quot;:45,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-12-30T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:103999,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H24&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-12-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-09-28T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-12-11T10:04:28.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期三,星期三,星期三,星期三&quot;,&quot;studentNum&quot;:3,&quot;classGradeSchedule&quot;:&quot;3|1.0,3|1.0,3|1.0,3|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-12-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午08:30-09:10(R3),星期三上午09:20-10:00(R3),星期三上午10:10-10:50(R3),星期三上午11:00-11:40(R3)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;3|352,3|352,3|352,3|352&quot;,&quot;classTeacherSchedule&quot;:&quot;3|08:30-09:10,3|09:20-10:00,3|10:10-10:50,3|11:00-11:40&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-19T10:40:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111970,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H24-2&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:17:04.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期三,星期六&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;3|1.0,6|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三晚上18:40-19:20(rise+教室),星期六下午14:10-14:50(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;3|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;3|18:40-19:20,6|14:10-14:50&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-19T11:20:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111971,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H24-3&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:19:36.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期三,星期六&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;3|1.0,6|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三晚上19:20-20:00(rise+教室),星期六下午14:50-15:30(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;3|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;3|19:20-20:00,6|14:50-15:30&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-01-01T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:104461,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-12-31T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-09-30T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-12-20T08:03:18.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期五,星期五,星期五,星期五&quot;,&quot;studentNum&quot;:10,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-12-31T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期五上午08:30-09:10(R2),星期五上午09:20-10:00(R2),星期五上午10:10-10:50(R2),星期五上午11:00-11:40(R2)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|449,5|449,5|449,5|449&quot;,&quot;classTeacherSchedule&quot;:&quot;5|08:30-09:10,5|09:20-10:00,5|10:10-10:50,5|11:00-11:40&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-04-30T10:00:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111819,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25-1&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-05T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-04-28T05:06:32.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期五,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;5|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期五晚上18:00-18:40(rise+教室),星期日上午10:30-11:10(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;5|18:00-18:40,7|10:30-11:10&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-04-30T10:40:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111820,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25-2&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-05T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-04-28T05:09:52.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期五,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;5|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期五晚上18:40-19:20(rise+教室),星期日上午11:10-11:50(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;5|18:40-19:20,7|11:10-11:50&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-03-25T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:108240,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-03-24T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-12-22T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-03-05T03:33:13.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期四,星期四,星期四&quot;,&quot;studentNum&quot;:12,&quot;classGradeSchedule&quot;:&quot;4|1.0,4|1.0,4|1.0,4|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-03-24T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四上午08:30-09:10(R4),星期四上午09:20-10:00(R4),星期四上午10:10-10:50(R4),星期四上午11:00-11:40(R4)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|521,4|521,4|521,4|521&quot;,&quot;classTeacherSchedule&quot;:&quot;4|08:30-09:10,4|09:20-10:00,4|10:10-10:50,4|11:00-11:40&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-20T10:00:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111989,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26-1&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:47:44.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期六&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;4|1.0,6|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四晚上18:00-18:40(rise+教室),星期六下午15:30-16:10(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;4|18:00-18:40,6|15:30-16:10&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-20T10:40:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111992,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26-2&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-26T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:49:53.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;4|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四晚上18:40-19:20(rise+教室),星期日下午16:10-16:50(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;4|18:40-19:20,7|16:10-16:50&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-20T11:20:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111994,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26-3&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-26T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:51:08.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;4|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四晚上19:20-20:00(rise+教室),星期日下午16:50-17:30(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;4|19:20-20:00,7|16:50-17:30&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:18250.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-04-30T11:20:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:111821,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25-3&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-10T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:125.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-04-28T05:11:48.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-29T17:00:57.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周日,周五&quot;,&quot;studentNum&quot;:6,&quot;classGradeSchedule&quot;:&quot;5|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期日上午10:30:00-11:10:00(rise+教室),星期五晚上19:20:00-20:00:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000059552,&quot;teacherAssistant&quot;:1000000412,&quot;openingCeremonyDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级5人，系统5人，辛苦审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:&quot;2020-12-07T09:44:20.000+0000&quot;,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;6|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;7|1000059552|10:30:00-11:10:00,5|1000059552|19:20:00-20:00:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:&quot;1000000412&quot;,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:16352.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-12-14T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:101847,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H23&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-12-13T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-09-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:112.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-11-12T11:39:34.000+0000&quot;,&quot;updatedBy&quot;:&quot;change_teacher_bak&quot;,&quot;updatedDate&quot;:&quot;2021-08-30T17:00:55.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周一,周一&quot;,&quot;studentNum&quot;:10,&quot;classGradeSchedule&quot;:&quot;1|1.0,1|1.0,1|1.0,1|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-12-13T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期一上午09:00:00-09:40:00(rise+教室),星期一上午10:20:00-11:00:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000051292,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:&quot;2020-12-11T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级12人，系统12人，&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:&quot;2020-11-13T08:40:59.000+0000&quot;,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|521,2|521,1|521,2|521,1|521,2|521,1|521,2|521&quot;,&quot;classTeacherSchedule&quot;:&quot;1|1000023342|09:00:00-09:40:00,1|1000023342|10:20:00-11:00:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:12848.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-11-18T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:101836,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H22&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-11-17T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-07-02T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:88.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-11-12T11:02:45.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-29T17:00:57.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周三,周日&quot;,&quot;studentNum&quot;:9,&quot;classGradeSchedule&quot;:&quot;3|1.0,3|1.0,3|1.0,3|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-11-17T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午11:00:00-11:40:00(rise+教室),星期日上午12:00:00-12:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:16662,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:&quot;2020-11-17T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级一共12人，系统10人，吴佳芮是回龙观转学入，张恒祎常规班转入，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|449,2|449,1|449,2|449,1|449,2|449,1|449,2|449&quot;,&quot;classTeacherSchedule&quot;:&quot;3|16662|11:00:00-11:40:00,7|16662|12:00:00-12:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:9928.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-30T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96945,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H18&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-04-19T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:68.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-09-08T10:49:22.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-25T17:00:56.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周三,周三&quot;,&quot;studentNum&quot;:9,&quot;classGradeSchedule&quot;:&quot;3|1.0,3|1.0,3|1.0,3|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-22T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午08:30:00-09:10:00(rise+教室),星期三上午09:50:00-10:30:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000051033,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共10人，系统4人，芦歆懿、许家祥、李呈祥、娄珈念、范唯溪、姜佳怡流程审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|270,1|270,1|270,1|270&quot;,&quot;classTeacherSchedule&quot;:&quot;3|1000051033|08:30:00-09:10:00,3|1000051033|09:50:00-10:30:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:9782.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-11-20T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:99616,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H21&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-11-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-04-18T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:67.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-10-22T07:40:29.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-27T17:00:58.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周二,周五&quot;,&quot;studentNum&quot;:5,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-11-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期二晚上19:00:00-19:40:00(rise+教室),星期五晚上19:00:00-19:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000051279,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:&quot;2020-11-19T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级12人，系统1人，石映曈班型不对需要异动进班&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:&quot;2020-11-10T02:19:29.000+0000&quot;,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|270,2|270,1|270,2|270,1|270,2|270,1|270,2|270&quot;,&quot;classTeacherSchedule&quot;:&quot;2|1000051279|19:00:00-19:40:00,5|1000051279|19:00:00-19:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:7300.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-08T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96316,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H16&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-07T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-02-18T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:50.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-08-29T04:15:36.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-28T17:00:58.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周六,周二&quot;,&quot;studentNum&quot;:3,&quot;classGradeSchedule&quot;:&quot;2|1.0,2|1.0,2|1.0,2|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-07T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期六上午10:30:00-11:10:00(rise+教室),星期二上午10:30:00-11:10:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000008494,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级一共12名学员，系统9名胡博睿张婉晴李昂溯3名学员一到总部，审批完就可以进班，请领导审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|278,1|278,1|278,1|278&quot;,&quot;classTeacherSchedule&quot;:&quot;6|1000008494|10:30:00-11:10:00,2|1000008494|10:30:00-11:10:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:5840.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-28T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:98002,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H19&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-27T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-01-16T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:40.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-09-22T02:25:09.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-30T17:00:55.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周三,周一&quot;,&quot;studentNum&quot;:8,&quot;classGradeSchedule&quot;:&quot;1|1.0,1|1.0,1|1.0,1|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-27T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午09:00:00-09:40:00(rise+教室),星期一上午09:00:00-09:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000012124,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共10人，系统4人，李安兴、王熙雅、贾惠雯、张艺潇、张恒祎、陈昱名流程审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|270,1|270,1|270,1|270&quot;,&quot;classTeacherSchedule&quot;:&quot;3|1000012124|09:00:00-09:40:00,1|1000012124|09:00:00-09:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:5256.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-18T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96318,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H17&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-17T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-01-02T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:36.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-08-29T04:25:48.000+0000&quot;,&quot;updatedBy&quot;:&quot;change_teacher_bak&quot;,&quot;updatedDate&quot;:&quot;2021-08-30T17:00:55.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周一,周五&quot;,&quot;studentNum&quot;:8,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-17T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期一上午08:30:00-09:10:00(rise+教室),星期五上午08:30:00-09:10:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000009615,&quot;teacherAssistant&quot;:1000009615,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共11人，系统7人，岳祖伊、王梓荀、赵晨晰、王彰文异动进班审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|278,1|278,1|278,1|278,2|278,2|278,2|278,2|278&quot;,&quot;classTeacherSchedule&quot;:&quot;1|1000016817|08:30:00-09:10:00,5|1000016817|08:30:00-09:10:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:4380.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-17T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96317,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H15&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-16T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-12-11T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:30.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-08-29T04:22:07.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-29T17:00:57.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周日,周四&quot;,&quot;studentNum&quot;:9,&quot;classGradeSchedule&quot;:&quot;4|1.0,4|1.0,4|1.0,4|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-09T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期日晚上19:00:00-19:40:00(rise+教室),星期四晚上19:00:00-19:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000002090,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共10人，系统5人，赵婧涵/吴畏/郑幂垚/郑君浩/陈怿心流程审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|278,1|278,1|278,1|278,2|278,2|278,2|278,2|278&quot;,&quot;classTeacherSchedule&quot;:&quot;7|1000002090|19:00:00-19:40:00,4|1000002090|19:00:00-19:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:730.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-07-12T07:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:91884,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;E-K1H14-1&quot;,&quot;classId&quot;:22964,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-07-11T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-09-13T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:5.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-07-03T02:09:34.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-28T17:00:58.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周二,周六&quot;,&quot;studentNum&quot;:4,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-07-11T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期二晚上19:00:00-19:40:00(rise+教室),星期六上午09:00:00-09:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000024606,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级一共4名学员，系统3名，卢一森审批中，审批完可以进班，请领导审批。&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|57,5|57,5|57,5|57&quot;,&quot;classTeacherSchedule&quot;:&quot;2|1000024606|19:00:00-19:40:00,6|1000024606|09:00:00-09:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1}],&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;price&quot;:null,&quot;qty&quot;:null,&quot;bundling&quot;:null,&quot;productLineId&quot;:1,&quot;totalClassHourAmt&quot;:23360.0000,&quot;classQty&quot;:160}],&quot;cost&quot;:508}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/classList?brandId=1&amp;key=Prek+160%E7%89%88+%E5%8D%8A%E5%A4%A9%E7%8F%AD-%E7%BA%BF%E4%B8%8B-%E5%88%863%E6%9C%9F%EF%BC%8852%2B56%2B52%EF%BC%89&amp;orgId=334</java.net.URL>
+</httpSample>
+<httpSample t="154" it="0" lt="154" ct="0" ts="1630403656173" s="true" lb="classPrice?--查版型定价--暂时无用" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="1369" sby="311" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:16 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;classId&quot;:7186,&quot;classCategoryId&quot;:1,&quot;classGradeId&quot;:null,&quot;classGradeCode&quot;:null,&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;brandId&quot;:null,&quot;brandType&quot;:null,&quot;orgId&quot;:null,&quot;orgName&quot;:&quot;北京西红门校区&quot;,&quot;companyId&quot;:null,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;classNamePy&quot;:&quot;Prek160bbtbxxf3q525652&quot;,&quot;classShortname&quot;:&quot;瑞思英语第一阶段（半天班）-分期&quot;,&quot;ableClassQty&quot;:160,&quot;inClassDate&quot;:null,&quot;price&quot;:24060.00000,&quot;qty&quot;:1,&quot;priceList&quot;:[{&quot;priceListId&quot;:14260,&quot;priceListCode&quot;:&quot;PRICELIST20210428117494&quot;,&quot;priceListName&quot;:&quot;北京Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;priceDetailList&quot;:[{&quot;classUnitId&quot;:1,&quot;classUnitSourceId&quot;:null,&quot;classUnitName&quot;:&quot;教辅用书&quot;,&quot;isneed&quot;:null,&quot;unitAmt&quot;:700.0000,&quot;price&quot;:700.0000,&quot;discountAmount&quot;:null,&quot;paidAmt&quot;:null,&quot;qty&quot;:1,&quot;confirmType&quot;:10},{&quot;classUnitId&quot;:3,&quot;classUnitSourceId&quot;:null,&quot;classUnitName&quot;:&quot;总课时费&quot;,&quot;isneed&quot;:null,&quot;unitAmt&quot;:146.00000,&quot;price&quot;:23360.00000,&quot;discountAmount&quot;:null,&quot;paidAmt&quot;:null,&quot;qty&quot;:160,&quot;confirmType&quot;:20}]}],&quot;bundlingPrice&quot;:null,&quot;productLineId&quot;:1,&quot;classGroupId&quot;:null,&quot;inClassQty&quot;:null,&quot;isInstallment&quot;:0},&quot;cost&quot;:136}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/classPrice?&amp;orgId=334&amp;brandId=1&amp;classId=7186&amp;inClassQty=0</java.net.URL>
+</httpSample>
+<httpSample t="157" it="0" lt="157" ct="0" ts="1630403656330" s="true" lb="judgeEnrollTypeValue" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="437" sby="389" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:16 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 94
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;enrollType&quot;:1,&quot;prepayAmt&quot;:null,&quot;sourceClassId&quot;:-1,&quot;learnedHours&quot;:-1,&quot;classProcess&quot;:-1,&quot;sourceClassStudentId&quot;:-1,&quot;brandId&quot;:1,&quot;studentId&quot;:9209257,&quot;classCategoryId&quot;:1},&quot;cost&quot;:140}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classCategoryId&quot;:1,&#xd;
+    &quot;studentId&quot;:9209257,&#xd;
+    &quot;centraId&quot;:334&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-contract/judgeEnrollTypeValue</java.net.URL>
+</httpSample>
+<httpSample t="134" it="0" lt="134" ct="0" ts="1630403656490" s="true" lb="product--产品各期价格" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="2582" sby="394" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:16 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 107
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:[{&quot;id&quot;:null,&quot;installmentId&quot;:704,&quot;installmentNum&quot;:1,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:8292.00,&quot;totalAmt&quot;:8292.00,&quot;discountAmt&quot;:0,&quot;singleClassFee&quot;:146.00,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:8292.00,&quot;totalAmt&quot;:8292.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[{&quot;productDetailId&quot;:1,&quot;productDetailName&quot;:&quot;教辅用书&quot;,&quot;qty&quot;:1,&quot;price&quot;:700.00,&quot;totalAmt&quot;:700.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:10,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null},{&quot;productDetailId&quot;:3,&quot;productDetailName&quot;:&quot;总课时费&quot;,&quot;qty&quot;:52,&quot;price&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:20,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null}],&quot;payAccount&quot;:3},{&quot;id&quot;:null,&quot;installmentId&quot;:705,&quot;installmentNum&quot;:2,&quot;installmentHours&quot;:56,&quot;sumTotalAmt&quot;:8176.00,&quot;totalAmt&quot;:8176.00,&quot;discountAmt&quot;:0,&quot;singleClassFee&quot;:146.00,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:8176.00,&quot;totalAmt&quot;:8176.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[{&quot;productDetailId&quot;:3,&quot;productDetailName&quot;:&quot;总课时费&quot;,&quot;qty&quot;:56,&quot;price&quot;:8176.00,&quot;totalAmt&quot;:8176.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:20,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null}],&quot;payAccount&quot;:null},{&quot;id&quot;:null,&quot;installmentId&quot;:706,&quot;installmentNum&quot;:3,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;singleClassFee&quot;:146.00,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[{&quot;productDetailId&quot;:3,&quot;productDetailName&quot;:&quot;总课时费&quot;,&quot;qty&quot;:52,&quot;price&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:20,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null}],&quot;payAccount&quot;:null}],&quot;cost&quot;:115}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;classId&quot;:7186,&#xd;
+    &quot;orgId&quot;:334,&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classGradeId&quot;:null,&#xd;
+    &quot;inClassQty&quot;:0&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-payment-plan/product</java.net.URL>
+</httpSample>
+<sample t="13" it="0" lt="0" ct="0" ts="1630403656674" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">import java.lang.String;
+import java.lang.Integer;
+
+
+
+
+
+
+
+String str_matchN=vars.get(&quot;nameASflag_matchNr&quot;);
+int int_matchNr = Integer.parseInt(str_matchN);
+String str=&quot;&quot;;
+
+
+for(int i=1;i&lt;=int_matchNr;i++){
+	String st123=&quot;nameASflag_&quot;+i;
+//	log.info(&quot;===========================================================================================&quot;);
+	log.info(st123);
+	if(i!=int_matchNr){
+		str=str+vars.get(st123)+&quot;,&quot;;
+		log.info(str);
+	}
+	else{
+		str=str+vars.get(st123);
+	}
+}
+
+vars.put(&quot;productDetailFlag&quot;,str);
+
+
+
+
+
+
+
+
+
+
+
+
+</samplerData>
+</sample>
+<httpSample t="158" it="0" lt="158" ct="0" ts="1630403656688" s="true" lb="trialCalculationPriceInfo--缴费校验" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="1774" sby="689" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:16 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 388
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;pageNo&quot;:1,&quot;pageSize&quot;:10,&quot;limitStart&quot;:0,&quot;totalDiscountAmount&quot;:0.00,&quot;classUnitList&quot;:[],&quot;prePaymentPlanList&quot;:[{&quot;id&quot;:null,&quot;entityId&quot;:null,&quot;installmentId&quot;:704,&quot;installmentNum&quot;:1,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;singleClassFee&quot;:0.0000,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[],&quot;currentDiscountAmt&quot;:0},{&quot;id&quot;:null,&quot;entityId&quot;:null,&quot;installmentId&quot;:705,&quot;installmentNum&quot;:2,&quot;installmentHours&quot;:56,&quot;sumTotalAmt&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;singleClassFee&quot;:0.0000,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[],&quot;currentDiscountAmt&quot;:0},{&quot;id&quot;:null,&quot;entityId&quot;:null,&quot;installmentId&quot;:706,&quot;installmentNum&quot;:3,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;singleClassFee&quot;:0.0000,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[],&quot;currentDiscountAmt&quot;:0}],&quot;wholeDiscountAmountAddStagingDiscountValue&quot;:null,&quot;stagingDiscountValue&quot;:null},&quot;cost&quot;:139}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classId&quot;:7186,&#xd;
+    &quot;classGradeId&quot;:null,&#xd;
+    &quot;entryType&quot;:3,&#xd;
+    &quot;inClassQty&quot;:0,&#xd;
+    &quot;isTransfer&quot;:1,&#xd;
+    &quot;productIds&quot;:7186,&#xd;
+    &quot;productLineId&quot;:1,&#xd;
+    &quot;couponIds&quot;:[&#xd;
+&#xd;
+    ],&#xd;
+    &quot;promotionIds&quot;:[&#xd;
+&#xd;
+    ],&#xd;
+    &quot;centerId&quot;:334,&#xd;
+    &quot;orgId&quot;:334,&#xd;
+    &quot;channelId&quot;:21844,&#xd;
+    &quot;studentId&quot;:9209257,&#xd;
+     &quot;productDetailFlag&quot;: &quot;教辅用书,总课时费&quot;,&#xd;
+     &quot;paidAmt&quot;: 0&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/trialCalculationPriceInfo</java.net.URL>
+</httpSample>
+<sample t="5" it="0" lt="0" ct="0" ts="1630403656847" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">import java.lang.String;
+import java.lang.Integer;
+import java.util.Arrays;
+
+
+
+String string=vars.get(&quot;classUnitId_matchNr&quot;);
+int classUnitId_matchNr=Integer.parseInt(string);
+String[] arr=new String[classUnitId_matchNr];
+
+for(int i=0;i&lt;classUnitId_matchNr;i++){
+	String classUnitId=&quot;classUnitId&quot;;
+	classUnitId=classUnitId+&quot;_&quot;+String.valueOf(i+1);
+	log.info(classUnitId);
+	String str=vars.get(classUnitId);
+	log.info(str);
+	arr[i]=str;	
+}
+String s=Arrays.toString(arr);
+System.out.println(s);
+vars.put(&quot;classUnitId_arr&quot;,s);  
+
+</samplerData>
+</sample>
+<sample t="1" it="0" lt="0" ct="0" ts="1630403656853" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">//import  java.lang.Double;
+
+//vars.get(&quot;sumTotalAmt&quot;);
+
+int a =Double.valueOf(vars.get(&quot;sumTotalAmt&quot;)).intValue();
+String ss = Integer.toString(a);
+vars.put(&quot;sumTotalAmt&quot;,ss);</samplerData>
+</sample>
+<httpSample t="828" it="0" lt="828" ct="0" ts="1630403656854" s="true" lb="insertOrderinfo--建订单" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="848" sby="1745" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:17 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1453
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;status&quot;:&quot;success&quot;,&quot;orderDTO&quot;:{&quot;orderId&quot;:&quot;908419&quot;,&quot;contractList&quot;:[{&quot;contractId&quot;:&quot;1064293&quot;,&quot;contractCode&quot;:&quot;COS2021083117006&quot;,&quot;paymentPlanList&quot;:[{&quot;paymentPlanId&quot;:&quot;1902431&quot;,&quot;payAmount&quot;:8292.00,&quot;payType&quot;:2}],&quot;isTransfer&quot;:1,&quot;installmentFlag&quot;:0}],&quot;payMethodDTOS&quot;:[{&quot;payMode&quot;:200,&quot;bankRate&quot;:null,&quot;bankAccount&quot;:null,&quot;referenceNumber&quot;:null,&quot;payAmount&quot;:8292,&quot;tradeDate&quot;:null,&quot;tradeDateStr&quot;:null,&quot;payer&quot;:&quot;fukuanren1&quot;,&quot;payerBankInfo&quot;:null,&quot;company&quot;:null,&quot;serialNumber&quot;:null,&quot;posOnlineWay&quot;:null}],&quot;parentId&quot;:&quot;9200123&quot;,&quot;studentId&quot;:&quot;9209257&quot;,&quot;userName&quot;:&quot;bja8844&quot;},&quot;bpaymentActivateVO&quot;:null},&quot;cost&quot;:745}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;orderinfoUpdateStatus&quot;: 1,&#xd;
+    &quot;studentDTO&quot;: {&#xd;
+        &quot;familyId&quot;: 9195563,&#xd;
+        &quot;parentId&quot;: 9200123,&#xd;
+        &quot;studentId&quot;: 9209257,&#xd;
+        &quot;isLeads&quot;: &quot;Y&quot;,&#xd;
+        &quot;channelId&quot;: 21844,&#xd;
+        &quot;parentPhone&quot;: &quot;18800000000&quot;&#xd;
+    },&#xd;
+    &quot;orderinfoDTO&quot;: {&#xd;
+        &quot;adviserId&quot;: 1000008566&#xd;
+    },&#xd;
+    &quot;orderinfoSaveStatus&quot;: 200,&#xd;
+    &quot;orderSource&quot;: 0,&#xd;
+    &quot;apedxInfoIds&quot;: &quot;&quot;,&#xd;
+    &quot;contractList&quot;: [&#xd;
+        {&#xd;
+&#xd;
+            &quot;productIds&quot;: 7186,&#xd;
+            &quot;classGradeId&quot;: null,&#xd;
+            &quot;centraId&quot;: 334,&#xd;
+            &quot;brandId&quot;: 1,&#xd;
+            &quot;enteredClassHours&quot;: 0,&#xd;
+            &quot;enrollType&quot;: 1,&#xd;
+            &quot;payType&quot;: 2,&#xd;
+            &quot;payAmt&quot;: 8292,&#xd;
+            &quot;productDetailFlag&quot;: &quot;教辅用书,总课时费&quot;,&#xd;
+            &quot;couponIds&quot;: [],&#xd;
+            &quot;redeemIds&quot;: [],&#xd;
+            &quot;promotionIds&quot;: [],&#xd;
+            &quot;bundledDiscountIds&quot;: [],&#xd;
+            &quot;paymentPlanDTO&quot;: {&#xd;
+                &quot;couponIds&quot;: [],&#xd;
+                &quot;promotionIds&quot;: [],&#xd;
+                &quot;redeemIds&quot;: []&#xd;
+            }&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;payMethodDTOS&quot;: [&#xd;
+        {&#xd;
+            &quot;payMode&quot;: 200,&#xd;
+            &quot;otherPayMode&quot;: 200,&#xd;
+            &quot;bankRate&quot;: null,&#xd;
+            &quot;bankAccount&quot;: null,&#xd;
+            &quot;referenceNumber&quot;: null,&#xd;
+            &quot;payAmount&quot;: 8292,&#xd;
+            &quot;tradeDateStr&quot;: null,&#xd;
+            &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
+            &quot;bank&quot;: null,&#xd;
+            &quot;chequeNo&quot;: null,&#xd;
+            &quot;company&quot;: null&#xd;
+        }&#xd;
+    ]&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/insertOrderinfo</java.net.URL>
+</httpSample>
+<httpSample t="1423" it="0" lt="1423" ct="0" ts="1630403657686" s="true" lb="review?--学员复核" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="276" sby="344" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 09:54:19 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: ddaae38e-fa11-484b-8c00-6f7464500585
+Content-Type: application/json;charset=UTF-8
+Content-Length: 34
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:null,&quot;cost&quot;:1380}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;paymentPlanId&quot;: 1902431&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-payment-plan/review?paymentPlanId=%201902431</java.net.URL>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1630403659129" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="2419" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@4c9b1e56
+LoginCookie1=SESSION=ddaae38e-fa11-484b-8c00-6f7464500585
+LoginCookie1_g=1
+LoginCookie1_g0=Set-Cookie: SESSION=ddaae38e-fa11-484b-8c00-6f7464500585; Path=/COS/;
+LoginCookie1_g1=SESSION=ddaae38e-fa11-484b-8c00-6f7464500585
+LoginToken1=ddaae38e-fa11-484b-8c00-6f7464500585
+LoginToken1_g=1
+LoginToken1_g0=&quot;ddaae38e-fa11-484b-8c00-6f7464500585&quot;
+LoginToken1_g1=ddaae38e-fa11-484b-8c00-6f7464500585
+START.HMS=175414
+START.MS=1630403654099
+START.YMD=20210831
+TESTSTART.MS=1630403654539
+__jm__contranct--单产品订单生成学员__idx=0
+__jmeter.U_T__=contranct--单产品订单生成学员 1-1
+__jmv_SAME_USER=true
+address=cos-uat.risechina.com
+addressMic=kcos-gateway-uat.risechina.com
+adviserId=1000008566
+adviserId_g=1
+adviserId_g0=,&quot;adviserId&quot;:1000008566,
+adviserId_g1=1000008566
+centraId_loginUser=334
+centraId_loginUser_g=1
+centraId_loginUser_g0=,&quot;centraId&quot;:334,
+centraId_loginUser_g1=334
+centraId_stu=1
+centraId_stu_g=1
+centraId_stu_g0=,&quot;centraId&quot;:1,
+centraId_stu_g1=1
+channelId=21844
+channelId_g=1
+channelId_g0=,&quot;channelId&quot;:21844,
+channelId_g1=21844
+classTypeName=Prek 160版 半天班-线下-分3期（52+56+52）
+classUnitId=Error_classUnitId
+classUnitId_arr=[]
+classUnitId_matchNr=0
+enrollType=1
+enrollType_g=1
+enrollType_g0=&quot;enrollType&quot;:1,
+enrollType_g1=1
+familyId=9195563
+familyId_g=1
+familyId_g0=,&quot;familyId&quot;:9195563,
+familyId_g1=9195563
+idASclassTypeId=7186
+idASclassTypeId_g=1
+idASclassTypeId_g0=&quot;id&quot;:7186,
+idASclassTypeId_g1=7186
+isLeads=Y
+isLeads_g=1
+isLeads_g0=,&quot;isLeads&quot;:&quot;Y&quot;,
+isLeads_g1=Y
+nameASflag_1=教辅用书
+nameASflag_2=总课时费
+nameASflag_matchNr=2
+parentId=9200123
+parentId_g=1
+parentId_g0=,&quot;parentId&quot;:9200123,
+parentId_g1=9200123
+payAccountASentryType=3
+payAccountASentryType_g=1
+payAccountASentryType_g0=,&quot;payAccount&quot;:3
+payAccountASentryType_g1=3
+paymentPlanId=Error_paymentPlanId
+phoneNum=18800000000
+phoneNum_g=1
+phoneNum_g0=,&quot;phoneNum&quot;:&quot;18800000000&quot;,
+phoneNum_g1=18800000000
+productDetailFlag=教辅用书,总课时费
+stuMobile=18800000000
+studentId=9209257
+studentId_g=1
+studentId_g0=,&quot;studentId&quot;:9209257,
+studentId_g1=9209257
+sumTotalAmt=8292
+sumTotalAmt_g=1
+sumTotalAmt_g0=,&quot;sumTotalAmt&quot;:8292.00,
+sumTotalAmt_g1=8292.00
+totalPrice=24060.00000
+totalPrice_g=1
+totalPrice_g0=,&quot;price&quot;:24060.00000,&quot;qty&quot;:1,
+totalPrice_g1=24060.00000
+userName_0=bja8844
+userPassword=uat
+
+</responseData>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+<httpSample t="157" it="0" lt="154" ct="42" ts="1630404873905" s="true" lb="login1----当前审批人登陆获取cookie" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="622" sby="190" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 10:14:36 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 85
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: rememberMe=deleteMe; Path=/COS; Max-Age=0; Expires=Mon, 30-Aug-2021 10:14:34 GMT
+Set-Cookie: SESSION=77768369-86ee-46f4-b5a0-f12207240599; Path=/COS/; HttpOnly
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;errorInfo&quot;:&quot;OK&quot;,&quot;result&quot;:{&quot;token&quot;:&quot;77768369-86ee-46f4-b5a0-f12207240599&quot;}}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/login/login.do?username=bja8844&amp;password=uat&amp;_=1630404873813</java.net.URL>
+</httpSample>
+<httpSample t="36" it="0" lt="36" ct="0" ts="1630404874077" s="true" lb="HTTP Request--token" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="401" sby="341" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 31 Aug 2021 10:14:36 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 38
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: cos-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">&quot;77768369-86ee-46f4-b5a0-f12207240599&quot;</responseData>
+  <cookies class="java.lang.String">SESSION=77768369-86ee-46f4-b5a0-f12207240599</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://cos-uat.risechina.com/COS/system/generateToken.do?baseLocation=http://cos-release.risechina.com/COS</java.net.URL>
+</httpSample>
+<httpSample t="183" it="0" lt="182" ct="15" ts="1630404874115" s="true" lb="studentList--查询学生信息" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="3895" sby="401" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:34 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 114
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;total&quot;:0,&quot;pageNo&quot;:1,&quot;pageSize&quot;:10,&quot;rows&quot;:[{&quot;id&quot;:null,&quot;orgId&quot;:null,&quot;centraId&quot;:1,&quot;contractCode&quot;:null,&quot;familyId&quot;:9195563,&quot;parentId&quot;:9200123,&quot;parentPhone&quot;:&quot;18800000000&quot;,&quot;studentId&quot;:9209257,&quot;productLineId&quot;:null,&quot;productIds&quot;:null,&quot;productId&quot;:null,&quot;productNams&quot;:null,&quot;enrollType&quot;:null,&quot;enrollName&quot;:null,&quot;totalAmt&quot;:null,&quot;discountAmt&quot;:null,&quot;payAmt&quot;:null,&quot;actualAmt&quot;:null,&quot;smallPayAmt&quot;:null,&quot;adviserId&quot;:null,&quot;isTransfer&quot;:null,&quot;isTransferName&quot;:null,&quot;comments&quot;:null,&quot;payType&quot;:null,&quot;payName&quot;:null,&quot;status&quot;:null,&quot;contractStatus&quot;:null,&quot;sourceId&quot;:null,&quot;createdDate&quot;:null,&quot;createdBy&quot;:null,&quot;updatedDate&quot;:null,&quot;updatedBy&quot;:null,&quot;deleteFlag&quot;:null,&quot;isreturn&quot;:null,&quot;uploadTime&quot;:null,&quot;recordType&quot;:null,&quot;priceListId&quot;:null,&quot;couponNum&quot;:null,&quot;couponPriceSum&quot;:null,&quot;bmszj&quot;:null,&quot;isInterface&quot;:null,&quot;signDate&quot;:null,&quot;prepayDate&quot;:null,&quot;isLeads&quot;:&quot;Y&quot;,&quot;approvalDate&quot;:null,&quot;isMultiClass&quot;:null,&quot;changeType&quot;:null,&quot;isreturnBms&quot;:null,&quot;depositZj&quot;:null,&quot;classId&quot;:null,&quot;classStudentId&quot;:null,&quot;learnedHours&quot;:null,&quot;classProcess&quot;:null,&quot;prepayAmt&quot;:null,&quot;signAmt&quot;:null,&quot;invoiceWhetherUsed&quot;:null,&quot;brandId&quot;:1,&quot;originalStatus&quot;:null,&quot;originalDate&quot;:null,&quot;leadsId&quot;:null,&quot;installment&quot;:null,&quot;isInstallment&quot;:null,&quot;erpUploadStatus&quot;:null,&quot;installmentNum&quot;:null,&quot;sourceIn&quot;:null,&quot;campperiodId&quot;:null,&quot;studentName&quot;:&quot;01&quot;,&quot;phoneStr&quot;:&quot;188xxxx0000&quot;,&quot;phoneNum&quot;:&quot;18800000000&quot;,&quot;channelId&quot;:21844,&quot;orgName&quot;:&quot;瑞思教育&quot;,&quot;parentName&quot;:&quot;0家长&quot;,&quot;studentStatus&quot;:200,&quot;studentEnglishName&quot;:null,&quot;studentBirthday&quot;:&quot;2017-11-30T16:00:00.000+0000&quot;,&quot;studentSex&quot;:0,&quot;useClassHour&quot;:0,&quot;endCourseDate&quot;:null,&quot;studentAge&quot;:null,&quot;brandName&quot;:&quot;常规课程&quot;,&quot;inschoolnum&quot;:null,&quot;employeeNameCn&quot;:null,&quot;employeeCode&quot;:null,&quot;channelName&quot;:null,&quot;centraName&quot;:null,&quot;beginDate&quot;:null,&quot;beginDateStr&quot;:null,&quot;classLevelName&quot;:null,&quot;className&quot;:null,&quot;classShortName&quot;:null,&quot;classGradeCode&quot;:null,&quot;qty&quot;:null,&quot;price&quot;:null,&quot;tranStatus&quot;:null,&quot;isChangeClass&quot;:null,&quot;sourceClassStudentId&quot;:null,&quot;sourceClassId&quot;:null,&quot;classGradeId&quot;:null,&quot;age&quot;:null,&quot;installmentNums&quot;:null,&quot;payPlanStatus&quot;:null,&quot;accountName&quot;:null,&quot;accountNumber&quot;:null,&quot;bankDeposit&quot;:null,&quot;firstPayPlanStatus&quot;:null,&quot;searchorgid&quot;:null,&quot;createdUserName&quot;:null,&quot;updateUserName&quot;:null,&quot;registrationNumber&quot;:null,&quot;businessDate&quot;:null,&quot;businessMonth&quot;:null,&quot;totalHours&quot;:null,&quot;classCategoryId&quot;:null,&quot;dataFlag&quot;:null,&quot;exportType&quot;:null,&quot;csId&quot;:null,&quot;contractIdStr&quot;:null,&quot;classcategory&quot;:null,&quot;groupcradeId&quot;:null,&quot;contractSource&quot;:null,&quot;classType&quot;:null,&quot;oldCoupons&quot;:null,&quot;oldPriceLists&quot;:null,&quot;paymentPlanId&quot;:null,&quot;gatherUserName&quot;:null,&quot;brandType&quot;:null,&quot;financeOrgName&quot;:null,&quot;classMode&quot;:null,&quot;approvalDatee&quot;:null,&quot;approvalDates&quot;:null,&quot;enrollTypeStr&quot;:null,&quot;isTransferStr&quot;:null,&quot;studentStatusStr&quot;:null,&quot;expectBeginDate&quot;:null,&quot;remindDate&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;orgAssociate&quot;:0,&quot;organizationId&quot;:0,&quot;currentUserId&quot;:null,&quot;mobileVisible&quot;:null,&quot;adviserName&quot;:null,&quot;strStartCreateDate&quot;:null,&quot;strEndCreateDate&quot;:null,&quot;startCreateDate&quot;:null,&quot;endCreateDate&quot;:null,&quot;unpaidamount&quot;:null,&quot;amountpayable&quot;:null,&quot;contractDate&quot;:null,&quot;couponIdStr&quot;:null,&quot;studentStrBirthday&quot;:null,&quot;endCourseDateStr&quot;:null,&quot;companyName&quot;:null,&quot;orgParentId&quot;:null,&quot;strStartSignDate&quot;:null,&quot;strEndSignDate&quot;:null,&quot;statusStr&quot;:null,&quot;approvalDateStr&quot;:null,&quot;channel1Name&quot;:&quot;网络主动&quot;,&quot;channel2Name&quot;:&quot;品牌营销中心&quot;,&quot;channel3Name&quot;:&quot;小达人&quot;,&quot;payer&quot;:null,&quot;cardNum&quot;:null,&quot;createDate&quot;:null,&quot;paymentMethod&quot;:null,&quot;payDAmt&quot;:null,&quot;bankName&quot;:null,&quot;orderNo&quot;:null,&quot;enteredClassHours&quot;:null,&quot;classQty&quot;:null,&quot;couponIds&quot;:null,&quot;bundledDiscountIds&quot;:null,&quot;promotionIds&quot;:null,&quot;redeemIds&quot;:null,&quot;address&quot;:null,&quot;payAccount&quot;:null,&quot;bindingId&quot;:null,&quot;bcontractProductDetailVOS&quot;:null,&quot;bpaymentPlanVOS&quot;:null,&quot;installmentName&quot;:null,&quot;bcontractProductDTO&quot;:null}]},&quot;cost&quot;:140}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;phoneNum&quot;:&quot;18800000000&quot;,&#xd;
+    &quot;studentName&quot;:&quot;&quot;,&#xd;
+    &quot;brandId&quot;:&quot;1&quot;,&#xd;
+    &quot;pageNo&quot;:1,&#xd;
+    &quot;pageSize&quot;:10&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-contract/studentList</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1630404874303" s="true" lb="studentsIdentify--校验学生信息" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="2896" sby="333" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:34 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 42
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;bContract&quot;:{&quot;pageNo&quot;:1,&quot;pageSize&quot;:10,&quot;limitStart&quot;:0,&quot;id&quot;:null,&quot;orgId&quot;:null,&quot;centraId&quot;:334,&quot;contractCode&quot;:null,&quot;familyId&quot;:null,&quot;parentId&quot;:null,&quot;parentPhone&quot;:null,&quot;studentId&quot;:9209257,&quot;classCategoryId&quot;:null,&quot;productIds&quot;:null,&quot;productNams&quot;:null,&quot;enrollType&quot;:null,&quot;enrollTypes&quot;:null,&quot;totalAmt&quot;:null,&quot;discountAmt&quot;:null,&quot;payAmt&quot;:null,&quot;adviserId&quot;:1000008566,&quot;isTransfer&quot;:null,&quot;comments&quot;:null,&quot;payType&quot;:null,&quot;status&quot;:null,&quot;contractStatuses&quot;:null,&quot;sourceId&quot;:null,&quot;createdDate&quot;:null,&quot;createdBy&quot;:null,&quot;updatedDate&quot;:null,&quot;updatedBy&quot;:null,&quot;deleteFlag&quot;:null,&quot;isreturn&quot;:null,&quot;uploadTime&quot;:null,&quot;recordType&quot;:null,&quot;priceListId&quot;:null,&quot;couponNum&quot;:null,&quot;couponPriceSum&quot;:null,&quot;bmszj&quot;:null,&quot;isInterface&quot;:null,&quot;signDate&quot;:null,&quot;prepayDate&quot;:null,&quot;isLeads&quot;:null,&quot;approvalDate&quot;:null,&quot;isMultiClass&quot;:null,&quot;changeType&quot;:null,&quot;isreturnBms&quot;:null,&quot;depositZj&quot;:null,&quot;classId&quot;:null,&quot;classStudentId&quot;:null,&quot;learnedHours&quot;:null,&quot;classProcess&quot;:null,&quot;prepayAmt&quot;:null,&quot;signAmt&quot;:null,&quot;invoiceWhetherUsed&quot;:null,&quot;brandId&quot;:null,&quot;originalStatus&quot;:null,&quot;originalDate&quot;:null,&quot;leadsId&quot;:null,&quot;installment&quot;:null,&quot;isInstallment&quot;:null,&quot;erpUploadStatus&quot;:null,&quot;installmentNum&quot;:null,&quot;installmentNums&quot;:null,&quot;sourceIn&quot;:null,&quot;sourceIns&quot;:null,&quot;campperiodId&quot;:null,&quot;couponIds&quot;:null,&quot;productLineId&quot;:null,&quot;productLineIds&quot;:null,&quot;orderinfoNo&quot;:null,&quot;adviserName&quot;:null,&quot;employee&quot;:null,&quot;org&quot;:null,&quot;studentName&quot;:null,&quot;phoneStr&quot;:null,&quot;phoneNum&quot;:null,&quot;channelId&quot;:null,&quot;orgName&quot;:&quot;北京西红门校区&quot;,&quot;parentName&quot;:null,&quot;studentStatus&quot;:null,&quot;studentEnglishName&quot;:null,&quot;studentBirthday&quot;:null,&quot;studentSex&quot;:null,&quot;useClassHour&quot;:0,&quot;endCourseDate&quot;:null,&quot;studentAge&quot;:null,&quot;brandName&quot;:null,&quot;inschoolnum&quot;:0,&quot;employeeNameCn&quot;:null,&quot;channelName&quot;:null,&quot;strStartApprovalDate&quot;:null,&quot;strEndApprovalDate&quot;:null,&quot;startApprovalDate&quot;:null,&quot;endApprovalDate&quot;:null,&quot;strStartSignDate&quot;:null,&quot;strEndSignDate&quot;:null,&quot;startOrderDate&quot;:null,&quot;endOrderDate&quot;:null,&quot;strStartOrderDate&quot;:null,&quot;strEndOrderDate&quot;:null,&quot;orgAssociate&quot;:null,&quot;orgAssociates&quot;:null,&quot;organizationId&quot;:null,&quot;strStartCreateDate&quot;:null,&quot;strEndCreateDate&quot;:null,&quot;startCreateDate&quot;:null,&quot;endCreateDate&quot;:null,&quot;unpaidamount&quot;:null,&quot;amountpayable&quot;:null,&quot;contractDate&quot;:null,&quot;couponIdStr&quot;:null,&quot;orgParent&quot;:null,&quot;studentStrBirthday&quot;:null,&quot;endCourseDateStr&quot;:null,&quot;companyName&quot;:null,&quot;orgParentId&quot;:null,&quot;statusStr&quot;:null,&quot;approvalDateStr&quot;:null,&quot;channel1Name&quot;:null,&quot;channel2Name&quot;:null,&quot;channel3Name&quot;:null,&quot;payer&quot;:null,&quot;cardNum&quot;:null,&quot;createDate&quot;:null,&quot;paymentMethod&quot;:null,&quot;payDAmt&quot;:null,&quot;bankName&quot;:null,&quot;searchorgId&quot;:null,&quot;orderNo&quot;:null,&quot;classType&quot;:null,&quot;classNo&quot;:null,&quot;payPlanStatus&quot;:null,&quot;payPlanStatuses&quot;:null,&quot;brandType&quot;:null,&quot;contractId&quot;:null,&quot;param&quot;:null,&quot;bcontractProductDTO&quot;:null}},&quot;cost&quot;:32}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;studentId&quot;:9209257,&#xd;
+	&quot;centraId&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-contract/studentsIdentify</java.net.URL>
+</httpSample>
+<httpSample t="656" it="0" lt="636" ct="0" ts="1630404874368" s="true" lb="classList--查版型列表" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="32580" sby="356" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:34 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:[{&quot;id&quot;:7186,&quot;orgId&quot;:4,&quot;brandId&quot;:1,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;classNamePy&quot;:&quot;Prek160bbtbxxf3q525652&quot;,&quot;classCategoryId&quot;:1,&quot;classShortname&quot;:&quot;瑞思英语第一阶段（半天班）-分期&quot;,&quot;base&quot;:0,&quot;baseId&quot;:null,&quot;classGrade&quot;:[{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-02-13T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:64402,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H13&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-02-12T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2020-11-11T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2019-12-29T02:43:37.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-08-03T01:20:56.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周四,周四&quot;,&quot;studentNum&quot;:12,&quot;classGradeSchedule&quot;:&quot;4|2,4|2&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-02-12T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四上午08:30-10:00(R3),星期四上午10:10-11:40(R3)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:20200625,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:&quot;2020-02-26T16:00:00.000+0000&quot;,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|352,4|352&quot;,&quot;classTeacherSchedule&quot;:null,&quot;brandId&quot;:1,&quot;duration&quot;:45,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-12-30T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:103999,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H24&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-12-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-09-28T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-12-11T10:04:28.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期三,星期三,星期三,星期三&quot;,&quot;studentNum&quot;:3,&quot;classGradeSchedule&quot;:&quot;3|1.0,3|1.0,3|1.0,3|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-12-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午08:30-09:10(R3),星期三上午09:20-10:00(R3),星期三上午10:10-10:50(R3),星期三上午11:00-11:40(R3)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;3|352,3|352,3|352,3|352&quot;,&quot;classTeacherSchedule&quot;:&quot;3|08:30-09:10,3|09:20-10:00,3|10:10-10:50,3|11:00-11:40&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-19T10:40:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111970,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H24-2&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:17:04.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期三,星期六&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;3|1.0,6|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三晚上18:40-19:20(rise+教室),星期六下午14:10-14:50(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;3|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;3|18:40-19:20,6|14:10-14:50&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-19T11:20:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111971,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H24-3&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:19:36.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期三,星期六&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;3|1.0,6|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-18T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三晚上19:20-20:00(rise+教室),星期六下午14:50-15:30(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;3|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;3|19:20-20:00,6|14:50-15:30&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-01-01T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:104461,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-12-31T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-09-30T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-12-20T08:03:18.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期五,星期五,星期五,星期五&quot;,&quot;studentNum&quot;:10,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-12-31T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期五上午08:30-09:10(R2),星期五上午09:20-10:00(R2),星期五上午10:10-10:50(R2),星期五上午11:00-11:40(R2)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|449,5|449,5|449,5|449&quot;,&quot;classTeacherSchedule&quot;:&quot;5|08:30-09:10,5|09:20-10:00,5|10:10-10:50,5|11:00-11:40&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-04-30T10:00:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111819,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25-1&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-05T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-04-28T05:06:32.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期五,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;5|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期五晚上18:00-18:40(rise+教室),星期日上午10:30-11:10(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;5|18:00-18:40,7|10:30-11:10&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-04-30T10:40:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111820,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25-2&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-05T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-04-28T05:09:52.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期五,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;5|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期五晚上18:40-19:20(rise+教室),星期日上午11:10-11:50(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;5|18:40-19:20,7|11:10-11:50&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-03-25T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:108240,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-03-24T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-12-22T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-03-05T03:33:13.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8328&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期四,星期四,星期四&quot;,&quot;studentNum&quot;:12,&quot;classGradeSchedule&quot;:&quot;4|1.0,4|1.0,4|1.0,4|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-03-24T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四上午08:30-09:10(R4),星期四上午09:20-10:00(R4),星期四上午10:10-10:50(R4),星期四上午11:00-11:40(R4)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|521,4|521,4|521,4|521&quot;,&quot;classTeacherSchedule&quot;:&quot;4|08:30-09:10,4|09:20-10:00,4|10:10-10:50,4|11:00-11:40&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:1,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-20T10:00:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111989,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26-1&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:47:44.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期六&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;4|1.0,6|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四晚上18:00-18:40(rise+教室),星期六下午15:30-16:10(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;4|18:00-18:40,6|15:30-16:10&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-20T10:40:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111992,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26-2&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-26T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:49:53.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;4|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四晚上18:40-19:20(rise+教室),星期日下午16:10-16:50(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;4|18:40-19:20,7|16:10-16:50&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:23360.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-05-20T11:20:00.000+0000&quot;,&quot;canTrialClassQty&quot;:1,&quot;id&quot;:111994,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H26-3&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-26T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:160.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8844&quot;,&quot;createdDate&quot;:&quot;2021-04-29T10:51:08.000+0000&quot;,&quot;updatedBy&quot;:&quot;bja8844&quot;,&quot;updatedDate&quot;:&quot;2021-06-24T02:52:20.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;星期四,星期日&quot;,&quot;studentNum&quot;:0,&quot;classGradeSchedule&quot;:&quot;4|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:400,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-05-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期四晚上19:20-20:00(rise+教室),星期日下午16:50-17:30(rise+教室)&quot;,&quot;teacherMode&quot;:null,&quot;teacherMaster&quot;:null,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:null,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;4|21112,7|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;4|19:20-20:00,7|16:50-17:30&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:18250.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2021-04-30T11:20:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:111821,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H25-3&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-11-10T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:125.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2021-04-28T05:11:48.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-29T17:00:57.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周日,周五&quot;,&quot;studentNum&quot;:6,&quot;classGradeSchedule&quot;:&quot;5|1.0,7|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期日上午10:30:00-11:10:00(rise+教室),星期五晚上19:20:00-20:00:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000059552,&quot;teacherAssistant&quot;:1000000412,&quot;openingCeremonyDate&quot;:&quot;2021-04-29T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级5人，系统5人，辛苦审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:&quot;2020-12-07T09:44:20.000+0000&quot;,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;6|21112,6|21112&quot;,&quot;classTeacherSchedule&quot;:&quot;7|1000059552|10:30:00-11:10:00,5|1000059552|19:20:00-20:00:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:&quot;1000000412&quot;,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:1.00,&quot;weekendHours&quot;:1.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:16352.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-12-14T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:101847,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H23&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-12-13T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-09-25T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:112.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-11-12T11:39:34.000+0000&quot;,&quot;updatedBy&quot;:&quot;change_teacher_bak&quot;,&quot;updatedDate&quot;:&quot;2021-08-30T17:00:55.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周一,周一&quot;,&quot;studentNum&quot;:10,&quot;classGradeSchedule&quot;:&quot;1|1.0,1|1.0,1|1.0,1|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-12-13T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期一上午09:00:00-09:40:00(rise+教室),星期一上午10:20:00-11:00:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000051292,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:&quot;2020-12-11T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级12人，系统12人，&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:&quot;2020-11-13T08:40:59.000+0000&quot;,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|521,2|521,1|521,2|521,1|521,2|521,1|521,2|521&quot;,&quot;classTeacherSchedule&quot;:&quot;1|1000023342|09:00:00-09:40:00,1|1000023342|10:20:00-11:00:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:12848.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-11-18T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:101836,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H22&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-11-17T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-07-02T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:88.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-11-12T11:02:45.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-29T17:00:57.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周三,周日&quot;,&quot;studentNum&quot;:9,&quot;classGradeSchedule&quot;:&quot;3|1.0,3|1.0,3|1.0,3|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-11-17T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午11:00:00-11:40:00(rise+教室),星期日上午12:00:00-12:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:16662,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:&quot;2020-11-17T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级一共12人，系统10人，吴佳芮是回龙观转学入，张恒祎常规班转入，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|449,2|449,1|449,2|449,1|449,2|449,1|449,2|449&quot;,&quot;classTeacherSchedule&quot;:&quot;3|16662|11:00:00-11:40:00,7|16662|12:00:00-12:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:9928.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-30T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96945,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H18&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-29T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-04-19T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:68.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-09-08T10:49:22.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-25T17:00:56.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周三,周三&quot;,&quot;studentNum&quot;:9,&quot;classGradeSchedule&quot;:&quot;3|1.0,3|1.0,3|1.0,3|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-22T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午08:30:00-09:10:00(rise+教室),星期三上午09:50:00-10:30:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000051033,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共10人，系统4人，芦歆懿、许家祥、李呈祥、娄珈念、范唯溪、姜佳怡流程审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|270,1|270,1|270,1|270&quot;,&quot;classTeacherSchedule&quot;:&quot;3|1000051033|08:30:00-09:10:00,3|1000051033|09:50:00-10:30:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:9782.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-11-20T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:99616,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H21&quot;,&quot;classId&quot;:7186,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-11-19T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-04-18T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:67.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-10-22T07:40:29.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-27T17:00:58.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周二,周五&quot;,&quot;studentNum&quot;:5,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:&quot;&quot;,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-11-19T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期二晚上19:00:00-19:40:00(rise+教室),星期五晚上19:00:00-19:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000051279,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:&quot;2020-11-19T16:00:00.000+0000&quot;,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级12人，系统1人，石映曈班型不对需要异动进班&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:&quot;2020-11-10T02:19:29.000+0000&quot;,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|270,2|270,1|270,2|270,1|270,2|270,1|270,2|270&quot;,&quot;classTeacherSchedule&quot;:&quot;2|1000051279|19:00:00-19:40:00,5|1000051279|19:00:00-19:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:0.00,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:7300.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-08T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96316,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H16&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-07T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-02-18T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:50.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-08-29T04:15:36.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-28T17:00:58.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周六,周二&quot;,&quot;studentNum&quot;:3,&quot;classGradeSchedule&quot;:&quot;2|1.0,2|1.0,2|1.0,2|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-07T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期六上午10:30:00-11:10:00(rise+教室),星期二上午10:30:00-11:10:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000008494,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级一共12名学员，系统9名胡博睿张婉晴李昂溯3名学员一到总部，审批完就可以进班，请领导审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|278,1|278,1|278,1|278&quot;,&quot;classTeacherSchedule&quot;:&quot;6|1000008494|10:30:00-11:10:00,2|1000008494|10:30:00-11:10:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:5840.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-28T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:98002,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H19&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-27T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-01-16T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:40.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-09-22T02:25:09.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-30T17:00:55.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周三,周一&quot;,&quot;studentNum&quot;:8,&quot;classGradeSchedule&quot;:&quot;1|1.0,1|1.0,1|1.0,1|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-27T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期三上午09:00:00-09:40:00(rise+教室),星期一上午09:00:00-09:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000012124,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共10人，系统4人，李安兴、王熙雅、贾惠雯、张艺潇、张恒祎、陈昱名流程审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|270,1|270,1|270,1|270&quot;,&quot;classTeacherSchedule&quot;:&quot;3|1000012124|09:00:00-09:40:00,1|1000012124|09:00:00-09:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:5256.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-18T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96318,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H17&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-17T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2022-01-02T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:36.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-08-29T04:25:48.000+0000&quot;,&quot;updatedBy&quot;:&quot;change_teacher_bak&quot;,&quot;updatedDate&quot;:&quot;2021-08-30T17:00:55.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周一,周五&quot;,&quot;studentNum&quot;:8,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-17T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期一上午08:30:00-09:10:00(rise+教室),星期五上午08:30:00-09:10:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000009615,&quot;teacherAssistant&quot;:1000009615,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共11人，系统7人，岳祖伊、王梓荀、赵晨晰、王彰文异动进班审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|278,1|278,1|278,1|278,2|278,2|278,2|278,2|278&quot;,&quot;classTeacherSchedule&quot;:&quot;1|1000016817|08:30:00-09:10:00,5|1000016817|08:30:00-09:10:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:4380.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-09-17T00:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:96317,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;K1H15&quot;,&quot;classId&quot;:27418,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-09-16T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-12-11T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:30.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;change_teacher_bak&quot;,&quot;createdDate&quot;:&quot;2020-08-29T04:22:07.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-29T17:00:57.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周日,周四&quot;,&quot;studentNum&quot;:9,&quot;classGradeSchedule&quot;:&quot;4|1.0,4|1.0,4|1.0,4|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-09-09T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期日晚上19:00:00-19:40:00(rise+教室),星期四晚上19:00:00-19:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000002090,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;本班一共10人，系统5人，赵婧涵/吴畏/郑幂垚/郑君浩/陈怿心流程审批中，请审批&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;1|278,1|278,1|278,1|278,2|278,2|278,2|278,2|278&quot;,&quot;classTeacherSchedule&quot;:&quot;7|1000002090|19:00:00-19:40:00,4|1000002090|19:00:00-19:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1},{&quot;ablePrice&quot;:730.000000000,&quot;inClassQty&quot;:null,&quot;inClassDate&quot;:null,&quot;ableClassQty&quot;:null,&quot;lessonBeginTime&quot;:&quot;2020-07-12T07:30:00.000+0000&quot;,&quot;canTrialClassQty&quot;:0,&quot;id&quot;:91884,&quot;cityId&quot;:4,&quot;orgId&quot;:334,&quot;classGradeCode&quot;:&quot;E-K1H14-1&quot;,&quot;classId&quot;:22964,&quot;baseClassId&quot;:7186,&quot;startDate&quot;:&quot;2020-07-11T16:00:00.000+0000&quot;,&quot;endDate&quot;:&quot;2021-09-13T16:00:00.000+0000&quot;,&quot;classHours&quot;:160,&quot;surplusHours&quot;:5.0000,&quot;status&quot;:320,&quot;createdBy&quot;:&quot;bja8328&quot;,&quot;createdDate&quot;:&quot;2020-07-03T02:09:34.000+0000&quot;,&quot;updatedBy&quot;:&quot;job&quot;,&quot;updatedDate&quot;:&quot;2021-08-28T17:00:58.000+0000&quot;,&quot;deleteFlag&quot;:0,&quot;bmsId&quot;:null,&quot;isInterface&quot;:null,&quot;bmszj&quot;:null,&quot;weekday&quot;:&quot;周二,周六&quot;,&quot;studentNum&quot;:4,&quot;classGradeSchedule&quot;:&quot;5|1.0,5|1.0,5|1.0,5|1.0&quot;,&quot;cosClazzStatus&quot;:700,&quot;sourceId&quot;:null,&quot;classType&quot;:1,&quot;expectStartDate&quot;:&quot;2020-07-11T16:00:00.000+0000&quot;,&quot;classScheduleDesc&quot;:&quot;星期二晚上19:00:00-19:40:00(rise+教室),星期六上午09:00:00-09:40:00(rise+教室)&quot;,&quot;teacherMode&quot;:4,&quot;teacherMaster&quot;:1000024606,&quot;teacherAssistant&quot;:null,&quot;openingCeremonyDate&quot;:null,&quot;yearMonthEntrance&quot;:null,&quot;isClose&quot;:1,&quot;reasonClose&quot;:null,&quot;comments&quot;:&quot;班级一共4名学员，系统3名，卢一森审批中，审批完可以进班，请领导审批。&quot;,&quot;allowEnrollStudent&quot;:1,&quot;twelveCourseDate&quot;:null,&quot;sourceGradeCodes&quot;:null,&quot;sourceEndDates&quot;:null,&quot;firstStudentEnterDate&quot;:null,&quot;rowColor&quot;:null,&quot;classRoomSchedule&quot;:&quot;5|57,5|57,5|57,5|57&quot;,&quot;classTeacherSchedule&quot;:&quot;2|1000024606|19:00:00-19:40:00,6|1000024606|09:00:00-09:40:00&quot;,&quot;brandId&quot;:1,&quot;duration&quot;:40,&quot;teachWay&quot;:2,&quot;headMaster&quot;:null,&quot;onlineDuration&quot;:40,&quot;workdayHours&quot;:4.00,&quot;weekendHours&quot;:null,&quot;teacherDesc&quot;:null,&quot;productLineId&quot;:1}],&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;price&quot;:null,&quot;qty&quot;:null,&quot;bundling&quot;:null,&quot;productLineId&quot;:1,&quot;totalClassHourAmt&quot;:23360.0000,&quot;classQty&quot;:160}],&quot;cost&quot;:534}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/classList?brandId=1&amp;key=Prek+160%E7%89%88+%E5%8D%8A%E5%A4%A9%E7%8F%AD-%E7%BA%BF%E4%B8%8B-%E5%88%863%E6%9C%9F%EF%BC%8852%2B56%2B52%EF%BC%89&amp;orgId=334</java.net.URL>
+</httpSample>
+<httpSample t="162" it="0" lt="162" ct="0" ts="1630404875028" s="true" lb="classPrice?--查版型定价--暂时无用" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="1369" sby="311" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:35 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;classId&quot;:7186,&quot;classCategoryId&quot;:1,&quot;classGradeId&quot;:null,&quot;classGradeCode&quot;:null,&quot;classLevelId&quot;:1,&quot;classLevelName&quot;:&quot;PreK&quot;,&quot;brandId&quot;:null,&quot;brandType&quot;:null,&quot;orgId&quot;:null,&quot;orgName&quot;:&quot;北京西红门校区&quot;,&quot;companyId&quot;:null,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;classNamePy&quot;:&quot;Prek160bbtbxxf3q525652&quot;,&quot;classShortname&quot;:&quot;瑞思英语第一阶段（半天班）-分期&quot;,&quot;ableClassQty&quot;:160,&quot;inClassDate&quot;:null,&quot;price&quot;:24060.00000,&quot;qty&quot;:1,&quot;priceList&quot;:[{&quot;priceListId&quot;:14260,&quot;priceListCode&quot;:&quot;PRICELIST20210428117494&quot;,&quot;priceListName&quot;:&quot;北京Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;priceDetailList&quot;:[{&quot;classUnitId&quot;:1,&quot;classUnitSourceId&quot;:null,&quot;classUnitName&quot;:&quot;教辅用书&quot;,&quot;isneed&quot;:null,&quot;unitAmt&quot;:700.0000,&quot;price&quot;:700.0000,&quot;discountAmount&quot;:null,&quot;paidAmt&quot;:null,&quot;qty&quot;:1,&quot;confirmType&quot;:10},{&quot;classUnitId&quot;:3,&quot;classUnitSourceId&quot;:null,&quot;classUnitName&quot;:&quot;总课时费&quot;,&quot;isneed&quot;:null,&quot;unitAmt&quot;:146.00000,&quot;price&quot;:23360.00000,&quot;discountAmount&quot;:null,&quot;paidAmt&quot;:null,&quot;qty&quot;:160,&quot;confirmType&quot;:20}]}],&quot;bundlingPrice&quot;:null,&quot;productLineId&quot;:1,&quot;classGroupId&quot;:null,&quot;inClassQty&quot;:null,&quot;isInstallment&quot;:0},&quot;cost&quot;:141}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/classPrice?&amp;orgId=334&amp;brandId=1&amp;classId=7186&amp;inClassQty=0</java.net.URL>
+</httpSample>
+<httpSample t="147" it="0" lt="147" ct="0" ts="1630404875192" s="true" lb="judgeEnrollTypeValue" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="437" sby="389" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:35 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 94
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;enrollType&quot;:1,&quot;prepayAmt&quot;:null,&quot;sourceClassId&quot;:-1,&quot;learnedHours&quot;:-1,&quot;classProcess&quot;:-1,&quot;sourceClassStudentId&quot;:-1,&quot;brandId&quot;:1,&quot;studentId&quot;:9209257,&quot;classCategoryId&quot;:1},&quot;cost&quot;:126}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classCategoryId&quot;:1,&#xd;
+    &quot;studentId&quot;:9209257,&#xd;
+    &quot;centraId&quot;:334&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-contract/judgeEnrollTypeValue</java.net.URL>
+</httpSample>
+<httpSample t="145" it="0" lt="145" ct="0" ts="1630404875342" s="true" lb="product--产品各期价格" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="2582" sby="394" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:35 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 107
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:[{&quot;id&quot;:null,&quot;installmentId&quot;:704,&quot;installmentNum&quot;:1,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:8292.00,&quot;totalAmt&quot;:8292.00,&quot;discountAmt&quot;:0,&quot;singleClassFee&quot;:146.00,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:8292.00,&quot;totalAmt&quot;:8292.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[{&quot;productDetailId&quot;:1,&quot;productDetailName&quot;:&quot;教辅用书&quot;,&quot;qty&quot;:1,&quot;price&quot;:700.00,&quot;totalAmt&quot;:700.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:10,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null},{&quot;productDetailId&quot;:3,&quot;productDetailName&quot;:&quot;总课时费&quot;,&quot;qty&quot;:52,&quot;price&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:20,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null}],&quot;payAccount&quot;:3},{&quot;id&quot;:null,&quot;installmentId&quot;:705,&quot;installmentNum&quot;:2,&quot;installmentHours&quot;:56,&quot;sumTotalAmt&quot;:8176.00,&quot;totalAmt&quot;:8176.00,&quot;discountAmt&quot;:0,&quot;singleClassFee&quot;:146.00,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:8176.00,&quot;totalAmt&quot;:8176.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[{&quot;productDetailId&quot;:3,&quot;productDetailName&quot;:&quot;总课时费&quot;,&quot;qty&quot;:56,&quot;price&quot;:8176.00,&quot;totalAmt&quot;:8176.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:20,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null}],&quot;payAccount&quot;:null},{&quot;id&quot;:null,&quot;installmentId&quot;:706,&quot;installmentNum&quot;:3,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;singleClassFee&quot;:146.00,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[{&quot;productDetailId&quot;:3,&quot;productDetailName&quot;:&quot;总课时费&quot;,&quot;qty&quot;:52,&quot;price&quot;:7592.00,&quot;totalAmt&quot;:7592.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;classUnitSourceId&quot;:null,&quot;confirmType&quot;:20,&quot;currentDiscountAmt&quot;:0,&quot;type&quot;:null,&quot;paymentPlanId&quot;:null,&quot;installmentNum&quot;:null,&quot;createdBy&quot;:null}],&quot;payAccount&quot;:null}],&quot;cost&quot;:126}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;classId&quot;:7186,&#xd;
+    &quot;orgId&quot;:334,&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classGradeId&quot;:null,&#xd;
+    &quot;inClassQty&quot;:0&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-payment-plan/product</java.net.URL>
+</httpSample>
+<sample t="11" it="0" lt="0" ct="0" ts="1630404875523" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">import java.lang.String;
+import java.lang.Integer;
+
+
+
+
+
+
+
+String str_matchN=vars.get(&quot;nameASflag_matchNr&quot;);
+int int_matchNr = Integer.parseInt(str_matchN);
+String str=&quot;&quot;;
+
+
+for(int i=1;i&lt;=int_matchNr;i++){
+	String st123=&quot;nameASflag_&quot;+i;
+//	log.info(&quot;===========================================================================================&quot;);
+	log.info(st123);
+	if(i!=int_matchNr){
+		str=str+vars.get(st123)+&quot;,&quot;;
+		log.info(str);
+	}
+	else{
+		str=str+vars.get(st123);
+	}
+}
+
+vars.put(&quot;productDetailFlag&quot;,str);
+
+
+
+
+
+
+
+
+
+
+
+
+</samplerData>
+</sample>
+<httpSample t="166" it="0" lt="165" ct="0" ts="1630404875535" s="true" lb="trialCalculationPriceInfo--缴费校验" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="1774" sby="689" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:35 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 388
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;pageNo&quot;:1,&quot;pageSize&quot;:10,&quot;limitStart&quot;:0,&quot;totalDiscountAmount&quot;:0.00,&quot;classUnitList&quot;:[],&quot;prePaymentPlanList&quot;:[{&quot;id&quot;:null,&quot;entityId&quot;:null,&quot;installmentId&quot;:704,&quot;installmentNum&quot;:1,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;singleClassFee&quot;:0.0000,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[],&quot;currentDiscountAmt&quot;:0},{&quot;id&quot;:null,&quot;entityId&quot;:null,&quot;installmentId&quot;:705,&quot;installmentNum&quot;:2,&quot;installmentHours&quot;:56,&quot;sumTotalAmt&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;singleClassFee&quot;:0.0000,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[],&quot;currentDiscountAmt&quot;:0},{&quot;id&quot;:null,&quot;entityId&quot;:null,&quot;installmentId&quot;:706,&quot;installmentNum&quot;:3,&quot;installmentHours&quot;:52,&quot;sumTotalAmt&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;paidAmt&quot;:null,&quot;singleClassFee&quot;:0.0000,&quot;productVO&quot;:{&quot;id&quot;:null,&quot;productId&quot;:7186,&quot;classId&quot;:null,&quot;price&quot;:0.00,&quot;totalAmt&quot;:0.00,&quot;discountAmt&quot;:0,&quot;expectBeginDate&quot;:null,&quot;classHours&quot;:160,&quot;className&quot;:&quot;Prek 160版 半天班-线下-分3期（52+56+52）&quot;,&quot;qty&quot;:1},&quot;productDetailVOs&quot;:[],&quot;currentDiscountAmt&quot;:0}],&quot;wholeDiscountAmountAddStagingDiscountValue&quot;:null,&quot;stagingDiscountValue&quot;:null},&quot;cost&quot;:146}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;brandId&quot;:1,&#xd;
+    &quot;classId&quot;:7186,&#xd;
+    &quot;classGradeId&quot;:null,&#xd;
+    &quot;entryType&quot;:3,&#xd;
+    &quot;inClassQty&quot;:0,&#xd;
+    &quot;isTransfer&quot;:1,&#xd;
+    &quot;productIds&quot;:7186,&#xd;
+    &quot;productLineId&quot;:1,&#xd;
+    &quot;couponIds&quot;:[&#xd;
+&#xd;
+    ],&#xd;
+    &quot;promotionIds&quot;:[&#xd;
+&#xd;
+    ],&#xd;
+    &quot;centerId&quot;:334,&#xd;
+    &quot;orgId&quot;:334,&#xd;
+    &quot;channelId&quot;:21844,&#xd;
+    &quot;studentId&quot;:9209257,&#xd;
+     &quot;productDetailFlag&quot;: &quot;教辅用书,总课时费&quot;,&#xd;
+     &quot;paidAmt&quot;: 0&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/trialCalculationPriceInfo</java.net.URL>
+</httpSample>
+<sample t="13" it="0" lt="0" ct="0" ts="1630404875703" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">import java.lang.String;
+import java.lang.Integer;
+import java.util.Arrays;
+
+
+
+String string=vars.get(&quot;classUnitId_matchNr&quot;);
+int classUnitId_matchNr=Integer.parseInt(string);
+String[] arr=new String[classUnitId_matchNr];
+
+for(int i=0;i&lt;classUnitId_matchNr;i++){
+	String classUnitId=&quot;classUnitId&quot;;
+	classUnitId=classUnitId+&quot;_&quot;+String.valueOf(i+1);
+	log.info(classUnitId);
+	String str=vars.get(classUnitId);
+	log.info(str);
+	arr[i]=str;	
+}
+String s=Arrays.toString(arr);
+System.out.println(s);
+vars.put(&quot;classUnitId_arr&quot;,s);  
+
+</samplerData>
+</sample>
+<sample t="2" it="0" lt="0" ct="0" ts="1630404875716" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">//import  java.lang.Double;
+
+//vars.get(&quot;sumTotalAmt&quot;);
+
+int a =Double.valueOf(vars.get(&quot;sumTotalAmt&quot;)).intValue();
+String ss = Integer.toString(a);
+vars.put(&quot;sumTotalAmt&quot;,ss);</samplerData>
+</sample>
+<httpSample t="934" it="0" lt="934" ct="0" ts="1630404875718" s="true" lb="insertOrderinfo--建订单" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="848" sby="1745" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:36 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1453
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:{&quot;status&quot;:&quot;success&quot;,&quot;orderDTO&quot;:{&quot;orderId&quot;:&quot;908420&quot;,&quot;contractList&quot;:[{&quot;contractId&quot;:&quot;1064294&quot;,&quot;contractCode&quot;:&quot;COS2021083118001&quot;,&quot;paymentPlanList&quot;:[{&quot;paymentPlanId&quot;:&quot;1902434&quot;,&quot;payAmount&quot;:8292.00,&quot;payType&quot;:2}],&quot;isTransfer&quot;:1,&quot;installmentFlag&quot;:0}],&quot;payMethodDTOS&quot;:[{&quot;payMode&quot;:200,&quot;bankRate&quot;:null,&quot;bankAccount&quot;:null,&quot;referenceNumber&quot;:null,&quot;payAmount&quot;:8292,&quot;tradeDate&quot;:null,&quot;tradeDateStr&quot;:null,&quot;payer&quot;:&quot;fukuanren1&quot;,&quot;payerBankInfo&quot;:null,&quot;company&quot;:null,&quot;serialNumber&quot;:null,&quot;posOnlineWay&quot;:null}],&quot;parentId&quot;:&quot;9200123&quot;,&quot;studentId&quot;:&quot;9209257&quot;,&quot;userName&quot;:&quot;bja8844&quot;},&quot;bpaymentActivateVO&quot;:null},&quot;cost&quot;:805}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;orderinfoUpdateStatus&quot;: 1,&#xd;
+    &quot;studentDTO&quot;: {&#xd;
+        &quot;familyId&quot;: 9195563,&#xd;
+        &quot;parentId&quot;: 9200123,&#xd;
+        &quot;studentId&quot;: 9209257,&#xd;
+        &quot;isLeads&quot;: &quot;Y&quot;,&#xd;
+        &quot;channelId&quot;: 21844,&#xd;
+        &quot;parentPhone&quot;: &quot;18800000000&quot;&#xd;
+    },&#xd;
+    &quot;orderinfoDTO&quot;: {&#xd;
+        &quot;adviserId&quot;: 1000008566&#xd;
+    },&#xd;
+    &quot;orderinfoSaveStatus&quot;: 200,&#xd;
+    &quot;orderSource&quot;: 0,&#xd;
+    &quot;apedxInfoIds&quot;: &quot;&quot;,&#xd;
+    &quot;contractList&quot;: [&#xd;
+        {&#xd;
+&#xd;
+            &quot;productIds&quot;: 7186,&#xd;
+            &quot;classGradeId&quot;: null,&#xd;
+            &quot;centraId&quot;: 334,&#xd;
+            &quot;brandId&quot;: 1,&#xd;
+            &quot;enteredClassHours&quot;: 0,&#xd;
+            &quot;enrollType&quot;: 1,&#xd;
+            &quot;payType&quot;: 2,&#xd;
+            &quot;payAmt&quot;: 8292,&#xd;
+            &quot;productDetailFlag&quot;: &quot;教辅用书,总课时费&quot;,&#xd;
+            &quot;couponIds&quot;: [],&#xd;
+            &quot;redeemIds&quot;: [],&#xd;
+            &quot;promotionIds&quot;: [],&#xd;
+            &quot;bundledDiscountIds&quot;: [],&#xd;
+            &quot;paymentPlanDTO&quot;: {&#xd;
+                &quot;couponIds&quot;: [],&#xd;
+                &quot;promotionIds&quot;: [],&#xd;
+                &quot;redeemIds&quot;: []&#xd;
+            }&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;payMethodDTOS&quot;: [&#xd;
+        {&#xd;
+            &quot;payMode&quot;: 200,&#xd;
+            &quot;otherPayMode&quot;: 200,&#xd;
+            &quot;bankRate&quot;: null,&#xd;
+            &quot;bankAccount&quot;: null,&#xd;
+            &quot;referenceNumber&quot;: null,&#xd;
+            &quot;payAmount&quot;: 8292,&#xd;
+            &quot;tradeDateStr&quot;: null,&#xd;
+            &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
+            &quot;bank&quot;: null,&#xd;
+            &quot;chequeNo&quot;: null,&#xd;
+            &quot;company&quot;: null&#xd;
+        }&#xd;
+    ]&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/order-info/insertOrderinfo</java.net.URL>
+</httpSample>
+<httpSample t="1431" it="0" lt="1431" ct="0" ts="1630404876654" s="true" lb="review?--学员复核" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="276" sby="344" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: nginx/1.15.9
+Date: Tue, 31 Aug 2021 10:14:38 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+token: 77768369-86ee-46f4-b5a0-f12207240599
+Content-Type: application/json;charset=UTF-8
+Content-Length: 34
+Host: kcos-gateway-uat.risechina.com
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:null,&quot;cost&quot;:1388}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;paymentPlanId&quot;: 1902434&#xd;
+}</queryString>
+  <java.net.URL>http://kcos-gateway-uat.risechina.com/orderinfo_server/b-payment-plan/review?paymentPlanId=%201902434</java.net.URL>
+</httpSample>
+<sample t="2" it="0" lt="0" ct="0" ts="1630404878106" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="contranct--单产品订单生成学员 1-1" dt="text" by="2419" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@522c7343
+LoginCookie1=SESSION=77768369-86ee-46f4-b5a0-f12207240599
+LoginCookie1_g=1
+LoginCookie1_g0=Set-Cookie: SESSION=77768369-86ee-46f4-b5a0-f12207240599; Path=/COS/;
+LoginCookie1_g1=SESSION=77768369-86ee-46f4-b5a0-f12207240599
+LoginToken1=77768369-86ee-46f4-b5a0-f12207240599
+LoginToken1_g=1
+LoginToken1_g0=&quot;77768369-86ee-46f4-b5a0-f12207240599&quot;
+LoginToken1_g1=77768369-86ee-46f4-b5a0-f12207240599
+START.HMS=181433
+START.MS=1630404873064
+START.YMD=20210831
+TESTSTART.MS=1630404873509
+__jm__contranct--单产品订单生成学员__idx=0
+__jmeter.U_T__=contranct--单产品订单生成学员 1-1
+__jmv_SAME_USER=true
+address=cos-uat.risechina.com
+addressMic=kcos-gateway-uat.risechina.com
+adviserId=1000008566
+adviserId_g=1
+adviserId_g0=,&quot;adviserId&quot;:1000008566,
+adviserId_g1=1000008566
+centraId_loginUser=334
+centraId_loginUser_g=1
+centraId_loginUser_g0=,&quot;centraId&quot;:334,
+centraId_loginUser_g1=334
+centraId_stu=1
+centraId_stu_g=1
+centraId_stu_g0=,&quot;centraId&quot;:1,
+centraId_stu_g1=1
+channelId=21844
+channelId_g=1
+channelId_g0=,&quot;channelId&quot;:21844,
+channelId_g1=21844
+classTypeName=Prek 160版 半天班-线下-分3期（52+56+52）
+classUnitId=Error_classUnitId
+classUnitId_arr=[]
+classUnitId_matchNr=0
+enrollType=1
+enrollType_g=1
+enrollType_g0=&quot;enrollType&quot;:1,
+enrollType_g1=1
+familyId=9195563
+familyId_g=1
+familyId_g0=,&quot;familyId&quot;:9195563,
+familyId_g1=9195563
+idASclassTypeId=7186
+idASclassTypeId_g=1
+idASclassTypeId_g0=&quot;id&quot;:7186,
+idASclassTypeId_g1=7186
+isLeads=Y
+isLeads_g=1
+isLeads_g0=,&quot;isLeads&quot;:&quot;Y&quot;,
+isLeads_g1=Y
+nameASflag_1=教辅用书
+nameASflag_2=总课时费
+nameASflag_matchNr=2
+parentId=9200123
+parentId_g=1
+parentId_g0=,&quot;parentId&quot;:9200123,
+parentId_g1=9200123
+payAccountASentryType=3
+payAccountASentryType_g=1
+payAccountASentryType_g0=,&quot;payAccount&quot;:3
+payAccountASentryType_g1=3
+paymentPlanId=Error_paymentPlanId
+phoneNum=18800000000
+phoneNum_g=1
+phoneNum_g0=,&quot;phoneNum&quot;:&quot;18800000000&quot;,
+phoneNum_g1=18800000000
+productDetailFlag=教辅用书,总课时费
+stuMobile=18800000000
+studentId=9209257
+studentId_g=1
+studentId_g0=,&quot;studentId&quot;:9209257,
+studentId_g1=9209257
+sumTotalAmt=8292
+sumTotalAmt_g=1
+sumTotalAmt_g0=,&quot;sumTotalAmt&quot;:8292.00,
+sumTotalAmt_g1=8292.00
+totalPrice=24060.00000
+totalPrice_g=1
+totalPrice_g0=,&quot;price&quot;:24060.00000,&quot;qty&quot;:1,
+totalPrice_g1=24060.00000
+userName_0=bja8844
+userPassword=uat
+
+</responseData>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+</testResults>

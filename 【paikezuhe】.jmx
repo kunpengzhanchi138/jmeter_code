@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="userNameSubmmitor" elementType="Argument">
             <stringProp name="Argument.name">userNameSubmmitor</stringProp>
-            <stringProp name="Argument.value">bja5050</stringProp>
+            <stringProp name="Argument.value">bja8844</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="address" elementType="Argument">
@@ -36,7 +36,7 @@
           </elementProp>
           <elementProp name="classTypeIdASclassId" elementType="Argument">
             <stringProp name="Argument.name">classTypeIdASclassId</stringProp>
-            <stringProp name="Argument.value">31013</stringProp>
+            <stringProp name="Argument.value">124</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">班型id</stringProp>
           </elementProp>
@@ -47,7 +47,7 @@
           </elementProp>
           <elementProp name="codeJSQ" elementType="Argument">
             <stringProp name="Argument.name">codeJSQ</stringProp>
-            <stringProp name="Argument.value">0826</stringProp>
+            <stringProp name="Argument.value">083106</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userNameAdmin" elementType="Argument">
@@ -63,6 +63,11 @@
           <elementProp name="stuMobile" elementType="Argument">
             <stringProp name="Argument.name">stuMobile</stringProp>
             <stringProp name="Argument.value">18611521858</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="classTypeName" elementType="Argument">
+            <stringProp name="Argument.name">classTypeName</stringProp>
+            <stringProp name="Argument.value">Prek 160版 常规班</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2069,7 +2074,7 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="addTeacher--新建英语老师【总部员工】" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
@@ -2512,7 +2517,7 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--单产品订单生成学员" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
@@ -2556,6 +2561,11 @@
             <elementProp name="stuMobile" elementType="Argument">
               <stringProp name="Argument.name">stuMobile</stringProp>
               <stringProp name="Argument.value">18611521858</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="classTypeName" elementType="Argument">
+              <stringProp name="Argument.name">classTypeName</stringProp>
+              <stringProp name="Argument.value">Prek 160版 常规班</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -2638,6 +2648,16 @@
               <stringProp name="RegexExtractor.default">Error_LoginToken1</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="34">&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -2762,6 +2782,16 @@
               <stringProp name="TestPlan.comments">合同接口使用phoneNum，而不是parentPhone</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1459617822">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="studentsIdentify--校验学生信息" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -2840,6 +2870,16 @@
               <stringProp name="RegexExtractor.default">Error_channelId</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1459617822">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -2948,6 +2988,16 @@
               <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="classPrice?--查版型定价--暂时无用" enabled="true">
@@ -3065,6 +3115,16 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="judgeEnrollTypeValue" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -3163,6 +3223,16 @@
               <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="product--产品各期价格" enabled="true">
@@ -3264,7 +3334,71 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="json" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">nameASflag</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.data[0].productDetailVOs[*].productDetailName</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">ERROR_productDetailNameASproductDetailFlag</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1286159396">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+            <stringProp name="BeanShellSampler.query">import java.lang.String;
+import java.lang.Integer;
+
+
+
+
+
+
+
+String str_matchN=vars.get(&quot;nameASflag_matchNr&quot;);
+int int_matchNr = Integer.parseInt(str_matchN);
+String str=&quot;&quot;;
+
+
+for(int i=1;i&lt;=int_matchNr;i++){
+	String st123=&quot;nameASflag_&quot;+i;
+//	log.info(&quot;===========================================================================================&quot;);
+	log.info(st123);
+	if(i!=int_matchNr){
+		str=str+vars.get(st123)+&quot;,&quot;;
+		log.info(str);
+	}
+	else{
+		str=str+vars.get(st123);
+	}
+}
+
+vars.put(&quot;productDetailFlag&quot;,str);
+
+
+
+
+
+
+
+
+
+
+
+
+</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="trialCalculationPriceInfo--缴费校验" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -3273,12 +3407,12 @@
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
     &quot;brandId&quot;:1,&#xd;
-    &quot;classId&quot;:${classTypeIdASclassId},&#xd;
+    &quot;classId&quot;:${idASclassTypeId},&#xd;
     &quot;classGradeId&quot;:null,&#xd;
     &quot;entryType&quot;:${payAccountASentryType},&#xd;
     &quot;inClassQty&quot;:0,&#xd;
     &quot;isTransfer&quot;:1,&#xd;
-    &quot;productIds&quot;:${classTypeIdASclassId},&#xd;
+    &quot;productIds&quot;:${idASclassTypeId},&#xd;
     &quot;productLineId&quot;:1,&#xd;
     &quot;couponIds&quot;:[&#xd;
 &#xd;
@@ -3289,7 +3423,9 @@
     &quot;centerId&quot;:${centraId_loginUser},&#xd;
     &quot;orgId&quot;:${centraId_loginUser},&#xd;
     &quot;channelId&quot;:${channelId},&#xd;
-    &quot;studentId&quot;:${studentId}&#xd;
+    &quot;studentId&quot;:${studentId},&#xd;
+     &quot;productDetailFlag&quot;: &quot;${productDetailFlag}&quot;,&#xd;
+     &quot;paidAmt&quot;: 0&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3393,6 +3529,16 @@ log.info(&quot;classUnitId的值&quot;+classUnitId);</stringProp>
               <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
             </BeanShellAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1216235670">&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
             <stringProp name="BeanShellSampler.query">import java.lang.String;
@@ -3424,6 +3570,19 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           </BeanShellSampler>
           <hashTree/>
         </hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">//import  java.lang.Double;
+
+//vars.get(&quot;sumTotalAmt&quot;);
+
+int a =Double.valueOf(vars.get(&quot;sumTotalAmt&quot;)).intValue();
+String ss = Integer.toString(a);
+vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="insertOrderinfo--建订单" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -3431,68 +3590,57 @@ vars.put(&quot;classUnitId_arr&quot;,s);
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-    &quot;orderinfoUpdateStatus&quot;:1,&#xd;
-    &quot;studentDTO&quot;:{&#xd;
-        &quot;familyId&quot;:${familyId},&#xd;
-        &quot;parentId&quot;:${parentId},&#xd;
-        &quot;studentId&quot;:${studentId},&#xd;
-        &quot;isLeads&quot;:&quot;${isLeads}&quot;,&#xd;
-        &quot;channelId&quot;:${channelId},&#xd;
-        &quot;parentPhone&quot;:&quot;${phoneNum}&quot;&#xd;
+    &quot;orderinfoUpdateStatus&quot;: 1,&#xd;
+    &quot;studentDTO&quot;: {&#xd;
+        &quot;familyId&quot;: ${familyId},&#xd;
+        &quot;parentId&quot;: ${parentId},&#xd;
+        &quot;studentId&quot;: ${studentId},&#xd;
+        &quot;isLeads&quot;: &quot;${isLeads}&quot;,&#xd;
+        &quot;channelId&quot;: ${channelId},&#xd;
+        &quot;parentPhone&quot;: &quot;${phoneNum}&quot;&#xd;
     },&#xd;
-    &quot;orderinfoDTO&quot;:{&#xd;
-        &quot;adviserId&quot;:${adviserId}&#xd;
+    &quot;orderinfoDTO&quot;: {&#xd;
+        &quot;adviserId&quot;: ${adviserId}&#xd;
     },&#xd;
-    &quot;payMethodDTO&quot;:{&#xd;
-        &quot;payMode&quot;:200,&#xd;
-        &quot;otherPayMode&quot;:200,&#xd;
-        &quot;bankRate&quot;:null,&#xd;
-        &quot;bankAccount&quot;:null,&#xd;
-        &quot;referenceNumber&quot;:null,&#xd;
-        &quot;payAmount&quot;:${sumTotalAmt},&#xd;
-        &quot;tradeDateStr&quot;:null,&#xd;
-        &quot;payer&quot;:&quot;fukuanren1&quot;,&#xd;
-        &quot;bank&quot;:null,&#xd;
-        &quot;chequeNo&quot;:null,&#xd;
-        &quot;company&quot;:null&#xd;
-    },&#xd;
-    &quot;orderinfoSaveStatus&quot;:200,&#xd;
-    &quot;orderSource&quot;:0,&#xd;
-    &quot;apedxInfoIds&quot;:&quot;&quot;,&#xd;
-    &quot;contractList&quot;:[&#xd;
+    &quot;orderinfoSaveStatus&quot;: 200,&#xd;
+    &quot;orderSource&quot;: 0,&#xd;
+    &quot;apedxInfoIds&quot;: &quot;&quot;,&#xd;
+    &quot;contractList&quot;: [&#xd;
         {&#xd;
-            &quot;productIds&quot;:${classTypeIdASclassId},&#xd;
-            &quot;classGradeId&quot;:null,&#xd;
-            &quot;centraId&quot;:${centraId_loginUser},&#xd;
-            &quot;brandId&quot;:1,&#xd;
-            &quot;enteredClassHours&quot;:0,&#xd;
-            &quot;enrollType&quot;:${enrollType},&#xd;
-            &quot;payType&quot;:2,&#xd;
-            &quot;payAmt&quot;:${sumTotalAmt},&#xd;
-            &quot;productDetailIdList&quot;:${classUnitId_arr},&#xd;
-            &quot;couponIds&quot;:[&#xd;
 &#xd;
-            ],&#xd;
-            &quot;redeemIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;promotionIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;bundledDiscountIds&quot;:[&#xd;
-&#xd;
-            ],&#xd;
-            &quot;paymentPlanDTO&quot;:{&#xd;
-                &quot;couponIds&quot;:[&#xd;
-&#xd;
-                ],&#xd;
-                &quot;promotionIds&quot;:[&#xd;
-&#xd;
-                ],&#xd;
-                &quot;redeemIds&quot;:[&#xd;
-&#xd;
-                ]&#xd;
+            &quot;productIds&quot;: ${idASclassTypeId},&#xd;
+            &quot;classGradeId&quot;: null,&#xd;
+            &quot;centraId&quot;: ${centraId_loginUser},&#xd;
+            &quot;brandId&quot;: 1,&#xd;
+            &quot;enteredClassHours&quot;: 0,&#xd;
+            &quot;enrollType&quot;: ${enrollType},&#xd;
+            &quot;payType&quot;: 2,&#xd;
+            &quot;payAmt&quot;: ${sumTotalAmt},&#xd;
+            &quot;productDetailFlag&quot;: &quot;${productDetailFlag}&quot;,&#xd;
+            &quot;couponIds&quot;: [],&#xd;
+            &quot;redeemIds&quot;: [],&#xd;
+            &quot;promotionIds&quot;: [],&#xd;
+            &quot;bundledDiscountIds&quot;: [],&#xd;
+            &quot;paymentPlanDTO&quot;: {&#xd;
+                &quot;couponIds&quot;: [],&#xd;
+                &quot;promotionIds&quot;: [],&#xd;
+                &quot;redeemIds&quot;: []&#xd;
             }&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;payMethodDTOS&quot;: [&#xd;
+        {&#xd;
+            &quot;payMode&quot;: 200,&#xd;
+            &quot;otherPayMode&quot;: 200,&#xd;
+            &quot;bankRate&quot;: null,&#xd;
+            &quot;bankAccount&quot;: null,&#xd;
+            &quot;referenceNumber&quot;: null,&#xd;
+            &quot;payAmount&quot;: ${sumTotalAmt},&#xd;
+            &quot;tradeDateStr&quot;: null,&#xd;
+            &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
+            &quot;bank&quot;: null,&#xd;
+            &quot;chequeNo&quot;: null,&#xd;
+            &quot;company&quot;: null&#xd;
         }&#xd;
     ]&#xd;
 }</stringProp>
@@ -3503,7 +3651,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           <stringProp name="HTTPSampler.domain">${addressMic}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/orderinfo_server/order-info/insertOrderinfo</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -3581,6 +3729,16 @@ vars.put(&quot;classUnitId_arr&quot;,s);
             <stringProp name="RegexExtractor.default">Error_isLeads</stringProp>
             <stringProp name="RegexExtractor.match_number">1</stringProp>
           </RegexExtractor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-604695343">{&quot;status&quot;:200,&quot;message&quot;:&quot;操作成功！&quot;,&quot;data&quot;:</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="review?--学员复核" enabled="true">
@@ -4681,7 +4839,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="kaiban" enabled="true"/>
+        <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="kaiban" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="updateOpenClassApply--开班" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -4764,8 +4922,8 @@ vars.put(&quot;classUnitId_arr&quot;,s);
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="【开班】" enabled="false">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="【开班】" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
@@ -5077,7 +5235,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
         </BeanShellSampler>
         <hashTree/>
-        <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="fangban" enabled="true"/>
+        <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="kaiban" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="getClazzList" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5202,7 +5360,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="审批流【mysql】[开班]" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="审批流【mysql】[开班]" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -5223,12 +5381,12 @@ vars.put(&quot;classUnitId_arr&quot;,s);
           <collectionProp name="Arguments.arguments">
             <elementProp name="preClassCode" elementType="Argument">
               <stringProp name="Argument.name">preClassCode</stringProp>
-              <stringProp name="Argument.value">K1</stringProp>
+              <stringProp name="Argument.value">XG</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="codeJSQ" elementType="Argument">
               <stringProp name="Argument.name">codeJSQ</stringProp>
-              <stringProp name="Argument.value">08081</stringProp>
+              <stringProp name="Argument.value">083105</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userNameSubmmitor" elementType="Argument">
@@ -5939,7 +6097,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 </RegexExtractor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buildClassApproval.do1----【放班】" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="openClassApproval.do?----【开班】" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="id" elementType="HTTPArgument">
@@ -5972,7 +6130,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                     </elementProp>
                     <elementProp name="type" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">4</stringProp>
+                      <stringProp name="Argument.value">5</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">type</stringProp>
@@ -5990,7 +6148,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.protocol"></stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/COS/clazz/buildClassApproval.do?</stringProp>
+                <stringProp name="HTTPSampler.path">/COS/clazz/openClassApproval.do?</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6014,7 +6172,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                   <stringProp name="TestPlan.comments">getApprovalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.useHeaders">code</stringProp>
-                  <stringProp name="RegexExtractor.refname">code</stringProp>
+                  <stringProp name="RegexExtractor.refname">approvalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.regex">(.+?)$</stringProp>
                   <stringProp name="RegexExtractor.template">$1$</stringProp>
                   <stringProp name="RegexExtractor.default">Error_approvalStatusCode</stringProp>
@@ -6143,7 +6301,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 </RegexExtractor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buildClassApproval.do1----【放班】" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="openClassApproval.do?----【开班】" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="id" elementType="HTTPArgument">
@@ -6176,7 +6334,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                     </elementProp>
                     <elementProp name="type" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">4</stringProp>
+                      <stringProp name="Argument.value">5</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">type</stringProp>
@@ -6194,7 +6352,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.protocol"></stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/COS/clazz/buildClassApproval.do?</stringProp>
+                <stringProp name="HTTPSampler.path">/COS/clazz/openClassApproval.do?</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6218,7 +6376,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                   <stringProp name="TestPlan.comments">getApprovalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.useHeaders">code</stringProp>
-                  <stringProp name="RegexExtractor.refname">code</stringProp>
+                  <stringProp name="RegexExtractor.refname">approvalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.regex">(.+?)$</stringProp>
                   <stringProp name="RegexExtractor.template">$1$</stringProp>
                   <stringProp name="RegexExtractor.default">Error_approvalStatusCode</stringProp>
@@ -6341,7 +6499,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 </RegexExtractor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buildClassApproval.do1----【放班】" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="openClassApproval.do?----【开班】" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="id" elementType="HTTPArgument">
@@ -6374,7 +6532,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                     </elementProp>
                     <elementProp name="type" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">4</stringProp>
+                      <stringProp name="Argument.value">5</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">type</stringProp>
@@ -6392,7 +6550,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.protocol"></stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/COS/clazz/buildClassApproval.do?</stringProp>
+                <stringProp name="HTTPSampler.path">/COS/clazz/openClassApproval.do?</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6416,7 +6574,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                   <stringProp name="TestPlan.comments">getApprovalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.useHeaders">code</stringProp>
-                  <stringProp name="RegexExtractor.refname">code</stringProp>
+                  <stringProp name="RegexExtractor.refname">approvalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.regex">(.+?)$</stringProp>
                   <stringProp name="RegexExtractor.template">$1$</stringProp>
                   <stringProp name="RegexExtractor.default">Error_approvalStatusCode</stringProp>
@@ -6539,7 +6697,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 </RegexExtractor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buildClassApproval.do1----【放班】" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="openClassApproval.do?----【开班】" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="id" elementType="HTTPArgument">
@@ -6572,7 +6730,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                     </elementProp>
                     <elementProp name="type" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">4</stringProp>
+                      <stringProp name="Argument.value">5</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">type</stringProp>
@@ -6590,7 +6748,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.protocol"></stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/COS/clazz/buildClassApproval.do?</stringProp>
+                <stringProp name="HTTPSampler.path">/COS/clazz/openClassApproval.do?</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6614,7 +6772,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
                 <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                   <stringProp name="TestPlan.comments">getApprovalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.useHeaders">code</stringProp>
-                  <stringProp name="RegexExtractor.refname">code</stringProp>
+                  <stringProp name="RegexExtractor.refname">approvalStatusCode</stringProp>
                   <stringProp name="RegexExtractor.regex">(.+?)$</stringProp>
                   <stringProp name="RegexExtractor.template">$1$</stringProp>
                   <stringProp name="RegexExtractor.default">Error_approvalStatusCode</stringProp>
@@ -6703,7 +6861,7 @@ vars.put(&quot;classUnitId_arr&quot;,s);
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script/resultTree/paikezuhe_ResultTree/paikezuhe.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

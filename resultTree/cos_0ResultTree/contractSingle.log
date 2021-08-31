@@ -1,0 +1,61 @@
+2021-08-31 18:14:33,034 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-08-31 18:14:33,052 INFO o.a.j.JMeter: Loading user properties from: /Library/Jmeter/apache-jmeter-5.3/bin/user.properties
+2021-08-31 18:14:33,053 INFO o.a.j.JMeter: Loading system properties from: /Library/Jmeter/apache-jmeter-5.3/bin/system.properties
+2021-08-31 18:14:33,055 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2021-08-31 18:14:33,055 INFO o.a.j.JMeter: Version 5.3
+2021-08-31 18:14:33,055 INFO o.a.j.JMeter: java.version=1.8.0_191
+2021-08-31 18:14:33,055 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-08-31 18:14:33,055 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-08-31 18:14:33,056 INFO o.a.j.JMeter: os.arch=x86_64
+2021-08-31 18:14:33,056 INFO o.a.j.JMeter: os.version=10.15.6
+2021-08-31 18:14:33,056 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-08-31 18:14:33,056 INFO o.a.j.JMeter: java.awt.headless=true
+2021-08-31 18:14:33,056 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-08-31 18:14:33,056 INFO o.a.j.JMeter: Available Processors =8
+2021-08-31 18:14:33,060 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-08-31 18:14:33,061 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-08-31 18:14:33,061 INFO o.a.j.JMeter: JMeterHome=/Library/Jmeter/apache-jmeter-5.3
+2021-08-31 18:14:33,061 INFO o.a.j.JMeter: user.dir  =/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script
+2021-08-31 18:14:33,061 INFO o.a.j.JMeter: PWD       =/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script
+2021-08-31 18:14:33,064 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: liuyunpengdeMacBook-Pro.local FullName: localhost
+2021-08-31 18:14:33,068 INFO o.a.j.s.FileServer: Default base='/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script'
+2021-08-31 18:14:33,072 INFO o.a.j.s.FileServer: Set new base='/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script'
+2021-08-31 18:14:33,180 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-08-31 18:14:33,194 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-08-31 18:14:33,198 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-08-31 18:14:33,203 INFO o.a.j.s.SaveService: Loading file: Test Plan.jmx
+2021-08-31 18:14:33,246 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:14:33,246 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:14:33,246 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:14:33,246 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-31 18:14:33,246 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-08-31 18:14:33,246 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-08-31 18:14:33,502 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-08-31 18:14:33,506 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-08-31 18:14:33,507 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-08-31 18:14:33,507 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-08-31 18:14:33,511 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-08-31 18:14:33,512 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-08-31 18:14:33,748 INFO o.a.j.JMeter: Running test (1630404873748)
+2021-08-31 18:14:33,784 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : contranct--单产品订单生成学员
+2021-08-31 18:14:33,784 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group contranct--单产品订单生成学员.
+2021-08-31 18:14:33,785 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-08-31 18:14:33,785 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2021-08-31 18:14:33,806 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-08-31 18:14:33,806 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-08-31 18:14:33,810 INFO o.a.j.t.JMeterThread: Thread started: contranct--单产品订单生成学员 1-1
+2021-08-31 18:14:33,830 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = liuyunpengdeMacBook-Pro.local
+2021-08-31 18:14:33,838 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-08-31 18:14:33,840 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-08-31 18:14:33,841 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to utf-8
+2021-08-31 18:14:33,841 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-08-31 18:14:33,841 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-08-31 18:14:34,075 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =    3.1/s Avg:   157 Min:   157 Max:   157 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2021-08-31 18:14:35,533 INFO o.a.j.u.BeanShellTestElement: nameASflag_1
+2021-08-31 18:14:35,533 INFO o.a.j.u.BeanShellTestElement: 教辅用书,
+2021-08-31 18:14:35,533 INFO o.a.j.u.BeanShellTestElement: nameASflag_2
+2021-08-31 18:14:38,108 INFO o.a.j.t.JMeterThread: Thread is done: contranct--单产品订单生成学员 1-1
+2021-08-31 18:14:38,108 INFO o.a.j.t.JMeterThread: Thread finished: contranct--单产品订单生成学员 1-1
+2021-08-31 18:14:38,111 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-08-31 18:14:38,111 INFO o.a.j.r.Summariser: summary +     14 in 00:00:04 =    3.5/s Avg:   281 Min:     2 Max:  1431 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+2021-08-31 18:14:38,112 INFO o.a.j.r.Summariser: summary =     15 in 00:00:04 =    3.4/s Avg:   273 Min:     2 Max:  1431 Err:     0 (0.00%)
