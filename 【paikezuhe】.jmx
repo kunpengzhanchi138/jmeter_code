@@ -21,33 +21,33 @@
           </elementProp>
           <elementProp name="address" elementType="Argument">
             <stringProp name="Argument.name">address</stringProp>
-            <stringProp name="Argument.value">cos-uat.risechina.com</stringProp>
+            <stringProp name="Argument.value">cos-test.risechina.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="addressMic" elementType="Argument">
             <stringProp name="Argument.name">addressMic</stringProp>
-            <stringProp name="Argument.value">kcos-gateway-uat.risechina.com</stringProp>
+            <stringProp name="Argument.value">kcos-gateway-test.risechina.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userPassword" elementType="Argument">
             <stringProp name="Argument.name">userPassword</stringProp>
-            <stringProp name="Argument.value">uat</stringProp>
+            <stringProp name="Argument.value">test</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="classTypeIdASclassId" elementType="Argument">
             <stringProp name="Argument.name">classTypeIdASclassId</stringProp>
-            <stringProp name="Argument.value">124</stringProp>
+            <stringProp name="Argument.value">4423</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">班型id</stringProp>
           </elementProp>
           <elementProp name="preClassCode" elementType="Argument">
             <stringProp name="Argument.name">preClassCode</stringProp>
-            <stringProp name="Argument.value">XG</stringProp>
+            <stringProp name="Argument.value">BJ</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="codeJSQ" elementType="Argument">
             <stringProp name="Argument.name">codeJSQ</stringProp>
-            <stringProp name="Argument.value">083106</stringProp>
+            <stringProp name="Argument.value">09035</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userNameAdmin" elementType="Argument">
@@ -62,12 +62,12 @@
           </elementProp>
           <elementProp name="stuMobile" elementType="Argument">
             <stringProp name="Argument.name">stuMobile</stringProp>
-            <stringProp name="Argument.value">18611521858</stringProp>
+            <stringProp name="Argument.value">13301379581</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="classTypeName" elementType="Argument">
             <stringProp name="Argument.name">classTypeName</stringProp>
-            <stringProp name="Argument.value">Prek 160版 常规班</stringProp>
+            <stringProp name="Argument.value">S1 174版 常规班</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -4226,7 +4226,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
                 </elementProp>
                 <elementProp name="classId" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">124</stringProp>
+                  <stringProp name="Argument.value">${classTypeIdASclassId}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">classId</stringProp>
@@ -4678,8 +4678,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
   &quot;teacherMode&quot;:4,&#xd;
   &quot;teacherMaster&quot;:&quot;&quot;,&#xd;
   &quot;teacherAssistant&quot;:&quot;&quot;,&#xd;
-  &quot;openingCeremonyDate&quot;:&quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
-  &quot;expectStartDate&quot;:&quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
+  &quot;openingCeremonyDate&quot;:&quot;2021-09-05&quot;,&#xd;
+  &quot;expectStartDate&quot;:&quot;2021-09-05&quot;,&#xd;
   &quot;headMaster&quot;:&quot;&quot;,&#xd;
   &quot;comments&quot;:&quot;备注&quot;,&#xd;
   &quot;classGradeScheduleTeacherList&quot;:[&#xd;
@@ -4772,6 +4772,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">${__time(yyyy-MM-dd)}</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getidASteacherId" enabled="false">
@@ -6861,7 +6862,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script/resultTree/paikezuhe_ResultTree/paikezuhe.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
