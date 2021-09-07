@@ -789,7 +789,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="审批流【mysql】[DEBUG]---" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="审批流【mysql】[DEBUG]---" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -820,7 +820,7 @@
             <stringProp name="-1338173431">dbname</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-1582971523">
+            <collectionProp name="-121226762">
               <stringProp name="1634">35</stringProp>
               <stringProp name="70802320">K2128</stringProp>
               <stringProp name="-92957159">bja8844</stringProp>
@@ -3572,6 +3572,13 @@
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">productLineId</stringProp>
+                </elementProp>
+                <elementProp name="foreignCourseNum" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">80</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">foreignCourseNum</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -11094,7 +11101,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ClassType【新建班型】【v7000】【new】【各品牌】" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ClassType【新建班型】【v7000】【new】【各品牌】" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -11129,12 +11136,12 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="classTypeName0" elementType="Argument">
               <stringProp name="Argument.name">classTypeName0</stringProp>
-              <stringProp name="Argument.value">0804基础英语2</stringProp>
+              <stringProp name="Argument.value">0907基础</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classTypeName1" elementType="Argument">
               <stringProp name="Argument.name">classTypeName1</stringProp>
-              <stringProp name="Argument.value">0804非基础英语2</stringProp>
+              <stringProp name="Argument.value">0907非基础</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="sendOrganizaitonId" elementType="Argument">
@@ -11144,9 +11151,9 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="classLevelId" elementType="Argument">
               <stringProp name="Argument.name">classLevelId</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.value">45</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
-              <stringProp name="Argument.desc">课程阶段：1prek 2k 3prerise 4s1 5s2 6s3 7s4 8s5 9PreMidele 10RiseUp 11SK 12SS 23E1 24E2 25E3 35测试课程阶段 42L1 43L2 44L3</stringProp>
+              <stringProp name="Argument.desc">课程阶段：1prek 2k 3prerise 4s1 5s2 6s3 7s4 8s5 9PreMidele 10RiseUp 11SK 12SS 23E1 24E2 25E3 35测试课程阶段 45L1 46L2 47L3 48B1 60H1 61H2 62L1-2021  63T1 64T2 65T3</stringProp>
             </elementProp>
             <elementProp name="classCategoryId" elementType="Argument">
               <stringProp name="Argument.name">classCategoryId</stringProp>
@@ -11162,7 +11169,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="productLineId" elementType="Argument">
               <stringProp name="Argument.name">productLineId</stringProp>
-              <stringProp name="Argument.value">4</stringProp>
+              <stringProp name="Argument.value">2</stringProp>
               <stringProp name="Argument.desc">产品线：1英语 2然点 3海芽 4riseup 3cantalk 6游学 7steam 8精品</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -11415,6 +11422,13 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">productLineId</stringProp>
+                </elementProp>
+                <elementProp name="foreignCourseNum" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">80</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">foreignCourseNum</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
