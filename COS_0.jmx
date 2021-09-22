@@ -16,7 +16,7 @@
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">11</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -39,11 +39,11 @@
             <stringProp name="716014134">approvalInterface</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-686757626">
+            <collectionProp name="1472882425">
               <stringProp name="48905">191</stringProp>
-              <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
+              <stringProp name="-687229589">cos-test.risechina.com</stringProp>
               <stringProp name="1958049040">1001660</stringProp>
-              <stringProp name="115560">uat</stringProp>
+              <stringProp name="3556498">test</stringProp>
               <stringProp name="1540255">2353</stringProp>
               <stringProp name="0"></stringProp>
               <stringProp name="-1924448950">clazz/buildClassApproval.do?</stringProp>
@@ -54,8 +54,8 @@
         </UserParameters>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="计数器" enabled="true">
-          <stringProp name="CounterConfig.start">37</stringProp>
-          <stringProp name="CounterConfig.end">40</stringProp>
+          <stringProp name="CounterConfig.start">42</stringProp>
+          <stringProp name="CounterConfig.end">45</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">iphoneNum</stringProp>
           <stringProp name="CounterConfig.format">00000000</stringProp>
@@ -785,11 +785,11 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/liuyunpeng/Documents/RISE/CODE/github_code/jmeter_code/jmeter_script/jmeter_code_script/resultTree/cos_0ResultTree/zixunliang.jtl</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="审批流【mysql】[DEBUG]---" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="审批流【mysql】[DEBUG]---" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -820,13 +820,13 @@
             <stringProp name="-1338173431">dbname</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-121226762">
-              <stringProp name="1634">35</stringProp>
-              <stringProp name="70802320">K2128</stringProp>
+            <collectionProp name="-1291702835">
+              <stringProp name="1572">15</stringProp>
+              <stringProp name="29100775">王凌晨</stringProp>
               <stringProp name="-92957159">bja8844</stringProp>
-              <stringProp name="3556498">test</stringProp>
-              <stringProp name="-687229589">cos-test.risechina.com</stringProp>
-              <stringProp name="-1932911425">kcos-gateway-test.risechina.com</stringProp>
+              <stringProp name="115560">uat</stringProp>
+              <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
+              <stringProp name="-1043835103">kcos-gateway-uat.risechina.com</stringProp>
               <stringProp name="1540255">2353</stringProp>
               <stringProp name="-109307118">currentProposerOrgId</stringProp>
               <stringProp name="-990080354">10.19.144.123</stringProp>
@@ -5897,13 +5897,13 @@
             <stringProp name="428369533">classTypeName</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="312908567">
+            <collectionProp name="1126241547">
               <stringProp name="-92957159">bja8844</stringProp>
               <stringProp name="115560">uat</stringProp>
               <stringProp name="-2112030475">cos-uat.risechina.com</stringProp>
               <stringProp name="-1043835103">kcos-gateway-uat.risechina.com</stringProp>
-              <stringProp name="416699889">18800000000</stringProp>
-              <stringProp name="420817891">Prek 160版 半天班-线下-分3期（52+56+52）</stringProp>
+              <stringProp name="-710043695">13522378992</stringProp>
+              <stringProp name="687126">Prek 160版 常规班</stringProp>
             </collectionProp>
           </collectionProp>
           <boolProp name="UserParameters.per_iteration">false</boolProp>
@@ -11101,7 +11101,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ClassType【新建班型】【v7000】【new】【各品牌】" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ClassType【新建班型】【v7000】【new】【各品牌】" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -11136,12 +11136,12 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="classTypeName0" elementType="Argument">
               <stringProp name="Argument.name">classTypeName0</stringProp>
-              <stringProp name="Argument.value">0907基础</stringProp>
+              <stringProp name="Argument.value">091601海牙基础班型</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classTypeName1" elementType="Argument">
               <stringProp name="Argument.name">classTypeName1</stringProp>
-              <stringProp name="Argument.value">0907非基础</stringProp>
+              <stringProp name="Argument.value">091601海牙非基础班型</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="sendOrganizaitonId" elementType="Argument">
@@ -11151,9 +11151,9 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="classLevelId" elementType="Argument">
               <stringProp name="Argument.name">classLevelId</stringProp>
-              <stringProp name="Argument.value">45</stringProp>
+              <stringProp name="Argument.value">66</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
-              <stringProp name="Argument.desc">课程阶段：1prek 2k 3prerise 4s1 5s2 6s3 7s4 8s5 9PreMidele 10RiseUp 11SK 12SS 23E1 24E2 25E3 35测试课程阶段 45L1 46L2 47L3 48B1 60H1 61H2 62L1-2021  63T1 64T2 65T3</stringProp>
+              <stringProp name="Argument.desc">课程阶段：1prek 2k 3prerise 4s1 5s2 6s3 7s4 8s5 9PreMidele 10RiseUp 11SK 12SS 23E1 24E2 25E3 35测试课程阶段 45L1 46L2 47L3 48B1 60H1 61H2 62L1-2021  63T1 64T2 65T3 66P1</stringProp>
             </elementProp>
             <elementProp name="classCategoryId" elementType="Argument">
               <stringProp name="Argument.name">classCategoryId</stringProp>
@@ -11169,8 +11169,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="productLineId" elementType="Argument">
               <stringProp name="Argument.name">productLineId</stringProp>
-              <stringProp name="Argument.value">2</stringProp>
-              <stringProp name="Argument.desc">产品线：1英语 2然点 3海芽 4riseup 3cantalk 6游学 7steam 8精品</stringProp>
+              <stringProp name="Argument.value">10</stringProp>
+              <stringProp name="Argument.desc">产品线：1英语 2然点 3海芽 4riseup 3cantalk 6游学 7steam 8精品 10玛特</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classType" elementType="Argument">

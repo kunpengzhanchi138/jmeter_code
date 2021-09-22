@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1631671793481,170,login_admin----获取admin账号cookie,200,OK,线程组--【新建咨询量】【校长权限】 1-1,text,true,,622,187,1,1,http://cos-uat.risechina.com/COS/login/login.do?username=2353&password=uat&_=1631671793481,169,0,23
+1631671793653,63,showEmpList.do0----用admin查申请人信息,200,OK,线程组--【新建咨询量】【校长权限】 1-1,text,true,,1016,441,1,1,http://cos-uat.risechina.com/COS/employee/showEmpList.do,63,0,0
+1631671793717,67,showEmpList.do0----用admin查申校长,200,OK,线程组--【新建咨询量】【校长权限】 1-1,text,true,,993,467,1,1,http://cos-uat.risechina.com/COS/employee/showEmpList.do,67,0,0
+1631671793785,66,login0----咨询人登陆cookie获取,200,OK,线程组--【新建咨询量】【校长权限】 1-1,text,true,,622,189,1,1,http://cos-uat.risechina.com/COS/login/login.do?username=sz0352&password=uat&_=1631671793785,66,0,0
+1631671793852,179,addOptt.do --咨询加,200,OK,线程组--【新建咨询量】【校长权限】 1-1,text,false,Test failed: text expected to contain /新建咨询量成功/,445,989,1,1,http://cos-uat.risechina.com/COS/optt/addOptt.do,179,0,0

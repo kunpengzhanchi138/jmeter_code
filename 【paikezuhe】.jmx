@@ -47,7 +47,7 @@
           </elementProp>
           <elementProp name="codeJSQ" elementType="Argument">
             <stringProp name="Argument.name">codeJSQ</stringProp>
-            <stringProp name="Argument.value">0906</stringProp>
+            <stringProp name="Argument.value">09145</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userNameAdmin" elementType="Argument">
@@ -62,7 +62,7 @@
           </elementProp>
           <elementProp name="stuMobile" elementType="Argument">
             <stringProp name="Argument.name">stuMobile</stringProp>
-            <stringProp name="Argument.value">13301379581</stringProp>
+            <stringProp name="Argument.value">18800000002</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="classTypeName" elementType="Argument">
@@ -4395,7 +4395,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[&#xd;
     {&#xd;
-        &quot;studentId&quot;: ${studentId},&#xd;
+        &quot;studentId&quot;: 12594842,&#xd;
         &quot;contractId&quot;: ${contractId},&#xd;
         &quot;classId&quot;: ${classTypeIdASclassId},&#xd;
         &quot;classHours&quot;: ${classHours},&#xd;
@@ -4432,6 +4432,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">${studentId}</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="getstudentId" enabled="true">
@@ -4678,8 +4679,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
   &quot;teacherMode&quot;:4,&#xd;
   &quot;teacherMaster&quot;:&quot;&quot;,&#xd;
   &quot;teacherAssistant&quot;:&quot;&quot;,&#xd;
-  &quot;openingCeremonyDate&quot;:&quot;2021-09-05&quot;,&#xd;
-  &quot;expectStartDate&quot;:&quot;2021-09-05&quot;,&#xd;
+  &quot;openingCeremonyDate&quot;:&quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
+  &quot;expectStartDate&quot;:&quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
   &quot;headMaster&quot;:&quot;&quot;,&#xd;
   &quot;comments&quot;:&quot;备注&quot;,&#xd;
   &quot;classGradeScheduleTeacherList&quot;:[&#xd;
