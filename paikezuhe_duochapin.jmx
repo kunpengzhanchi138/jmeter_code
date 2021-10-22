@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="【排课组合】" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="[排课组合][多产品]" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
@@ -21,27 +21,33 @@
           </elementProp>
           <elementProp name="address" elementType="Argument">
             <stringProp name="Argument.name">address</stringProp>
-            <stringProp name="Argument.value">cos-test.risechina.com</stringProp>
+            <stringProp name="Argument.value">cos-dev.risechina.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="addressMic" elementType="Argument">
             <stringProp name="Argument.name">addressMic</stringProp>
-            <stringProp name="Argument.value">kcos-gateway-test.risechina.com</stringProp>
+            <stringProp name="Argument.value">kcos-gateway-dev.risechina.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userPassword" elementType="Argument">
             <stringProp name="Argument.name">userPassword</stringProp>
-            <stringProp name="Argument.value">test</stringProp>
+            <stringProp name="Argument.value">dev</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="classTypeIdASclassId" elementType="Argument">
+            <stringProp name="Argument.name">classTypeIdASclassId</stringProp>
+            <stringProp name="Argument.value">4423</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">班型id</stringProp>
           </elementProp>
           <elementProp name="preClassCode" elementType="Argument">
             <stringProp name="Argument.name">preClassCode</stringProp>
-            <stringProp name="Argument.value">YAHAO</stringProp>
+            <stringProp name="Argument.value">BJ</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="codeJSQ" elementType="Argument">
             <stringProp name="Argument.name">codeJSQ</stringProp>
-            <stringProp name="Argument.value">092704</stringProp>
+            <stringProp name="Argument.value">0920</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userNameAdmin" elementType="Argument">
@@ -61,18 +67,13 @@
           </elementProp>
           <elementProp name="classTypeName" elementType="Argument">
             <stringProp name="Argument.name">classTypeName</stringProp>
-            <stringProp name="Argument.value">D3 174版 常规班</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="orgName" elementType="Argument">
-            <stringProp name="Argument.name">orgName</stringProp>
-            <stringProp name="Argument.value">宝山</stringProp>
+            <stringProp name="Argument.value">S1 174版 常规班</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="[建班][排班][放班]" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="[建班][排班][放班]" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -90,71 +91,55 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="userNameSubmmitor" elementType="Argument">
               <stringProp name="Argument.name">userNameSubmmitor</stringProp>
-              <stringProp name="Argument.value">sh1910</stringProp>
+              <stringProp name="Argument.value">914224</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="address" elementType="Argument">
               <stringProp name="Argument.name">address</stringProp>
-              <stringProp name="Argument.value">cos-test.risechina.com</stringProp>
+              <stringProp name="Argument.value">cos-dev.risechina.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="addressMic" elementType="Argument">
               <stringProp name="Argument.name">addressMic</stringProp>
-              <stringProp name="Argument.value">kcos-gateway-test.risechina.com</stringProp>
+              <stringProp name="Argument.value">kcos-gateway-dev.risechina.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userPassword" elementType="Argument">
               <stringProp name="Argument.name">userPassword</stringProp>
-              <stringProp name="Argument.value">test</stringProp>
+              <stringProp name="Argument.value">dev</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="classTypeIdASclassId" elementType="Argument">
+              <stringProp name="Argument.name">classTypeIdASclassId</stringProp>
+              <stringProp name="Argument.value">124</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">班型id</stringProp>
             </elementProp>
             <elementProp name="preClassCode" elementType="Argument">
               <stringProp name="Argument.name">preClassCode</stringProp>
-              <stringProp name="Argument.value">D3</stringProp>
+              <stringProp name="Argument.value">K1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="codeJSQ" elementType="Argument">
               <stringProp name="Argument.name">codeJSQ</stringProp>
-              <stringProp name="Argument.value">08084</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="classTypeName" elementType="Argument">
-              <stringProp name="Argument.name">classTypeName</stringProp>
-              <stringProp name="Argument.value">D3 174版 常规班</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="orgName" elementType="Argument">
-              <stringProp name="Argument.name">orgName</stringProp>
-              <stringProp name="Argument.value">宝山</stringProp>
+              <stringProp name="Argument.value">08081</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager-cookie" enabled="false">
-          <collectionProp name="CookieManager.cookies">
-            <elementProp name="cookie" elementType="Cookie" testname="cookie">
-              <stringProp name="Cookie.value">${__property(cookie)}</stringProp>
-              <stringProp name="Cookie.domain">${addressMic}</stringProp>
-              <stringProp name="Cookie.path">/</stringProp>
-              <boolProp name="Cookie.secure">false</boolProp>
-              <longProp name="Cookie.expires">0</longProp>
-              <boolProp name="Cookie.path_specified">true</boolProp>
-              <boolProp name="Cookie.domain_specified">true</boolProp>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">token</stringProp>
+              <stringProp name="Header.value">${__property(token)}</stringProp>
             </elementProp>
-            <elementProp name="token" elementType="Cookie" testname="token">
-              <stringProp name="Cookie.value">${__property(token)}</stringProp>
-              <stringProp name="Cookie.domain">${addressMic}</stringProp>
-              <stringProp name="Cookie.path">/</stringProp>
-              <boolProp name="Cookie.secure">false</boolProp>
-              <longProp name="Cookie.expires">0</longProp>
-              <boolProp name="Cookie.path_specified">true</boolProp>
-              <boolProp name="Cookie.domain_specified">true</boolProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
             </elementProp>
           </collectionProp>
-          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
-          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
-        </CookieManager>
+        </HeaderManager>
         <hashTree/>
         <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="login" enabled="true"/>
         <hashTree>
@@ -246,8 +231,7 @@
             <hashTree/>
           </hashTree>
           <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler--将token设为全局变量" enabled="true">
-            <stringProp name="BeanShellSampler.query">${__setProperty(token,${LoginTokenSubmmitor},)}
-${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
+            <stringProp name="BeanShellSampler.query">${__setProperty(token,${LoginTokenSubmmitor},)}</stringProp>
             <stringProp name="BeanShellSampler.filename"></stringProp>
             <stringProp name="BeanShellSampler.parameters"></stringProp>
             <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
@@ -256,323 +240,6 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
         </hashTree>
         <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="createClass--建班" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查版型" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="className" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">${classTypeName}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">className</stringProp>
-                </elementProp>
-                <elementProp name="classShortname" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">classShortname</stringProp>
-                </elementProp>
-                <elementProp name="status" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">0</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">status</stringProp>
-                </elementProp>
-                <elementProp name="classLevelId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">classLevelId</stringProp>
-                </elementProp>
-                <elementProp name="classCategoryId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">classCategoryId</stringProp>
-                </elementProp>
-                <elementProp name="oldclassType" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">oldclassType</stringProp>
-                </elementProp>
-                <elementProp name="isInstallment" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">isInstallment</stringProp>
-                </elementProp>
-                <elementProp name="base" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">0</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">base</stringProp>
-                </elementProp>
-                <elementProp name="onlineSale" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">onlineSale</stringProp>
-                </elementProp>
-                <elementProp name="classAssociate" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">classAssociate</stringProp>
-                </elementProp>
-                <elementProp name="lessonMode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">lessonMode</stringProp>
-                </elementProp>
-                <elementProp name="productLineId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">productLineId</stringProp>
-                </elementProp>
-                <elementProp name="page" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">page</stringProp>
-                </elementProp>
-                <elementProp name="rows" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">15</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">rows</stringProp>
-                </elementProp>
-                <elementProp name="sort" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">id</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sort</stringProp>
-                </elementProp>
-                <elementProp name="order" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">className</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">order</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${address}</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/COS/class/getlist.do?brandId=1</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">用随机数拼接成班号新建一个班级</stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-814722413">&quot;rows&quot;:</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="GETidASclassTypeId&amp;productLineIds&amp;classType" enabled="true">
-              <stringProp name="TestPlan.comments">productLineId</stringProp>
-              <stringProp name="JSONPostProcessor.referenceNames">idASclassTypeId;productLineId</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">$.rows[0].id;$.rows[0].productLineId</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1;1</stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">Error_idASclassTypeId;Error_productLineId</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-cookie" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">${__property(cookie)}</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查机构" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="booksetId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">booksetId</stringProp>
-                </elementProp>
-                <elementProp name="orgCode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">orgCode</stringProp>
-                </elementProp>
-                <elementProp name="orgName" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">${orgName}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">orgName</stringProp>
-                </elementProp>
-                <elementProp name="deptIds" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">deptIds</stringProp>
-                </elementProp>
-                <elementProp name="orgType" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">orgType</stringProp>
-                </elementProp>
-                <elementProp name="status" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">0</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">status</stringProp>
-                </elementProp>
-                <elementProp name="region" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">region</stringProp>
-                </elementProp>
-                <elementProp name="showOrgStatus" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">showOrgStatus</stringProp>
-                </elementProp>
-                <elementProp name="startDate" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">startDate</stringProp>
-                </elementProp>
-                <elementProp name="endDate" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">endDate</stringProp>
-                </elementProp>
-                <elementProp name="productLineId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">productLineId</stringProp>
-                </elementProp>
-                <elementProp name="page" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">page</stringProp>
-                </elementProp>
-                <elementProp name="rows" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">15</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">rows</stringProp>
-                </elementProp>
-                <elementProp name="sort" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">id</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sort</stringProp>
-                </elementProp>
-                <elementProp name="order" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">asc</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">order</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${address}</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/COS/organization/getlist.do</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">用随机数拼接成班号新建一个班级</stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="1082097287">&quot;rows&quot;</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="GETorgId" enabled="true">
-              <stringProp name="TestPlan.comments">productLineId</stringProp>
-              <stringProp name="JSONPostProcessor.referenceNames">orgId</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">$.rows[0].id</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">Error_productLineId</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-cookie" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">${__property(cookie)}</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="saveClassInfo" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -580,17 +247,16 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;brandId&quot;: 1,&#xd;
-    &quot;orgId&quot;: ${orgId},&#xd;
-    &quot;classGradeCode&quot;: &quot;${preClassCode}${codeJSQ}&quot;,&#xd;
-    &quot;productLineId&quot;: ${productLineId},&#xd;
-    &quot;classId&quot;: ${idASclassTypeId},&#xd;
-    &quot;classType&quot;: 1,&#xd;
-    &quot;expectStartDate&quot;: &quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
-    &quot;teachWay&quot;: 2,&#xd;
-    &quot;duration&quot;: 50,&#xd;
-    &quot;onlineDuration&quot;: 40,&#xd;
-    &quot;sourceId&quot;: &quot;&quot;&#xd;
+  &quot;brandId&quot;:1,&#xd;
+  &quot;classGradeCode&quot;:&quot;${preClassCode}${codeJSQ}&quot;,&#xd;
+  &quot;productLineId&quot;:1,&#xd;
+  &quot;classId&quot;:${classTypeIdASclassId},&#xd;
+  &quot;classType&quot;:1,&#xd;
+  &quot;expectStartDate&quot;:&quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
+  &quot;teachWay&quot;:2,&#xd;
+  &quot;duration&quot;:10,&#xd;
+  &quot;onlineDuration&quot;:5,&#xd;
+  &quot;sourceId&quot;:&quot;&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -599,7 +265,7 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
             <stringProp name="HTTPSampler.domain">${addressMic}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/teaching_server/clazz/saveClassInfo</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -633,18 +299,14 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-token" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">token</stringProp>
-                  <stringProp name="Header.value">${__property(token)}</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="getdataASclassId" enabled="false">
+              <stringProp name="RegexExtractor.useHeaders">true</stringProp>
+              <stringProp name="RegexExtractor.refname">dataASclassId</stringProp>
+              <stringProp name="RegexExtractor.regex">{&quot;code&quot;:200,&quot;msg&quot;:&quot;新建班级成功&quot;,&quot;errorInfo&quot;:&quot;&quot;,&quot;data&quot;:(.+?)}</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">Error_getdataASclassId</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="getClazzList" enabled="true">
@@ -691,7 +353,7 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
             <stringProp name="HTTPSampler.domain">${addressMic}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/teaching_server/clazz/getClazzList</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -725,21 +387,8 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-token" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">token</stringProp>
-                  <stringProp name="Header.value">${__property(token)}</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
           </hashTree>
-          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>
@@ -867,19 +516,6 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-token" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">token</stringProp>
-                  <stringProp name="Header.value">${__property(token)}</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
           </hashTree>
         </hashTree>
         <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="buildClassApply--放班" enabled="true"/>
@@ -923,19 +559,6 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
-            <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-token" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">token</stringProp>
-                  <stringProp name="Header.value">${__property(token)}</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -2466,7 +2089,7 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
         <longProp name="ThreadGroup.end_time">1606795994000</longProp>
       </ThreadGroup>
       <hashTree>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
           <collectionProp name="Arguments.arguments">
             <elementProp name="userNameAdmin" elementType="Argument">
               <stringProp name="Argument.name">userNameAdmin</stringProp>
@@ -2475,27 +2098,27 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
             </elementProp>
             <elementProp name="userPassword" elementType="Argument">
               <stringProp name="Argument.name">userPassword</stringProp>
-              <stringProp name="Argument.value">test</stringProp>
+              <stringProp name="Argument.value">uat</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="address" elementType="Argument">
               <stringProp name="Argument.name">address</stringProp>
-              <stringProp name="Argument.value">cos-test.risechina.com</stringProp>
+              <stringProp name="Argument.value">cos-uat.risechina.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="addressMic" elementType="Argument">
               <stringProp name="Argument.name">addressMic</stringProp>
-              <stringProp name="Argument.value">kcos-gateway-test.risechina.com</stringProp>
+              <stringProp name="Argument.value">kcos-gateway-uat.risechina.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="preTeacherCode" elementType="Argument">
               <stringProp name="Argument.name">preTeacherCode</stringProp>
-              <stringProp name="Argument.value">teache</stringProp>
+              <stringProp name="Argument.value">teacher</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="codeJSQ" elementType="Argument">
               <stringProp name="Argument.name">codeJSQ</stringProp>
-              <stringProp name="Argument.value">080803</stringProp>
+              <stringProp name="Argument.value">080801</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -2893,7 +2516,7 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--单产品订单生成学员" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="contranct--单产品订单生成学员" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2907,7 +2530,7 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
           <collectionProp name="Arguments.arguments">
             <elementProp name="userNameSubmmitor" elementType="Argument">
               <stringProp name="Argument.name">userNameSubmmitor</stringProp>
@@ -2916,17 +2539,17 @@ ${__setProperty(cookie,${LoginCookieSubmmitor},)}</stringProp>
             </elementProp>
             <elementProp name="address" elementType="Argument">
               <stringProp name="Argument.name">address</stringProp>
-              <stringProp name="Argument.value">cos-test.risechina.com</stringProp>
+              <stringProp name="Argument.value">cos-uat.risechina.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="addressMic" elementType="Argument">
               <stringProp name="Argument.name">addressMic</stringProp>
-              <stringProp name="Argument.value">kcos-gateway-test.risechina.com</stringProp>
+              <stringProp name="Argument.value">kcos-gateway-uat.risechina.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userPassword" elementType="Argument">
               <stringProp name="Argument.name">userPassword</stringProp>
-              <stringProp name="Argument.value">test</stringProp>
+              <stringProp name="Argument.value">uat</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classTypeIdASclassId" elementType="Argument">
