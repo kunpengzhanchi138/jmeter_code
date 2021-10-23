@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="COS_0" enabled="true">
-      <stringProp name="TestPlan.comments">基础脚本</stringProp>
+      <stringProp name="TestPlan.comments">基础脚本--urlencde、formdate</stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
@@ -16722,7 +16722,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
           <collectionProp name="Arguments.arguments">
             <elementProp name="userName_0" elementType="Argument">
               <stringProp name="Argument.name">userName_0</stringProp>
-              <stringProp name="Argument.value">bja8844</stringProp>
+              <stringProp name="Argument.value">sh1910</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userPassword" elementType="Argument">
@@ -16747,7 +16747,17 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </elementProp>
             <elementProp name="classTypeName" elementType="Argument">
               <stringProp name="Argument.name">classTypeName</stringProp>
-              <stringProp name="Argument.value">1022</stringProp>
+              <stringProp name="Argument.value">1022英语基础</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="orgName" elementType="Argument">
+              <stringProp name="Argument.name">orgName</stringProp>
+              <stringProp name="Argument.value">宝山</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="productLineId" elementType="Argument">
+              <stringProp name="Argument.name">productLineId</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -17001,7 +17011,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
     &quot;studentName&quot;:&quot;&quot;,&#xd;
     &quot;brandId&quot;:&quot;1&quot;,&#xd;
     &quot;pageNo&quot;:1,&#xd;
-    &quot;pageSize&quot;:10&#xd;
+    &quot;pageSize&quot;:10,&#xd;
+    &quot;orgId&quot;:${orgId}&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17020,6 +17031,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">orgId参数后台未使用也可不传</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -17128,7 +17140,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;studentId&quot;:${studentId},&#xd;
-	&quot;centraId&quot;:${orgId}&#xd;
+	&quot;centraId&quot;:1,&#xd;
+	&quot;orgId&quot;:${orgId}&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17147,6 +17160,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">cnetraId是什么</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -17231,10 +17245,17 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
                 </elementProp>
                 <elementProp name="orgId" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">${centraId_loginUser}</stringProp>
+                  <stringProp name="Argument.value">${orgId}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">orgId</stringProp>
+                </elementProp>
+                <elementProp name="productLineId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${productLineId}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">productLineId</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -17251,6 +17272,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">productLineId可以不传</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -17453,7 +17475,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="judgeEnrollTypeValue" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="judgeEnrollTypeValue--判断学生新招/升学" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -17463,7 +17485,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
     &quot;brandId&quot;:1,&#xd;
     &quot;classCategoryId&quot;:1,&#xd;
     &quot;studentId&quot;:${studentId},&#xd;
-    &quot;centraId&quot;:${orgId}&#xd;
+    &quot;centraId&quot;:${orgId},&#xd;
+    &quot;productLineId&quot;:${productLineId}&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17482,6 +17505,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">productLineId可以不传</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -17573,7 +17597,8 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
     &quot;orgId&quot;:${orgId},&#xd;
     &quot;brandId&quot;:1,&#xd;
     &quot;classGradeId&quot;:null,&#xd;
-    &quot;inClassQty&quot;:0&#xd;
+    &quot;inClassQty&quot;:0,&#xd;
+    &quot;orgId&quot;:${orgId}&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17592,6 +17617,7 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">orgId可以不传</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -17936,12 +17962,11 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
     &quot;orderinfoDTO&quot;: {&#xd;
         &quot;adviserId&quot;: ${adviserId}&#xd;
     },&#xd;
-    &quot;orderinfoSaveStatus&quot;: 200,&#xd;
+    &quot;orderinfoSaveStatus&quot;: 400,&#xd;
     &quot;orderSource&quot;: 0,&#xd;
     &quot;apedxInfoIds&quot;: &quot;&quot;,&#xd;
     &quot;contractList&quot;: [&#xd;
         {&#xd;
-&#xd;
             &quot;productIds&quot;: ${idASclassTypeId},&#xd;
             &quot;classGradeId&quot;: null,&#xd;
             &quot;centraId&quot;: ${orgId},&#xd;
@@ -17959,22 +17984,24 @@ vars.put(&quot;sumTotalAmt&quot;,ss);</stringProp>
                 &quot;couponIds&quot;: [],&#xd;
                 &quot;promotionIds&quot;: [],&#xd;
                 &quot;redeemIds&quot;: []&#xd;
-            }&#xd;
+            },&#xd;
+            &quot;productLineId&quot;: ${productLineId}&#xd;
         }&#xd;
     ],&#xd;
     &quot;payMethodDTOS&quot;: [&#xd;
         {&#xd;
-            &quot;payMode&quot;: 200,&#xd;
-            &quot;otherPayMode&quot;: 200,&#xd;
+            &quot;payMode&quot;: 400,&#xd;
+            &quot;otherPayMode&quot;: 400,&#xd;
             &quot;bankRate&quot;: null,&#xd;
-            &quot;bankAccount&quot;: null,&#xd;
+            &quot;bankAccount&quot;: &quot;zhanghao&quot;,&#xd;
             &quot;referenceNumber&quot;: null,&#xd;
-            &quot;payAmount&quot;: ${sumTotalAmt},&#xd;
+            &quot;payAmount&quot;: 67300,&#xd;
             &quot;tradeDateStr&quot;: null,&#xd;
-            &quot;payer&quot;: &quot;fukuanren1&quot;,&#xd;
+            &quot;payer&quot;: &quot;huikuanren&quot;,&#xd;
             &quot;bank&quot;: null,&#xd;
             &quot;chequeNo&quot;: null,&#xd;
-            &quot;company&quot;: null&#xd;
+            &quot;company&quot;: null,&#xd;
+            &quot;payerBankInfo&quot;: &quot;kaihuhang&quot;&#xd;
         }&#xd;
     ]&#xd;
 }</stringProp>
